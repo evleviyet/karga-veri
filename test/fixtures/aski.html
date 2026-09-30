@@ -1,0 +1,716 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" href="&lt;%= ResolveClientUrl(&quot;../assets/vendor/font-awesome/css/fontawesome-all.min.css&quot;)%>" /><title>
+	Ankara Su Arızaları
+</title></head>
+<body>
+    <form method="post" action="./Kesinti.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="54E6E256" />
+</div>
+        <div class="body">
+            <div role="main" class="main">
+                
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+<!-- Web Fonts  -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+<!-- Vendor CSS -->
+<link rel="stylesheet" href='../assets/vendor/bootstrap/css/bootstrap.min.css' />
+<link rel="stylesheet" href='../assets/vendor/font-awesome/css/font-awesome.min.css' />
+<link rel="stylesheet" href='../assets/vendor/font-awesome/css/fontawesome-all.min.css' />
+
+<link rel="stylesheet" href='../assets/vendor/animate/animate.min.css' />
+
+<link rel="stylesheet" href='../assets/vendor/simple-line-icons/css/simple-line-icons.min.css' />
+<link rel="stylesheet" href='../assets/vendor/owl.carousel/assets/owl.carousel.min.css' />
+<link rel="stylesheet" href='../assets/vendor/owl.carousel/assets/owl.theme.default.min.css' />
+<link rel="stylesheet" href='../assets/vendor/magnific-popup/magnific-popup.min.css' />
+<!-- Theme CSS -->
+<link rel="stylesheet" href='../assets/css/theme.css' />
+<link rel="stylesheet" href='../assets/css/theme-elements.css' />
+<link rel="stylesheet" href='../assets/css/theme-blog.css' />
+<link rel="stylesheet" href='../assets/css/theme-shop.css' />
+<!-- Current Page CSS -->
+<link rel="stylesheet" href='../assets/vendor/rs-plugin/css/settings.css' />
+<link rel="stylesheet" href='../assets/vendor/rs-plugin/css/layers.css' />
+<link rel="stylesheet" href='../assets/vendor/rs-plugin/css/navigation.css' />
+<!-- Demo CSS -->
+<link rel="stylesheet" href='../assets/css/demos/demo-medical.css' />
+<!-- Skin CSS -->
+<link rel="stylesheet" href='../assets/css/skins/skin-medical.css' />
+<!-- Theme Custom CSS -->
+<link rel="stylesheet" href='../assets/css/custom.css' />
+<!-- Head Libs -->
+<script src='../assets/vendor/modernizr/modernizr.min.js'></script>
+
+
+
+
+<!-- Skin CSS -->
+<header id="header" class="header-narrow" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 40, 'stickySetTop': '-100px', 'stickyChangeLogo': false}">
+    <div class="header-body">
+        <div class="header-top header-top header-top-style-3 header-top-custom">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header-column justify-content-end">
+                        <div class="header-row">
+                            <div class="header-column justify-content-start">
+                                <div class="header-row">
+                                
+                                    <a href="/tr/Anasayfa">
+                                        <img alt="Aski Genel Müdürlüğü" width="192" height="auto" src='../Yukle/Resim/Icerik/logo-aski.png' />
+                                    </a>
+
+
+
+
+                                </div>
+                            </div>
+                            <nav class="header-nav-top float-right">
+                                <ul class="nav nav-pills">
+
+                                    <li class="nav nav-pills">
+                                       
+                                        <img src="/tr/images/ataturkweb.png" />
+
+                                    </li>
+                                </ul>
+                            </nav>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-container container">
+            <div class="header-row">
+                <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
+                    <div id="IncBanner_MenuBar1">
+	<nav class='collapse'><ul class='nav nav-pills' id='mainNav'><li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link'  href='http://www.aski.gov.tr/'>ANASAYFA</a></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>KURUMSAL</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Belediye-Baskani/17>Belediye Başkanı</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Genel-Mudur/18>Genel Müdür</a></li><li><a class='dropdown-item' target=_self href=/tr/TeskilatSemasi.aspx>Teşkilat Şeması</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Misyon-Vizyonumuz/20>Misyon & Vizyonumuz</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Etik-Komisyonu/114>Etik Komisyonu</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Aski-Hakkinda/19>Aski Hakkında</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Stratejik-Planlar/21>Stratejik Planlar</a></li><li><a class='dropdown-item' target=_self href=/tr/mecliskararlari.aspx>Belediye Meclis Kararları</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Mevzuat/78>Mevzuat</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Mali-Durum-Raporu/64>Mali Durum Raporu</a></li><li><a class='dropdown-item' target=_blank href=\Yukle\Dosya\sertifikalar\NewIBNET_SErtifika.pdf>NewIBNET Üyelik Sertifikası</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Performans-Programlari/23>Performans Programları</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Ebc-Mukayeseli-Degerlendirmebenchmarking-Calismasi/115>EBC Mukayeseli Değerlendirme(Benchmarking) Çalışması</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Faaliyet-Raporlari/26>Faaliyet Raporları</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Teknik-Sartnameler/111>Teknik Şartnameler</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Hizmet-Standartlari/113>Hizmet Standartları</a></li><li><a class='dropdown-item' target=_blank href=http://yayinlar.aski.gov.tr/>Yayınlarımız</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>ANKARA VE SU</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Atiksu-Aritma/30>Atıksu Arıtma</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Icme-Suyu-Aritma/31>İçme Suyu Arıtma</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Su-Kaynaklarimiz/32>Su Kaynaklarımız</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Laboratuvar-Hizmetleri/28>Laboratuvar Hizmetleri
+</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Su-Kalitemiz/29>Su Kalitemiz
+</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Yapi-Kalite-Kontrol-Laboratuvari/40>Yapı Kalite Kontrol Laboratuvarı</a></li><li><a class='dropdown-item' target=_blank href=http://www.aski.gov.tr/TR/SuAnalizSonuclari.aspx>Su Analiz Sonuçları</a></li><li><a class='dropdown-item' target=_blank href=http://www.aski.gov.tr/yukle/dosya/SuKaliteNoktalari.pdf>Su Kalite Noktalarımız</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>ABONELİK HİZMETLERİ</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Abonelik-Islemleri-Gerekli-Evraklar/37>Abonelik İşlemleri (Gerekli Evraklar)</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Abonelik-Sikca-Sorulan-Sorular/36>Abonelik Sıkça Sorulan Sorular
+</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Abonelik-Rehberi/34>Abonelik Rehberi
+</a></li><li><a class='dropdown-item' target=_self href=/tr/ucretler.aspx>Tarife ve Ücretler</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>KARTLI SAYAÇ</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Sikca-Sorulan-Sorular/59>Sıkça Sorulan Sorular</a></li><li><a class='dropdown-item' target=_self href=http://www.aski.gov.tr/tr/KioksNoktalar.aspx>Su matik Ödeme Noktaları</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Kartli-Sayac-Nedir/44>Kartlı Sayaç Nedir?
+</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>TEKNOLOJİMİZ</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Ankabıs/38>ANKABİS</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Scada/39>SCADA</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Sebeke-Bilgi-Merkezi/41>Şebeke Bilgi Merkezi</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>İLETİŞİM</a><ul class='dropdown-menu'><li><a class='dropdown-item' target=_self href=/tr/iletisim.aspx>Genel Müdürlük</a></li><li><a class='dropdown-item' target=_self href=/tr/iletisimDetay.aspx?ID=11>Bölge Müdürlükleri</a></li></ul></li><li style='background-color:#d1ea7c;'><a class='nav-link' target='_blank' href='https://onlineislem.aski.gov.tr'>ONLİNE İŞLEMLER</a></li></ul></nav>
+</div>
+                </div>
+                <a href="#" class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav"><i class="fa fa-bars"></i></a>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+
+                <section class="page-header page-header-color page-header-tertiary page-header-more-padding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <ul class="breadcrumb">
+                                    <li><a href="/TR/Default.aspx">Anasayfa</a></li>
+                                    <li class="active">İçerik</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h1>
+                                    <span id="LblMenuBaslik">Ankara Su Arızaları</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="word-rotator-title">Ankara geneli <strong>
+                                <span class="word-rotator" data-plugin-options="{'delay': 2000}">
+                                    <span class="word-rotator-items">
+                                       
+                                        <span>çalışmaları.</span>
+                                    </span>
+                                </span>
+                            </strong>
+                            </h2>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="row">
+                        <div class="col">
+                            
+                            <ul class="history">
+                                
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>ELMADAĞ</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>30.09.2026 08:00:00<br />
+                                                        <b>Tamir Tarihi: </b>30.09.2026 15:00:00<br />
+                                                        <b>Detay: </b>Değerli abonelerimiz, Tatlıca  mahallesi petır  sokak içerinde  içme suyu hattı arızası nedeniyle,30 Eylül.2026 saat-08:00 ile 30 Eylül.2026 
+saat-15:00 saatleri arasında 
+su verilemeyecektir. 
+ 
+Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız 
+sürdürmektedir. 
+
+Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> Tatlıca mahallesi üst kotları
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>BEYPAZARI</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>30.09.2026 09:30:00<br />
+                                                        <b>Tamir Tarihi: </b>30.09.2026 17:00:00<br />
+                                                        <b>Detay: </b>Değerli abonelerimiz, Hacıkara mahallesi şehit ümit bölük oğlu caddesinde bulunan 63 luk Polietilen  Boru hattında patlama nedeniyle oluşan arıza 09:30 ile 17:00 saatleri arasında plansız su kesintisi yapılacaktır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> şehit ümit bölük oğlu catdesi ve civarı
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>GÖLBAŞI</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>30.09.2026 10:00:00<br />
+                                                        <b>Tamir Tarihi: </b>30.09.2026 16:00:00<br />
+                                                        <b>Detay: </b>Değerli abonelerimiz, Kızılcaşar Mahallesi 30 Ağustost Caddesi üzerinde 225’lik içme suyu hattında yapılacak olan arıza çalışması nedeniyle su kesintisi yapılmıştır. Tek Yapı Kooperatifi bir kısmına 30 Eylül 2026 saat- 10:00 ile 30 Eylül 2026 saat- 16:00 saatleri arasında 
+su verilemeyecektir. 
+
+Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız 
+sürdürmektedir. 
+
+Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> Kızılcaşar mahallesi
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>ÇUBUK</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>30.09.2026 11:05:00<br />
+                                                        <b>Tamir Tarihi: </b>30.09.2026 15:00:00<br />
+                                                        <b>Detay: </b>Değerli abonelerimiz, Çubuk ilçesi Esenboğa mahallesi merkez kümeevleri adresinde oluşan arıza nedeniyle plansız su kesintisi yapılmıştır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> Çubuk ilçesi Esenboğa mahallesi merkez kümeevleri.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>AKYURT</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>30.09.2026 12:10:00<br />
+                                                        <b>Tamir Tarihi: </b>30.09.2026 17:00:00<br />
+                                                        <b>Detay: </b>Balıkhisar Mahallesi Çankırı Bulvarı Aselsan yanında içme suyu dağıtım şebeke hattında oluşan arıza nedeniyle su kesintisi yaşanacaktır.vermiş olduğumuz rahatsızlıktan dolayı özür dileriz.<br />
+                                                        <b>Etkilenen Yerler:</b> Balıkhisar Mahallesi fabrikalar bölgesi - Güzelhisar Mahallesi fabrikalar bölgesi
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>YENİMAHALLE</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>30.09.2026 12:20:00<br />
+                                                        <b>Tamir Tarihi: </b>30.09.2026 16:00:00<br />
+                                                        <b>Detay: </b> Yuvaköy Mahallesi 3703 Cadde içerisindeØ100 lük Duktil boruda oluşan arıza nedeniyle plansız su kesintisi yapılmıştır. Verdiğimiz rahatsızlıktan dolayı özür diler, Sabır ve anlayışınız için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> Yuvaköy Mahalesi pidosan anteks 3703 Cadde ve civarı
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>ÇUBUK</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>30.09.2026 13:00:00<br />
+                                                        <b>Tamir Tarihi: </b>30.09.2026 17:00:00<br />
+                                                        <b>Detay: </b>Değerli abonelerimiz, Çubuk ilçesi Atatürk mahallesi Kurbantepe Caddesi adresinde oluşan arıza nedeniyle plansız su kesintisi yapılmıştır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> Atatürk Mahalesi geneli
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>ALTINDAĞ</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>30.09.2026 13:30:00<br />
+                                                        <b>Tamir Tarihi: </b>30.09.2026 17:00:00<br />
+                                                        <b>Detay: </b>PLANSIZ SU KESİNTİSİ: 
+Değerli abonelerimiz Örnek mahallesi Hızır Reis sokak içerisinde meydana gelen İçme Suyu Şebeke hattındaki arızadan dolayı su kesintisi yapılmıştır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> Kale mahallesi, Örnek mahallesi ve Atıfbey mahallesi bir kısmı
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>BEYPAZARI</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>30.09.2026 09:30:00<br />
+                                                        <b>Tamir Tarihi: </b>30.09.2026 17:00:00<br />
+                                                        <b>Detay: </b>Değerli abonelerimiz, Hacıkara şehit ümit bölük oğlu caddesinde bulunan 63 luk Polietilen  Boru hattında patlama nedeniyle oluşan arıza 09:30 ile 17:00 saatleri arasında plansız su kesintisi yapılacaktır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> şehit ümit bölük oğlu catdesi ve civarı
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>BEYPAZARI</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>30.09.2026 13:55:00<br />
+                                                        <b>Tamir Tarihi: </b>30.09.2026 16:00:00<br />
+                                                        <b>Detay: </b>Değerli abonelerimiz, Ayvaşık mahallesi azmak mevkin de bulunan yeni toki bloklarında Q 110 Polietilen  Boru hattında mütait firma tarafından bağlantı yapılma nedeniyle oluşan arıza 13:50 ile 16:00 saatleri arasında plansız su kesintisi yapılacaktır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> azmak mevki yeni Toki 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>MAMAK</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>30.09.2026 08:00:00<br />
+                                                        <b>Tamir Tarihi: </b>1.10.2026 05:00:00<br />
+                                                        <b>Detay: </b>A1 ANKARAY Dikimevi–Natoyolu Raylı Sistem çalışmaları kapsamında, Cengizhan Metro İstasyonu inşaat alanında bulunan içme suyu hatlarının güvenli şekilde çalışma alanı dışına taşınması gerekmektedir.
+Bu nedenle 30 Eylül Çarşamba günü saat 08.00’den itibaren Mamak’ın 15 mahallesinde kademeli olarak su kesintisi uygulanacaktır.
+
+Çalışmaların saat 14.00’te tamamlanması ve bu saatten itibaren şebekeye yeniden su verilmeye başlanması planlanmaktadır. Zirvekent ve Yakupabdal’da, bölgelerin yüksek kotta bulunması nedeniyle suyun ulaşmasının 1 Ekim Perşembe günü saat 05.00’i bulabileceği öngörülmektedir.
+
+Kesinti süresince; deposu bulunan toplu konutlara, okullara, hastanelere, öğrenci yurtlarına ve huzurevlerine ihtiyaç halinde tankerlerle su desteği sağlanacaktır.
+
+Vatandaşlarımızın kesintiden etkilenmemeleri için gerekli tedbirleri önceden almalarını rica ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b>  Zirvekent, Akşemsettin, Durali Alıç, Boğaziçi, Ege, Mutlu, General Zeki Doğan, Kutlu, Cengizhan, Fahri Korutürk, Misket,Şahintepe, Şirintepe, Tuzluçayır Mahalleleri ve Çankaya İlçesi Yakupabdal Mahallesi
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>MAMAK</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>30.09.2026 10:00:00<br />
+                                                        <b>Tamir Tarihi: </b>30.09.2026 17:00:00<br />
+                                                        <b>Detay: </b>Değerli abonelerimiz, 
+Küçük Kayaş Mahallesi 19 Mayıs Bulvarı Bayındır Barajı yanı adresinde P-25 Pompa İstasyonunda debimetre arıza çalışması nedeniyle 30 Eylül 2026 Tarih Saat:10:00 ile 30 Eylül 2026 Tarih Saat-17:00 saatleri arasında su verilemeyecektir. 
+Etkilenen yerler; Küçük Kayaş Mahallesi’nin tamamı ile Yeni Bayındır, Yeşilbayır Mahallelerin üst kotları
+Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. 
+Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> Küçük Kayaş Mahallesi’nin tamamı ile Yeni Bayındır, Yeşilbayır Mahallelerin üst kotları
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<style>
+
+    .blogCookieCover {
+    width: 100%;
+    max-height:90px;
+    position: fixed;
+    bottom: 0px;
+    float: left;
+    clear: both;
+    height: auto;
+    min-height: 85px;
+    background-color: #87a2bd;
+    color: #fff;
+    z-index: 999999;
+    display: none;
+}
+
+
+.blogCookiesubCover {
+    text-align: left;
+    width: 100%;
+    max-width: 1114px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    height: auto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+}
+
+.blogCookieText {
+    float: left;
+    text-align: left;
+    width: 90%;
+    padding-left: 10px;
+    margin: auto;
+    height: auto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+}
+
+.blogCookieBtnCover {
+    float: right;
+    width: 8%;
+    /*min-width: 175px;*/
+    height: auto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 43px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.blogCookieBtn {
+    float: left;
+    width: 80%;
+    min-width: 140px;
+    margin: auto;
+    height: 36px;
+    border-radius: 22.5px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #001e3c;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 37px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.blogCookieCls {
+    margin-right: 30px;
+    float: right;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.bCookiePolicyLink {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+</style>
+<footer id="footer" class="m-0">
+    <div class="container">
+        <div class="row">
+            <div class="footer-ribbon">
+                <span><a style="color: white" href="/TR/SiteHaritasi.aspx">Site Haritası</a></span>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-details">
+                    <h4>İletişim</h4>
+                    <ul class="contact">
+                        <li>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i><strong>Adres:</strong>Hacı Bayram Mahallesi Kazım Karabekir Caddesi<br />
+                                No:70 06050 ALTINDAĞ/ANKARA
+                            </p>
+                        </li>
+                       
+                        <li>
+                            <p><i class="fas fa-phone"></i><strong>ASKİ Çağrı Merkezi:</strong><a href="tel:153"> 153</a></p>
+                        </li>
+
+                        <li>
+                            <p><i class="far fa-envelope"></i><strong>Email:</strong> <a href="mailto: bilgiedinme@aski.gov.tr">bilgiedinme@aski.gov.tr</a></p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="mb-4">Genel Müdürlük Çalışma Saatleri</h4>
+                <div class="info custom-info">
+                    <span>Pzt-Cum</span>
+                    <span>08:00-12:00 / 13:00-17:00</span>
+                </div>
+               
+
+            </div>
+
+            <div class="col-lg-2 ml-lg-auto">
+                <h4 class="mb-4">Sosyal Medya</h4>
+                <ul class="social-icons">
+                    <li class="social-icons-facebook">
+                        <a href="https://tr-tr.facebook.com/askigenelmudurlugu/" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social-icons-twitter">
+                        <a href="https://twitter.com/askiankara" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-icons-instagram">
+                        <a href="https://www.instagram.com/askibaskentankara/" target="_blank" title="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-icons-youtube">
+                        <a href="https://www.youtube.com/user/askigenelmudurlugu" target="_blank" title="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-2 ml-lg-auto">
+                <h4 class="mb-4">Uygulamalarımız</h4>
+                <div class="info custom-info">
+                    <a href="https://play.google.com/store/apps/details?id=org.uygulama.aski" target="_blank">
+                        <img src="/TR/images/PlayStoreIcon.png" style="max-width: 150px" /></a>
+                </div>
+                <div class="info custom-info">
+                    <a href="https://itunes.apple.com/us/app/aski-ankara/id1109913912?mt=8" target="_blank">
+                        <img src="/TR/images/AppStoreIcon.png" style="max-width: 150px" /></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center m-0">
+                    <p>© Aski Genel Müdürlüğü - Bilgi İşlem Dairesi Başkanlığı</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-15596961-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-15596961-1');
+</script>
+
+        
+<!-- Vendor -->
+<script src='../assets/vendor/jquery/jquery.min.js'></script>
+<script src='../assets/vendor/jquery.appear/jquery.appear.min.js'></script>
+<script src='../assets/vendor/jquery.easing/jquery.easing.min.js'></script>
+<script src='../assets/vendor/jquery-cookie/jquery-cookie.min.js'></script>
+<script src='../assets/vendor/popper/umd/popper.min.js'></script>
+<script src='../assets/vendor/bootstrap/js/bootstrap.min.js'></script>
+<script src='../assets/vendor/common/common.min.js'></script>
+
+<script src='../assets/vendor/jquery.validation/jquery.validation.min.js'></script>
+<script src='../assets/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js'></script>
+<script src='../assets/vendor/jquery.gmap/jquery.gmap.min.js'></script>
+<script src='../assets/vendor/jquery.lazyload/jquery.lazyload.min.js'></script>
+<script src='../assets/vendor/isotope/jquery.isotope.min.js'></script>
+<script src='../assets/vendor/owl.carousel/owl.carousel.min.js'></script>
+<script src='../assets/vendor/magnific-popup/jquery.magnific-popup.min.js'></script>
+<script src='../assets/vendor/vide/vide.min.js'></script>
+
+<!-- Theme Base, Components and Settings -->
+<script src='../assets/js/theme.js'></script>
+
+<!-- Current Page Vendor and Views -->
+<script src='../assets/vendor/rs-plugin/js/jquery.themepunch.tools.min.js'></script>
+<script src='../assets/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
+
+<!-- Current Page Vendor and Views -->
+<script src='../assets/js/views/view.contact.js'></script>
+
+<!-- Demo -->
+<script src='../assets/js/demos/demo-medical.js'></script>
+
+<!-- Theme Custom -->
+<script src='../assets/js/custom.js'></script>
+
+<!-- Theme Initialization Files -->
+<script src='../assets/js/theme.init.js'></script>
+
+   
+
+
+    </form>
+</body>
+</html>

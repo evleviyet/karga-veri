@@ -1,0 +1,12 @@
+name: karga_feed
+description: Karga uygulamasının veri katmanı; kamu kaynaklarını okuyup statik JSON üretir.
+publish_to: none
+
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  http: ^1.2.0
+
+dev_dependencies:
+  test: ^1.25.0
