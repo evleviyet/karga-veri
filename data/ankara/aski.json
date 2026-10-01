@@ -6,46 +6,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Kıbrıs köyü mahallesi'nin üst kotları",
-      "district": "MAMAK",
-      "start": "2026-10-01T16:25:00.000",
-      "end": "2026-10-01T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yakacık 3967 cadde ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-01T16:30:00.000",
-      "end": "2026-10-01T20:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": ": Aşagıyurtçu Bir Kısmı ve Golfkent Civarı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-01T09:40:00.000",
-      "end": "2026-10-01T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yeni Batı mahallesi 2359 sokak ve civarı.",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-01T11:30:00.000",
-      "end": "2026-10-01T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "ŞENTEPE Mah. Bır Kısmı",
       "district": "POLATLI",
       "start": "2026-10-01T14:45:00.000",
-      "end": "2026-10-01T18:00:00.000"
+      "end": "2026-10-01T23:00:00.000"
     }
   ]
 }
