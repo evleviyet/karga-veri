@@ -6,10 +6,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "ŞENTEPE Mah. Bır Kısmı",
-      "district": "POLATLI",
-      "start": "2026-10-01T14:45:00.000",
-      "end": "2026-10-01T23:00:00.000"
+      "detail": "Yakacık Mahallesi , Memlik mahallesi , Kuzey yıldızı mahallesi bir kısmı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-01T23:00:00.000",
+      "end": "2026-10-02T11:00:00.000"
     }
   ]
 }
