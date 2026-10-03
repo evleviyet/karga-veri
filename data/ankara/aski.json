@@ -6,24 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ballıkpınar mahallesi",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-03T10:15:00.000",
-      "end": "2026-10-03T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Koru mahallesi bir kısmı, Konutkent mahallesi bir kısmı",
-      "district": "ÇANKAYA",
-      "start": "2026-10-03T11:00:00.000",
-      "end": "2026-10-03T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": ": Piyade Mahallesi ve Elvan Mahallesi Bir Kısmı",
       "district": "ETİMESGUT",
       "start": "2026-10-03T12:35:00.000",
@@ -33,19 +15,28 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Erler Mahallesi Bir Kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-03T13:40:00.000",
-      "end": "2026-10-03T18:00:00.000"
+      "detail": "Yakacık kuzey yıldızı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-03T14:30:00.000",
+      "end": "2026-10-03T20:00:00.000"
     },
     {
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yakacık kuzey yıldızı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-03T14:30:00.000",
+      "detail": "günsazak caddesi ve civarı",
+      "district": "KEÇİÖREN",
+      "start": "2026-10-03T15:35:00.000",
       "end": "2026-10-03T20:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Ballıkpınar Mahallesi",
+      "district": "GÖLBAŞI",
+      "start": "2026-10-03T18:30:00.000",
+      "end": "2026-10-03T23:00:00.000"
     }
   ]
 }
