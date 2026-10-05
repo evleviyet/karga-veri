@@ -9,7 +9,70 @@
       "detail": "Ata Kent Mahallesi ve Topçu Mahallesi",
       "district": "ETİMESGUT",
       "start": "2026-10-05T03:15:00.000",
-      "end": "2026-10-05T12:00:00.000"
+      "end": "2026-10-05T14:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Çakırlar Mahallesi 2291 sokak 2164 sokak 1467/1 sokak ve Mesut evler sitesi ve çevresi",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-05T10:15:00.000",
+      "end": "2026-10-05T18:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "",
+      "district": "ÇUBUK",
+      "start": "2026-10-05T10:20:00.000",
+      "end": "2026-10-05T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "",
+      "district": "ÇUBUK",
+      "start": "2026-10-05T10:45:00.000",
+      "end": "2026-10-05T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yakacık Mahallesi 3601 cadde 3604 cadde ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-05T11:10:00.000",
+      "end": "2026-10-05T18:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Kurtuluş mahallesi Köroğlu Sokak ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-10-05T12:05:00.000",
+      "end": "2026-10-05T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İvedikosb Mahallesi 1418 Cadde ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-05T12:05:00.000",
+      "end": "2026-10-05T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Saray Gümüşoluk Mahallesi bir kısmı",
+      "district": "PURSAKLAR",
+      "start": "2026-10-05T12:30:00.000",
+      "end": "2026-10-05T14:30:00.000"
     }
   ]
 }
