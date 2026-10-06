@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-06T07:29:15.479807Z",
+  "generatedAt": "2026-10-06T14:26:13.480537Z",
   "sources": {
     "ankara-aski": {
-      "status": "degraded",
-      "error": "FormatException: ASKİ: sayfada 7 kayıt var, 6 tanesi ayrıştırıldı"
+      "status": "ok",
+      "count": 5
     },
     "ankara-abb": {
       "status": "ok",
