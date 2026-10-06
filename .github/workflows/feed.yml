@@ -1,4 +1,13 @@
-# Kaynakları 30 dakikada bir okur, data/ altına JSON yazar, değiştiyse commit'ler.
+# Kaynakları 30 dakikada bir okur, siteyi üretir ve GitHub Pages'e commit'siz
+# yayımlar (81 ilin verisi depo geçmişini şişirmesin diye).
+#
+# Bir kez yapılacak ayar: Settings → Pages → Build and deployment → Source:
+# "GitHub Actions". Bu seçilene kadar "deploy" işi başarısız olur ve eski yayın
+# (depodaki data/ klasörü) sürer.
+#
+# Eski uygulama sürümlerinin okuduğu Ankara dosyaları (data/) değiştikçe yine
+# commit'lenir; bu commit'ler zamanlanmış işin 60 gün hareketsizlikte
+# kapatılmasını da önler.
 name: feed
 on:
   schedule:
@@ -7,6 +16,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: feed
@@ -15,13 +26,49 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: dart-lang/setup-dart@v1
       - run: dart pub get
+
+      # Trafo -> mahalle eşlemeleri ve kaynakların son başarılı okumaları
+      - name: Önbelleği geri yükle
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache
+          key: feed-cache-${{ github.run_id }}
+          restore-keys: feed-cache-
+
       - name: Feed'i üret
-        run: dart run bin/build_feed.dart
-      - name: Değiştiyse commit'le
+        run: dart run bin/build_feed.dart site --legacy data
+
+      - name: Önbelleği kaydet
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache
+          key: feed-cache-${{ github.run_id }}
+
+      - name: Kaynak durumunu özetle
+        if: always()
+        run: |
+          {
+            echo "### Kaynaklar"
+            echo "| Kaynak | Durum | Kayıt | Hata |"
+            echo "|---|---|---|---|"
+            jq -r '.sources | to_entries[] | "| \(.value.name) | \(.value.status)\(if .value.stale then " (son veri)" else "" end) | \(.value.count) | \(.value.error // "") |"' site/data/v2/meta.json
+          } >> "$GITHUB_STEP_SUMMARY" || true
+          bash tool/annotate.sh site "Feed özeti" || true
+
+      - name: Siteyi paketle
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      # Push çakışırsa (ör. aynı anda elle push) yayın yine de yapılır.
+      - name: Eski sürüm dosyaları değiştiyse commit'le
+        continue-on-error: true
         run: |
           git config user.name "karga-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -30,5 +77,19 @@ jobs:
             echo "Değişiklik yok"
           else
             git commit -m "feed: $(date -u +'%F %R') UTC"
+            git pull --rebase --autostash || true
             git push
           fi
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    # Pages kaynağı "GitHub Actions" yapılana kadar başarısız olur; feed işini
+    # kırmızıya boyamasın.
+    continue-on-error: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

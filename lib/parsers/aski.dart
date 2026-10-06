@@ -16,17 +16,22 @@ List<Notice> parseAski(String html) {
     final places =
         _first(RegExp(r'Etkilenen Yerler:\s*</b>(.*?)</p>', dotAll: true), b) ?? '';
     if (district == null || start == null) continue;
+    final text = cleanHtml(places.isNotEmpty ? places : detail);
     out.add(Notice(
       kind: NoticeKind.water,
       source: 'ASKİ',
       title: 'Su kesintisi',
-      detail: cleanHtml(places.isNotEmpty ? places : detail),
+      detail: text,
       district: cleanHtml(district),
       start: _date(start),
       end: end == null ? null : _date(end),
+      plaka: 6,
+      url: 'https://www.aski.gov.tr/tr/Kesinti.aspx',
+      id: 'aski:${stableId('${cleanHtml(district)}|$start|$text')}',
     ));
   }
-  final expected = 'Arıza Tarihi'.allMatches(html).length;
+  // Etiket sayısı (detay metninde geçen "Arıza Tarihi" yazıları sayılmaz).
+  final expected = RegExp(r'<b>\s*Arıza Tarihi:\s*</b>').allMatches(html).length;
   if (out.length != expected) {
     throw FormatException(
         'ASKİ: sayfada $expected kayıt var, ${out.length} tanesi ayrıştırıldı');

@@ -2,3 +2,8 @@ data/*.tmp
 .dart_tool/
 .packages
 pubspec.lock
+# Çalışma çıktıları (Actions'ta Pages'e yüklenir, depoya girmez)
+.cache/
+site/
+site_local/
+probe-site/

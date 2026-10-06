@@ -1,0 +1,573 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" href="&lt;%= ResolveClientUrl(&quot;../assets/vendor/font-awesome/css/fontawesome-all.min.css&quot;)%>" /><title>
+	Ankara Su Arızaları
+</title></head>
+<body>
+    <form method="post" action="./Kesinti.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="OCA084372HKweEUA6ncdQpZoIxNmPkZxmqxgLh1Axk0UXo1eq72V93R+kMyPvN4zmuDq0Y7aq0Kf1NAv5DFCTBGHrNyZl8nqE/GRql652Q0Dm7BmPlsLE2mtA0H1Rrh78qvnL3vaRctFLoqNAaon6Unt1n1iV30ss48j1LG65st4s0MppIcdJRMWl1deeTDMP5dwSuWh/vUepTRs4rs8G6XIWG5FIQxyP42wTKqctaCspap0seUiKLpF6sLx3fU0q18IH3aaMQX8LdtNLX+iYTsk+NnC4U0N2/9v0YRVm7s+z5s9tdVmZb0cSTCcTEe6d2QqTKMgudrkb5nFJ2VydbD+tkWLKZjVBAn3jMLR2+6AyYz5Cak+TOAAlkK6S6cTxjYRD2haYsPjSy2rMi2fDCjGEqD1ddKoaEomkVJuJcR/DI31ljdWGjoRsaj/TLLfUgxf1O55R3FVsGN5sPqfM8JfmcvxsSYXUFaj4f0T5UbRN9w7wi1mc2+CSgZkcYzuSVF2GpCVGpbjn5x3PgnAKZMxK/h/qZxbkhOUE9r1QcQh3S+wExRfldnsCBCsmRJRxMWP5RODavJjOKlY7olYAgt2oC0Dylr40HgRD34TGfDeoeHiWQrU1i1vFrDlnW2aIY81sOZzQth0O3WuCA/bOnZI17AOUht8iknGY2rNHDt43dy/HKo6NKMpm60QFwqzxHM4HWey1PwQeUR1thKuE2/gPZpmQAh/M5t4+oDkEBQVQ/FUz7QXc1/24W7GKilSeMf/qzZoQriRAViRelYtkzKSW/OGXpaOontRnbmvrfdcmwj1Bwi2by7lZkSu/MPbUzYYfDJpRBiSeC4VpHPBFIU4yv4vla3XaTwXrNR/UK2lAXOULhfjc9d5DPFI+zncMa4MBYggLW8NaMKIFW6ggF+H2Uq4um0B6vJ3k9rdgGhLZt3SNoM3CHzs3ssjdPDbrOSIpmzJPjmSmitr1Lcrp6/sQf9XviB077VneJF+t/Qa9H8O4LKZ9JRkUBqKvRTxp8mOCr8DVP5HvR786fEK4XAISl0TaIXMYPtU2b4xl1ficge/IQTtITSkEBOzwVC6zZsH42nnoCSfH6dDw+dxfO3eejA4LZW0KQBAMu/1B3xCDLJ5lalfVSwU3pdoGgiYFWMe1C8Ss6iGEfcj5rKtpMSxAXqHr7cKdJ4t09kThr0CnWEjhS4G3zGCaIk0+tTiVyW8twGnLOSYM4KDMQWR536WcBirKSd/P/WuIWGOP0CiQP0GjHhRg6KqzL3KM0lJ0+lBH8cD5wm3YY9OpAtnQymI1v/NZAS5MAvVGXXHFN19LP/F4DfmdJ210Y53bn7rfSp6Bwp4uWq2/XNR87F7GvVH3AEUTXgHe11mtyt3rgzG9s9IHx9p6obF+T2eyhou2YuSI63ZwDssiyYWKxkp22EybmIDy/uKkTEI7R/0pv3dCOm2U1/bYV8W1MNXgSWodL+I0HuJUzwk3x2xjPpsvCvnFOZ1z7t9g7htrBtOKr37nr00Nhg2XAV8pqdgR9kaLlbOhmtPPYbfT3CkmBWl2JDWXrestpxn5YU/pnvSgXtm+YBiBu+lWdsFQVz2B2qNyr0Gp6T7mvP+05Vp28cs7g5v1ChdOgVET6X75sxxaoRV+5eDC9V3vgLGAykpe9+RQ8KTgznOiUaCxJsnHAEHMrIPbiyG1uvg9ehkw04DtetCkZM3P5CB70tPuErJ+KTyK2zf/RRC1wDcpL6TrzSq2tT5nVIGc0iu+LCtFnwTD+C07PIok5cuUI+azbX967hJkL9Ew+d40A+PC0VogeywkSuFGQbYDBzGFCRERUUE2FIN+swmJqWJgmhzaqJ/JXvY+F/Og/ts/OhhKxyLBcPaWt/XRL8Ofb3qzJwa1unBtvFgFg9ERLEc4JUYNx87rm9V3wUFdGhKWQPTFBArxan8tF+iz9JTMlj98Xf3W1M/3k2sBlgKEdwYRj3uwgeh2bD6asTG+sgkqRtqtw/AV0sgILCzsCKHqPYaxOawCciwPLSojr0EibVEz07GAWQgUrZm7t/RW5bCwUve6FTW6uzqtrMBpuObBccrVTaPNIo+3gwUqfWzDFNM+4PUrOS3pmZOxdKxGLpNPtxkD1EOhP/C9QZWP4Wr9Xl+Gk3lPqfV2P4B947/LodhHIDYn04r0Low1hg5d1zs2gZWdqU1+YKWR8SwvUWSZDFfPjBVXYiFOB2Qao4HOSbqHNjJOKJNUFjj9lQdiTZVqn6IpDcup377XKpE3Wpkl5WclkE47TTTWtVhpSfsHvgRrk4HfnF025np0eShuHopxJvEpAyFGklNAaMVrTU8+BdQHW0kX0LlvV6TUAAtm9ffQV0/hN5jCRge+OIDZ/AYC+SlVOxQRyQM0Nkxb2yJP2P6oXhnkMi+b4G6GvxR0rDWEuE1AJicATWiXx1HHeIJHExpNcneiR8t3kGjmbOd6BBpZ7EQR5Jm7j8wCX4T/WTft1hto97F31TgWY3ra3117UNHFCsay4HeibhpMkfRQC8uZTVhuvPrJQLu2mICksZTMEz3CfwIJSMPHwwYcuSeiYl1ff5l7iu8WE37oy6Ck8QNH8ylSLW5q2xqx/l2btpFXwZXPHmVS7NUnHdqxzY31m94IbUAKstwdImV460c9PYAlfWpK8PXXJg2U3KRT8xzZ0bVl4tFDvwWf4stT6FhO5NHIIXX7xTU1aMPgIvSVgrXTNmcpBgbYZumJCdgmxaNH8kVPGkaRMKgFYHvpOPZSp/aztG5AdiYLKEko33UOiFZPy6yVhxb7txQlSuIPQJ3RnHid7VLKVp+AB7wYrkDZNUlLmti+GVKRI+N+xEc4KH5kOJ0dL4xwc4pfq4O2ZRbHoJOl6uaP4/26YbtSbReEm17zO3pSn+ifpRbqcuyxHXP0fiJE3lA/E5eKBHQ2k5eQScy/J05foJtDSIt81Yc3RMPT/zIY0dfX4/c5VoNwXuuDYrPqBcX+KRlCSXfdVG8LqJEtkiBQJ2hmkIaVf0tUwA7mMuP+O4yiLlto2xFPaOpZ9ioO7HHDIi4sEouuC2rqg8CezwqU1R99H5TwddOwTRuNZOui/0W1k8YpMxmbxxAdnNvTmOodsx89ywtm/IhKWKhqcYIb0WdQ1ZaZ8q/pCuF9CeRCIX44zFzGz+/3LekjPCfYps+h5PUQ+ZR3flsDCwQLcuIumFY4mBj2ODmZvDSxT3+z0L6ntLQTaofrROgzgLU53g+5JxAMlTur8UgQHQetPyjAQIDcsgFOMcg9Vg6BkRlP2DhREFLmR3rx+AV0b8rQDRjfZLKcGLqNJSlUH5DMq4SrVcBgy4CTJbYTrjhBvLQdlcvE4MfcDXsA7ChVSKKQMgb+qY8oUDkQFkd0rEvMZg91bzuSCEuxxdSwE4Xqg7264Ijl14vQQQSaO9ajC3OhHD5xr5kZLdQ0kWperyqNtcIZv1TzUSdsVWs3M+Mnk/Gto7drls1MPHJ272hoNkU/3IF+OWXfevHQJ9JJ7lh9LJHAOtC1OL2pfk2nRBMZhiyGk4M1Pk3QQQwJKV5a5YytW/QEzzyU1iXqdzojMyHa9QZyqJZIpidtYu0ZlKeNIcZGP77xcjTz/uQLVjvQCwOYeDy3YyErRA7qph7sYt95yQPbUGk2YMWIYEjrCaYHPPPmT75s1/+jVTNHhu9nMcePaKCrtPC7KfzxvB42LqW0Axqv8os7u4e+RwXHhMx7dkdGhbjR5pQhoWg1WT0Q8ztCYa8KxZzKKsNO9bRTgYzIGD29DekX1ai7UEQjqjL8s3PgPPHTXzxexmaNH9GD+RhcFphw5EfP8Tcbjap8ZDkX7n/NndlnfSkUVKcx7lfhoaBg8tLt3wp7C3M+1wvBqeCaphD2ZSSk4DBb3kA1WQ76GpYP4IOYkoPW8jnnIAryQYSnhR+j7YOOwxnt52fai08gXT/KGMEM4wjmoeJ4Rj/y8d0tZzvdWg7M5ek9qrdIosuDkCQM7QKPaDXax40nEtjZkMldewERzPMVbuViiWy+Aa29TbiiveUrvIudL2YKY6FS/ERH57Hht5FMxvwHnBgk4V3aaIU/O2cnukEVXeEagIVcLgJ4LQYbq72KI33SruYZBzPUiTPFg88xYpUQxaAxG+EDB4rsbXE4Rv/J9nPd/75VMliSubN1Lp6QpS3BZ6DdC7YK9lqubaYQ7njCteATBqLew6nbxft2N8ggcl3XiehQlg9tc0c5QtsLrSPPXcnZm9/wNJIOlxNteRH/W9SmCJHxUygYCEFe4d1I1I2q/furuGMjGsHsN9J1yhgHGoE6xCs+H1nOkPVJQz1g9FAFUyH1A+nggDsrsppbfh45WhQAWQbtZfhI4K0K4altvw6Ikzb6mRCx7c/4K/9pA2JFxBvpddNL1FmRjvaguILhedW0w7eG82iT6sHPtZJWM6qYuSNw5TwccT6keL0/9soWLRhGOY=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="54E6E256" />
+</div>
+        <div class="body">
+            <div role="main" class="main">
+                
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+<!-- Web Fonts  -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+<!-- Vendor CSS -->
+<link rel="stylesheet" href='../assets/vendor/bootstrap/css/bootstrap.min.css' />
+<link rel="stylesheet" href='../assets/vendor/font-awesome/css/font-awesome.min.css' />
+<link rel="stylesheet" href='../assets/vendor/font-awesome/css/fontawesome-all.min.css' />
+
+<link rel="stylesheet" href='../assets/vendor/animate/animate.min.css' />
+
+<link rel="stylesheet" href='../assets/vendor/simple-line-icons/css/simple-line-icons.min.css' />
+<link rel="stylesheet" href='../assets/vendor/owl.carousel/assets/owl.carousel.min.css' />
+<link rel="stylesheet" href='../assets/vendor/owl.carousel/assets/owl.theme.default.min.css' />
+<link rel="stylesheet" href='../assets/vendor/magnific-popup/magnific-popup.min.css' />
+<!-- Theme CSS -->
+<link rel="stylesheet" href='../assets/css/theme.css' />
+<link rel="stylesheet" href='../assets/css/theme-elements.css' />
+<link rel="stylesheet" href='../assets/css/theme-blog.css' />
+<link rel="stylesheet" href='../assets/css/theme-shop.css' />
+<!-- Current Page CSS -->
+<link rel="stylesheet" href='../assets/vendor/rs-plugin/css/settings.css' />
+<link rel="stylesheet" href='../assets/vendor/rs-plugin/css/layers.css' />
+<link rel="stylesheet" href='../assets/vendor/rs-plugin/css/navigation.css' />
+<!-- Demo CSS -->
+<link rel="stylesheet" href='../assets/css/demos/demo-medical.css' />
+<!-- Skin CSS -->
+<link rel="stylesheet" href='../assets/css/skins/skin-medical.css' />
+<!-- Theme Custom CSS -->
+<link rel="stylesheet" href='../assets/css/custom.css' />
+<!-- Head Libs -->
+<script src='../assets/vendor/modernizr/modernizr.min.js'></script>
+
+
+
+
+<!-- Skin CSS -->
+<header id="header" class="header-narrow" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 40, 'stickySetTop': '-100px', 'stickyChangeLogo': false}">
+    <div class="header-body">
+        <div class="header-top header-top header-top-style-3 header-top-custom">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header-column justify-content-end">
+                        <div class="header-row">
+                            <div class="header-column justify-content-start">
+                                <div class="header-row">
+                                
+                                    <a href="/tr/Anasayfa">
+                                        <img alt="Aski Genel Müdürlüğü" width="192" height="auto" src='../Yukle/Resim/Icerik/logo-aski.png' />
+                                    </a>
+
+
+
+
+                                </div>
+                            </div>
+                            <nav class="header-nav-top float-right">
+                                <ul class="nav nav-pills">
+
+                                    <li class="nav nav-pills">
+                                       
+                                        <img src="/tr/images/ataturkweb.png" />
+
+                                    </li>
+                                </ul>
+                            </nav>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-container container">
+            <div class="header-row">
+                <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
+                    <div id="IncBanner_MenuBar1">
+	<nav class='collapse'><ul class='nav nav-pills' id='mainNav'><li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link'  href='http://www.aski.gov.tr/'>ANASAYFA</a></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>KURUMSAL</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Belediye-Baskani/17>Belediye Başkanı</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Genel-Mudur/18>Genel Müdür</a></li><li><a class='dropdown-item' target=_self href=/tr/TeskilatSemasi.aspx>Teşkilat Şeması</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Misyon-Vizyonumuz/20>Misyon & Vizyonumuz</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Etik-Komisyonu/114>Etik Komisyonu</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Aski-Hakkinda/19>Aski Hakkında</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Stratejik-Planlar/21>Stratejik Planlar</a></li><li><a class='dropdown-item' target=_self href=/tr/mecliskararlari.aspx>Belediye Meclis Kararları</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Mevzuat/78>Mevzuat</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Mali-Durum-Raporu/64>Mali Durum Raporu</a></li><li><a class='dropdown-item' target=_blank href=\Yukle\Dosya\sertifikalar\NewIBNET_SErtifika.pdf>NewIBNET Üyelik Sertifikası</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Performans-Programlari/23>Performans Programları</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Ebc-Mukayeseli-Degerlendirmebenchmarking-Calismasi/115>EBC Mukayeseli Değerlendirme(Benchmarking) Çalışması</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Faaliyet-Raporlari/26>Faaliyet Raporları</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Teknik-Sartnameler/111>Teknik Şartnameler</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Hizmet-Standartlari/113>Hizmet Standartları</a></li><li><a class='dropdown-item' target=_blank href=http://yayinlar.aski.gov.tr/>Yayınlarımız</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>ANKARA VE SU</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Atiksu-Aritma/30>Atıksu Arıtma</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Icme-Suyu-Aritma/31>İçme Suyu Arıtma</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Su-Kaynaklarimiz/32>Su Kaynaklarımız</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Laboratuvar-Hizmetleri/28>Laboratuvar Hizmetleri
+</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Su-Kalitemiz/29>Su Kalitemiz
+</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Yapi-Kalite-Kontrol-Laboratuvari/40>Yapı Kalite Kontrol Laboratuvarı</a></li><li><a class='dropdown-item' target=_blank href=http://www.aski.gov.tr/TR/SuAnalizSonuclari.aspx>Su Analiz Sonuçları</a></li><li><a class='dropdown-item' target=_blank href=http://www.aski.gov.tr/yukle/dosya/SuKaliteNoktalari.pdf>Su Kalite Noktalarımız</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>ABONELİK HİZMETLERİ</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Abonelik-Islemleri-Gerekli-Evraklar/37>Abonelik İşlemleri (Gerekli Evraklar)</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Abonelik-Sikca-Sorulan-Sorular/36>Abonelik Sıkça Sorulan Sorular
+</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Abonelik-Rehberi/34>Abonelik Rehberi
+</a></li><li><a class='dropdown-item' target=_self href=/tr/ucretler.aspx>Tarife ve Ücretler</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>KARTLI SAYAÇ</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Sikca-Sorulan-Sorular/59>Sıkça Sorulan Sorular</a></li><li><a class='dropdown-item' target=_self href=http://www.aski.gov.tr/tr/KioksNoktalar.aspx>Su matik Ödeme Noktaları</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Kartli-Sayac-Nedir/44>Kartlı Sayaç Nedir?
+</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>TEKNOLOJİMİZ</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Ankabıs/38>ANKABİS</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Scada/39>SCADA</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Sebeke-Bilgi-Merkezi/41>Şebeke Bilgi Merkezi</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>İLETİŞİM</a><ul class='dropdown-menu'><li><a class='dropdown-item' target=_self href=/tr/iletisim.aspx>Genel Müdürlük</a></li><li><a class='dropdown-item' target=_self href=/tr/iletisimDetay.aspx?ID=11>Bölge Müdürlükleri</a></li></ul></li><li style='background-color:#d1ea7c;'><a class='nav-link' target='_blank' href='https://onlineislem.aski.gov.tr'>ONLİNE İŞLEMLER</a></li></ul></nav>
+</div>
+                </div>
+                <a href="#" class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav"><i class="fa fa-bars"></i></a>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+
+                <section class="page-header page-header-color page-header-tertiary page-header-more-padding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <ul class="breadcrumb">
+                                    <li><a href="/TR/Default.aspx">Anasayfa</a></li>
+                                    <li class="active">İçerik</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h1>
+                                    <span id="LblMenuBaslik">Ankara Su Arızaları</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="word-rotator-title">Ankara geneli <strong>
+                                <span class="word-rotator" data-plugin-options="{'delay': 2000}">
+                                    <span class="word-rotator-items">
+                                       
+                                        <span>çalışmaları.</span>
+                                    </span>
+                                </span>
+                            </strong>
+                            </h2>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="row">
+                        <div class="col">
+                            
+                            <ul class="history">
+                                
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>ETİMESGUT</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>6.10.2026 08:30:00<br />
+                                                        <b>Tamir Tarihi: </b>6.10.2026 18:00:00<br />
+                                                        <b>Detay: </b>Arıza Tarihi:  06.10.2026 08:30
+Tamir Tarihi: 06.10..2026 18:00
+Değerli abonelerimiz, Turkuaz Mahalesi  Golfkent Sitesinde  Ø110 dağıtım şebeke hattında oluşan arızadan kaynaklı 08:30 ile 18:00 saatleri arasında plansız su kesintisi yapılmıştır. Su arızasını en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.
+<br />
+                                                        <b>Etkilenen Yerler:</b> Aşağıyurtçu Mahallesi Bir Kısmı ve Golfkent Civarı
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>POLATLI</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>6.10.2026 10:30:00<br />
+                                                        <b>Tamir Tarihi: </b>6.10.2026 17:00:00<br />
+                                                        <b>Detay: </b>Polatlı İlçesi ŞENTEPE Mahallesi MİLLİ EGEMENLİK Caddesi üzerinde bulunan   içme suyu sağlayan şebeke hattında Ø 225 lık P100 boruda meydana gelen arıza nedeniyle 10:30 ile 17.00 saatleri arasında su verilmeyecektir. Arızanın daha hızlı giderilmesi adına zorunlu su kesintisi uygulanmaktadır. Sabır ve anlayışınız için teşekkür eder, vermiş olduğumuz rahatsızlıktan dolayı özür dileriz.<br />
+                                                        <b>Etkilenen Yerler:</b> ŞENTEPE Mahallesi Bir Kısmı, GÜLVEREN mahallesi bir bölümü 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>MAMAK</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>6.10.2026 12:30:00<br />
+                                                        <b>Tamir Tarihi: </b>6.10.2026 18:00:00<br />
+                                                        <b>Detay: </b>Değerli abonelerimiz, Derbent mahallesi 1325 caddesi içerinde Q100 lık içme suyu hattı arızası nedeniyle,06 Ekim.2026 saat-12:30 ile 06 Ekim.2026 
+saat-18 :00 saatleri arasında 
+su verilemeyecektir. 
+
+Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız 
+sürdürmektedir. 
+
+Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> Derbent, Araplar, Köstence,mahallerin üst kotları
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>YENİMAHALLE</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>6.10.2026 13:20:00<br />
+                                                        <b>Tamir Tarihi: </b>6.10.2026 18:00:00<br />
+                                                        <b>Detay: </b>Yenimahalle Cumhuriyet Mahallesi Fatih Sultan Mehmet Bulvarı  içerisinde Ø160 lık  boruda oluşan  arıza nedeniyle plansız su kesintisi yapılmıştır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> Cumhuriyet Mahallesi 5609 cadde ve civarı
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>MAMAK</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>6.10.2026 15:20:00<br />
+                                                        <b>Tamir Tarihi: </b>6.10.2026 20:00:00<br />
+                                                        <b>Detay: </b>Değerli abonelerimiz, Altı ağaç mahallesi Şeyh Şamil caddesi içerinde Q100 lük içme suyu hattı arızası nedeniyle,06 Ekim.2026 saat-15:20 ile 06 Ekim.2026 
+saat-20 :00 saatleri arasında 
+su verilemeyecektir. 
+
+Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız 
+sürdürmektedir. 
+
+Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> Altıagaç, Karaağaç, Hüseyin Gazi, Harman, Bahçeleriçi mahallerin üst kotları 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="appear-animation" data-appear-animation="fadeInUp">
+                                            <div class="thumb">
+                                                <img src="../Yukle/Resim/SuKesintiIcon.png" alt="" />
+                                            </div>
+                                            <div class="featured-box">
+                                                <div class="box-content">
+                                                    <h4 class="heading-primary"><strong>GÖLBAŞI</strong></h4>
+                                                    <br />
+                                                    <h4 class="heading-primary">
+                                                        <strong>
+                                                            Arıza Kaynaklı
+                                                        </strong>
+                                                    </h4>
+                                                    <p>
+                                                        <b>Arıza Tarihi: </b>6.10.2026 16:00:00<br />
+                                                        <b>Tamir Tarihi: </b>6.10.2026 19:00:00<br />
+                                                        <b>Detay: </b>Değerli abonelerimiz, İncek Mahallesi Reyhan Caddesi üzerinde 100’lük içme suyu hattında yapılacak olan arıza çalışması nedeniyle su kesintisi yapılmıştır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız 
+sürdürmektedir. 
+
+Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.<br />
+                                                        <b>Etkilenen Yerler:</b> incek Mahallesi bir kısmına
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<style>
+
+    .blogCookieCover {
+    width: 100%;
+    max-height:90px;
+    position: fixed;
+    bottom: 0px;
+    float: left;
+    clear: both;
+    height: auto;
+    min-height: 85px;
+    background-color: #87a2bd;
+    color: #fff;
+    z-index: 999999;
+    display: none;
+}
+
+
+.blogCookiesubCover {
+    text-align: left;
+    width: 100%;
+    max-width: 1114px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    height: auto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+}
+
+.blogCookieText {
+    float: left;
+    text-align: left;
+    width: 90%;
+    padding-left: 10px;
+    margin: auto;
+    height: auto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+}
+
+.blogCookieBtnCover {
+    float: right;
+    width: 8%;
+    /*min-width: 175px;*/
+    height: auto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 43px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.blogCookieBtn {
+    float: left;
+    width: 80%;
+    min-width: 140px;
+    margin: auto;
+    height: 36px;
+    border-radius: 22.5px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #001e3c;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 37px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.blogCookieCls {
+    margin-right: 30px;
+    float: right;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.bCookiePolicyLink {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+</style>
+<footer id="footer" class="m-0">
+    <div class="container">
+        <div class="row">
+            <div class="footer-ribbon">
+                <span><a style="color: white" href="/TR/SiteHaritasi.aspx">Site Haritası</a></span>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-details">
+                    <h4>İletişim</h4>
+                    <ul class="contact">
+                        <li>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i><strong>Adres:</strong>Hacı Bayram Mahallesi Kazım Karabekir Caddesi<br />
+                                No:70 06050 ALTINDAĞ/ANKARA
+                            </p>
+                        </li>
+                       
+                        <li>
+                            <p><i class="fas fa-phone"></i><strong>ASKİ Çağrı Merkezi:</strong><a href="tel:153"> 153</a></p>
+                        </li>
+
+                        <li>
+                            <p><i class="far fa-envelope"></i><strong>Email:</strong> <a href="mailto: bilgiedinme@aski.gov.tr">bilgiedinme@aski.gov.tr</a></p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="mb-4">Genel Müdürlük Çalışma Saatleri</h4>
+                <div class="info custom-info">
+                    <span>Pzt-Cum</span>
+                    <span>08:00-12:00 / 13:00-17:00</span>
+                </div>
+               
+
+            </div>
+
+            <div class="col-lg-2 ml-lg-auto">
+                <h4 class="mb-4">Sosyal Medya</h4>
+                <ul class="social-icons">
+                    <li class="social-icons-facebook">
+                        <a href="https://tr-tr.facebook.com/askigenelmudurlugu/" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social-icons-twitter">
+                        <a href="https://twitter.com/askiankara" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-icons-instagram">
+                        <a href="https://www.instagram.com/askibaskentankara/" target="_blank" title="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-icons-youtube">
+                        <a href="https://www.youtube.com/user/askigenelmudurlugu" target="_blank" title="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-2 ml-lg-auto">
+                <h4 class="mb-4">Uygulamalarımız</h4>
+                <div class="info custom-info">
+                    <a href="https://play.google.com/store/apps/details?id=org.uygulama.aski" target="_blank">
+                        <img src="/TR/images/PlayStoreIcon.png" style="max-width: 150px" /></a>
+                </div>
+                <div class="info custom-info">
+                    <a href="https://itunes.apple.com/us/app/aski-ankara/id1109913912?mt=8" target="_blank">
+                        <img src="/TR/images/AppStoreIcon.png" style="max-width: 150px" /></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center m-0">
+                    <p>© Aski Genel Müdürlüğü - Bilgi İşlem Dairesi Başkanlığı</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-15596961-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-15596961-1');
+</script>
+
+        
+<!-- Vendor -->
+<script src='../assets/vendor/jquery/jquery.min.js'></script>
+<script src='../assets/vendor/jquery.appear/jquery.appear.min.js'></script>
+<script src='../assets/vendor/jquery.easing/jquery.easing.min.js'></script>
+<script src='../assets/vendor/jquery-cookie/jquery-cookie.min.js'></script>
+<script src='../assets/vendor/popper/umd/popper.min.js'></script>
+<script src='../assets/vendor/bootstrap/js/bootstrap.min.js'></script>
+<script src='../assets/vendor/common/common.min.js'></script>
+
+<script src='../assets/vendor/jquery.validation/jquery.validation.min.js'></script>
+<script src='../assets/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js'></script>
+<script src='../assets/vendor/jquery.gmap/jquery.gmap.min.js'></script>
+<script src='../assets/vendor/jquery.lazyload/jquery.lazyload.min.js'></script>
+<script src='../assets/vendor/isotope/jquery.isotope.min.js'></script>
+<script src='../assets/vendor/owl.carousel/owl.carousel.min.js'></script>
+<script src='../assets/vendor/magnific-popup/jquery.magnific-popup.min.js'></script>
+<script src='../assets/vendor/vide/vide.min.js'></script>
+
+<!-- Theme Base, Components and Settings -->
+<script src='../assets/js/theme.js'></script>
+
+<!-- Current Page Vendor and Views -->
+<script src='../assets/vendor/rs-plugin/js/jquery.themepunch.tools.min.js'></script>
+<script src='../assets/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
+
+<!-- Current Page Vendor and Views -->
+<script src='../assets/js/views/view.contact.js'></script>
+
+<!-- Demo -->
+<script src='../assets/js/demos/demo-medical.js'></script>
+
+<!-- Theme Custom -->
+<script src='../assets/js/custom.js'></script>
+
+<!-- Theme Initialization Files -->
+<script src='../assets/js/theme.init.js'></script>
+
+   
+
+
+    </form>
+</body>
+</html>

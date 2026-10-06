@@ -1,38 +1,37 @@
-# Faz 0: GitHub runner'ından kaynaklara erişim testi (elle çalıştırılır).
-# Sonuç, iş özetindeki tabloda görünür. Bulut IP'leri engelleniyorsa tablo bunu gösterir.
+# GitHub runner'ından tüm kaynaklara erişim testi. Elle ya da kaynak kodu /
+# kayıt defteri değişince çalışır; feed'i yayımlamadan üretir. Her kaynağın
+# durumu iş özetinde tablo, özet ve hatalar uyarı notu (annotation) olarak görünür.
+# Bulut IP'lerini engelleyen kaynaklar burada "degraded" görünür.
 name: probe
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'lib/**'
+      - 'bin/**'
+      - 'registry/**'
+      - 'tool/annotate.sh'
+      - '.github/workflows/probe.yml'
 
 jobs:
   probe:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - name: Kaynaklara erişim testi
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+      - run: dart pub get
+      - name: Kaynakları oku (yayımlamadan)
+        run: dart run bin/build_feed.dart probe-site
+      - name: Sonuç tablosu
         run: |
-          UA="Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120 Mobile Safari/537.36"
           {
             echo "### Runner erişim testi ($(date -u +%F' '%T) UTC)"
-            echo "| Kaynak | HTTP | Boyut | Süre | Beklenen içerik | Gövde başı |"
+            echo "| Kaynak | Tür | Durum | Kayıt | Süre (ms) | Hata |"
             echo "|---|---|---|---|---|---|"
+            jq -r '.sources | to_entries[] | "| \(.value.name) | \(.value.kind) | \(.value.status) | \(.value.count) | \(.value.ms) | \(.value.error // "") |"' probe-site/data/v2/meta.json
           } >> "$GITHUB_STEP_SUMMARY"
-
-          probe() {  # ad url beklenen-metin
-            res=$(curl -sL -m 40 -A "$UA" -o /tmp/out -w "%{http_code}|%{size_download}|%{time_total}" "$2" || echo "000|0|0")
-            IFS='|' read -r code size secs <<< "$res"
-            if grep -aqi -- "$3" /tmp/out 2>/dev/null; then ok="✅ var"; else ok="❌ yok"; fi
-            head_txt=$(head -c 70 /tmp/out 2>/dev/null | tr -d '\n\r|' | tr -c '[:print:]' '?')
-            echo "| $1 | $code | ${size}B | ${secs}s | $ok | $head_txt |" >> "$GITHUB_STEP_SUMMARY"
-          }
-
-          START=$(date -u -d '1 day ago' +%F); END=$(date -u +%F)
-          probe "ASKİ su kesintisi"   "https://www.aski.gov.tr/tr/Kesinti.aspx" "Arıza Tarihi"
-          probe "ABB duyurular"        "https://www.ankara.bel.tr/duyurular" "/duyurular/"
-          probe "Ankara Valiliği"      "https://www.ankara.gov.tr/duyurular" "duyuru"
-          probe "Başkent EDAŞ"         "https://www.baskentedas.com.tr/planli-kesintiler" "kesinti"
-          probe "AFAD deprem"          "https://deprem.afad.gov.tr/apiv2/event/filter?start=$START&end=$END&minmag=2&limit=3" "magnitude"
-          probe "USGS deprem"          "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=1&minlatitude=35&maxlatitude=42&minlongitude=26&maxlongitude=45" "features"
-          probe "Kandilli"             "http://www.koeri.boun.edu.tr/scripts/lasteq.asp" "Lat"
-          probe "Open-Meteo"           "https://api.open-meteo.com/v1/forecast?latitude=39.93&longitude=32.86&current=temperature_2m" "temperature_2m"
-          probe "kanari (yangın)"      "https://kanari.io/en/api" "fire"
-
-          echo "----- SONUÇ -----"; cat "$GITHUB_STEP_SUMMARY"
+          cat "$GITHUB_STEP_SUMMARY"
+      - name: Uyarı notları
+        run: bash tool/annotate.sh probe-site "Probe özeti"
