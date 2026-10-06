@@ -6,46 +6,19 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "ŞENTEPE Mahallesi Bir Kısmı, GÜLVEREN mahallesi bir bölümü",
-      "district": "POLATLI",
-      "start": "2026-10-06T10:30:00.000",
-      "end": "2026-10-06T19:55:00.000"
+      "detail": "Selcuklu cad.- günsazak cad. - gülgün sokak tezol sokak- ve civarı",
+      "district": "KEÇİÖREN",
+      "start": "2026-10-06T20:45:00.000",
+      "end": "2026-10-06T23:55:00.000"
     },
     {
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Derbent, Araplar, Köstence,mahallerin üst kotları",
-      "district": "MAMAK",
-      "start": "2026-10-06T12:30:00.000",
-      "end": "2026-10-06T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Altıagaç, Karaağaç, Hüseyin Gazi, Harman, Bahçeleriçi mahallerin üst kotları",
-      "district": "MAMAK",
-      "start": "2026-10-06T15:20:00.000",
-      "end": "2026-10-06T20:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "incek Mahallesi bir kısmına",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-06T16:00:00.000",
-      "end": "2026-10-06T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Uğurmumcu Mahallesinin tamamı Ostimosb Mahallesi nin bir kısmı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-06T15:55:00.000",
-      "end": "2026-10-06T20:00:00.000"
+      "detail": "Aşağıyurtçu Mahallesi Bir Kısmı ve Golfkent Civarı",
+      "district": "ETİMESGUT",
+      "start": "2026-10-06T21:25:00.000",
+      "end": "2026-10-07T04:00:00.000"
     }
   ]
 }
