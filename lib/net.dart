@@ -44,6 +44,12 @@ class Net {
   Future<dynamic> getJson(String url, {Map<String, String>? headers}) async =>
       jsonDecode(await get(url, headers: headers));
 
+  /// Form gönderir (application/x-www-form-urlencoded) ve metin döndürür.
+  Future<String> postForm(String url, Map<String, String> fields,
+          {Map<String, String>? headers}) =>
+      _send(() => client.post(Uri.parse(url),
+          headers: {'User-Agent': browserUa, ...?headers}, body: fields));
+
   Future<dynamic> postJson(String url, Object body,
           {Map<String, String>? headers}) async =>
       jsonDecode(await _send(() => client.post(Uri.parse(url),

@@ -1,5 +1,9 @@
-# Kaynakları 30 dakikada bir okur, siteyi üretir ve GitHub Pages'e commit'siz
-# yayımlar (81 ilin verisi depo geçmişini şişirmesin diye).
+# Kaynakları okur, siteyi üretir ve GitHub Pages'e commit'siz yayımlar (81 ilin
+# verisi depo geçmişini şişirmesin diye).
+#
+# Tetikleyiciler: 15 dakikada bir harici zamanlayıcı (scheduler/: Cloudflare
+# Worker → workflow_dispatch), kod değişince push, yedek olarak schedule
+# (GitHub bunu yük altında günde birkaç kereye indiriyor).
 #
 # Bir kez yapılacak ayar: Settings → Pages → Build and deployment → Source:
 # "GitHub Actions". Kaynak "branch" iken de "deploy" işi paketi yayınlar, ama

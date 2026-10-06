@@ -226,23 +226,30 @@ void main() {
       }
     });
 
-    test('UEDAŞ: mahalle listesi ve il çözümü', () {
-      final n = uedasNotices(fxJson('uedas.json') as Map<String, dynamic>,
-          planned: true, reg: reg, now: now);
+    test('UEDAŞ (ana site): ilçe listesi, satır tekrarları ve mahalle grupları', () {
+      final ids = uedasDistrictIds(fx('uedas_kesintiler.html'));
+      expect(ids, hasLength(55)); // Balıkesir 20, Bursa 17, Çanakkale 12, Yalova 6
+      expect(ids, containsAll([2077, 1829]));
+      expect(() => uedasDistrictIds('<html></html>'), throwsFormatException);
+
+      final xmls = [fx('uedas_sec_2077.xml'), fx('uedas_sec_1829.xml')];
+      final n = uedasNotices(xmls, reg: reg, now: now);
       expect(n, isNotEmpty);
-      final b = n.firstWhere((x) => x.neighborhoods.contains('KARAKAYA'));
-      expect(b.plaka, 10);
-      expect(b.district, 'Altıeylül');
-      expect(b.start, DateTime(2026, 10, 7, 9, 30));
-      expect(
-          () => uedasNotices({'SonucDurum': 0, 'SonucMesaj': 'Hata'},
-              planned: true, reg: reg, now: now),
+      // ALTIEYLÜL sorgusu KARESİ satırlarını da getirir; aynı satır iki kez sayılmaz.
+      expect(n.map((x) => x.id).toSet().length, n.length);
+      final k = n.firstWhere((x) =>
+          x.district == 'Altıeylül' && x.neighborhoods.contains('KARAKAYA'));
+      expect(k.plaka, 10);
+      expect(k.start, DateTime(2026, 10, 7, 9, 30));
+      expect(k.end, DateTime(2026, 10, 7, 14));
+      expect(k.neighborhoods, containsAll(['KARAKAYA', 'KÜRSE']));
+      expect(k.planned, isTrue);
+      expect(n.any((x) => x.plaka == 16 && x.district == 'Nilüfer'), isTrue);
+      for (final x in n) {
+        expect(reg.byPlaka(x.plaka)!.ilce(x.district), isNotNull, reason: x.district);
+      }
+      expect(() => uedasNotices(['<html>hata</html>'], reg: reg, now: now),
           throwsFormatException);
-      // Kesinti yokken boş liste döner.
-      expect(
-          uedasNotices({'SonucDurum': 1, 'SonucIcerik': null},
-              planned: false, reg: reg, now: now),
-          isEmpty);
     });
   });
 

@@ -1,0 +1,15 @@
+# npx wrangler deploy        (bu klasörde)
+# npx wrangler secret put GH_TOKEN
+name = "karga-feed-scheduler"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+# Herkese açık adres yok: Worker yalnızca zamanlayıcıyla çalışır.
+workers_dev = false
+preview_urls = false
+
+[triggers]
+# Saat başı yoğunluğundan kaçınmak için 4., 19., 34. ve 49. dakikalar.
+crons = ["4,19,34,49 * * * *"]
+
+[observability]
+enabled = true

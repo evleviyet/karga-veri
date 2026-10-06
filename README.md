@@ -14,13 +14,21 @@ kurumların "kara haber"leri (kesinti, uyarı, tatil, afet...) iletilir.
 | Hava uyarısı | MGM MeteoUyarı (sarı/turuncu/kırmızı) | 81 il, ilçe düzeyinde |
 | Resmi duyuru | 81 valilik duyuru sayfası (tatil, afet, yasak, karantina, yol...) | 81 il |
 | Deprem | AFAD (uygulama doğrudan okur) | Türkiye |
-| Elektrik | BEDAŞ, AEDAŞ, ÇEDAŞ (CK Enerji), Çoruh, Fırat, KCETAŞ, YEDAŞ, MEDAŞ, UEDAŞ | 32 il + İstanbul Avrupa yakası |
-| Su | ASKİ (Ankara), İZSU, DESKİ, SASKİ (Samsun), TİSKİ | 5 büyükşehir |
+| Elektrik | BEDAŞ, AEDAŞ, ÇEDAŞ (CK Enerji), Çoruh, Fırat, KCETAŞ, UEDAŞ | 26 il + İstanbul Avrupa yakası |
+| Elektrik (cihazdan) | MEDAŞ — uygulama Türkiye'den kendisi okur | 6 il |
+| Su | ASKİ (Ankara), İZSU, SASKİ (Samsun), TİSKİ | 4 büyükşehir |
+| Su (cihazdan) | DESKİ — uygulama Türkiye'den kendisi okur | Denizli |
 | Belediye | Ankara Büyükşehir duyuruları | Ankara |
 
+MEDAŞ (`cc.meramedas.com.tr`), DESKİ (`sukesinti.deski.gov.tr`) ve YEDAŞ (`www.yedas.com`)
+GitHub runner'larının (yurt dışı IP) bağlantısını TCP düzeyinde düşürür. MEDAŞ (ilçe sorgusu
+~50 KB) ve DESKİ (~12 KB) uygulamada cihazdan okunur; YEDAŞ'ın tek uç noktası filtresiz ve
+sıkıştırmasız ~1,9 MB olduğu için okunmaz. UEDAŞ'ın API'si de kapalıdır, ama ana sitenin resmi
+planlı kesinti uç noktası (`www.uedas.com.tr/planli-kesintiler/sec.asp`) açıktır ve kullanılır.
+
 Otomatik okunamayan kurumlar (reCAPTCHA/bot koruması: Başkent EDAŞ, AYEDAŞ, Toroslar, TREDAŞ,
-GDZ, ADM, OEDAŞ, SEDAŞ, Akedaş; erişilemeyen: Dicle, VEDAŞ, Aras) için uygulama kurumu, resmi
-kesinti sayfasını ve 185/186 hatlarını gösterir. Güncel durum: sitenin `index.html` sayfası.
+GDZ, ADM, OEDAŞ, SEDAŞ, Akedaş; erişilemeyen: Dicle, VEDAŞ, Aras, YEDAŞ) için uygulama kurumu,
+resmi kesinti sayfasını ve 185/186 hatlarını gösterir. Güncel durum: sitenin `index.html` sayfası.
 
 ## Kayıt defteri (`registry/`)
 
@@ -43,8 +51,11 @@ Bir kaynak okunamazsa son başarılı okuması (6 saate kadar) yayımlanmaya dev
 
 ## Kurulum (bir kez)
 
-Settings → Pages → Build and deployment → Source: **GitHub Actions**. Bu ayar yapılana kadar
-`feed` iş akışının `deploy` adımı başarısız olur ve depodaki `data/` klasörü yayında kalır.
+1. Settings → Pages → Build and deployment → Source: **GitHub Actions**. Kaynak "branch" iken
+   her push ve botun `data/` commit'i siteyi eski içeriğe (yalnızca sürüm 1) döndürür.
+2. **Zamanlayıcı:** GitHub'ın `schedule` tetikleyicisi günde yalnızca 3–6 kez çalışıyor. 15
+   dakikalık yenileme için [`scheduler/`](scheduler/README.md) altındaki Cloudflare Worker
+   kurulur (ücretsiz; token yalnızca Cloudflare'de şifreli durur).
 
 ## Geliştirme
 

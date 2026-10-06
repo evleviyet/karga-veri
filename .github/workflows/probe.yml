@@ -35,20 +35,3 @@ jobs:
           cat "$GITHUB_STEP_SUMMARY"
       - name: Uyarı notları
         run: bash tool/annotate.sh probe-site "Probe özeti"
-      # GEÇİCİ: engellenen kaynakların alternatif uç noktalarına runner'dan erişim.
-      - name: Alternatif uç noktalar
-        run: |
-          check() {
-            url="$1"; shift
-            code=$(curl -s -o /dev/null -m 25 --connect-timeout 10 -A "Mozilla/5.0" -w '%{http_code}' "$@" "$url" || true)
-            echo "::notice title=Erişim::${code:-000} $url"
-          }
-          check https://www.uedas.com.tr/planli-kesintiler/sec.asp -X POST -d ilce=2077
-          check https://www.uedas.com.tr/tr/kesintiler
-          check https://edrimsapi.uedas.com.tr/
-          check https://www.meramedas.com.tr/kesintiler/ajax
-          check https://cc.meramedas.com.tr/
-          check https://www.yedas.com/
-          check https://online.yedas.com/
-          check https://www.deski.gov.tr/
-          check https://sukesinti.deski.gov.tr/kesintiler.json

@@ -79,12 +79,6 @@ List<Source> allSources(Registry reg) => [
         return arizaTableNotices(await c.net.get(url),
             source: 'İZSU', url: url, plaka: 35, reg: c.reg, now: c.now);
       }),
-      Source('deski', 'DESKİ', NoticeKind.water, [20], kurum: 'deski', (c) async {
-        final rows =
-            await c.net.getJson('https://sukesinti.deski.gov.tr/kesintiler.json');
-        if (rows is! List) throw const FormatException('DESKİ: liste bekleniyordu');
-        return deskiNotices(rows, reg: c.reg, now: c.now);
-      }),
       Source('saski', 'SASKİ', NoticeKind.water, [55], kurum: 'saski', (c) async {
         return saskiNotices(
             await c.net.get('https://www.saski.gov.tr/sukesintileri/'),
@@ -117,51 +111,36 @@ List<Source> allSources(Registry reg) => [
             reg: c.reg,
             now: c.now);
       }),
-      Source('yedas', 'YEDAŞ', NoticeKind.power, [55, 5, 19, 52, 57], kurum: 'yedas',
-          (c) async {
-        final j = await c.net.getJson('https://www.yedas.com/api/planli-kesinti-harita');
-        return yedasNotices(j as Map<String, dynamic>, reg: c.reg, now: c.now);
-      }),
-      Source('meram', 'MEDAŞ', NoticeKind.power, [42, 68, 70, 40, 50, 51],
-          kurum: 'meram', (c) async {
-        final out = <Notice>[];
-        for (final p in const [42, 68, 70, 40, 50, 51]) {
-          final rows = await c.net.getJson(
-              'https://cc.meramedas.com.tr/services/publicdata.ashx?m=mrm_gb1&il=$p');
-          if (rows is! List) throw const FormatException('MEDAŞ: liste bekleniyordu');
-          out.addAll(meramNotices(rows, plaka: p, reg: c.reg, now: c.now));
-        }
-        return out;
-      }),
       Source('uedas', 'UEDAŞ', NoticeKind.power, [16, 10, 17, 77], kurum: 'uedas',
           (c) async {
-        const url =
-            'https://edrimsapi.uedas.com.tr/api/DoimGeneral/KesintiGetirByKesintiTur';
-        const h = {
-          'Origin': 'https://online.uedas.com.tr',
-          'Referer': 'https://online.uedas.com.tr/',
-        };
-        final out = <Notice>[];
-        for (final tur in const [1, 2]) {
-          final j = await c.net.postJson(
-              url,
-              {
-                'ilKodu': -1,
-                'ilceKodu': -1,
-                'mahalleKodu': -1,
-                'csbmKodu': -1,
-                'aboneno': '',
-                'haritadanMi': 0,
-                'aboneun': -1,
-                'abonesahisun': -1,
-                'kesintiTur': tur,
-              },
-              headers: h);
-          out.addAll(uedasNotices(j as Map<String, dynamic>,
-              planned: tur == 1, reg: c.reg, now: c.now));
+        const page = 'https://www.uedas.com.tr/tr/kesintiler';
+        final ids = uedasDistrictIds(await c.net.get(page));
+        // İlçe başına küçük bir istek (~20 KB); tek tük hata tüm kaynağı düşürmesin.
+        final xmls = await pooled([
+          for (final id in ids)
+            () async {
+              try {
+                return await c.net.postForm(
+                    'https://www.uedas.com.tr/planli-kesintiler/sec.asp', {'ilce': '$id'},
+                    headers: {'Referer': page, 'X-Requested-With': 'XMLHttpRequest'});
+              } catch (_) {
+                return null;
+              }
+            }
+        ], 4);
+        final ok = xmls.whereType<String>().toList();
+        if (ok.length < ids.length * 0.8) {
+          throw Exception('UEDAŞ: ${ids.length - ok.length}/${ids.length} ilçe okunamadı');
         }
-        return out;
+        return uedasNotices(ok, reg: c.reg, now: c.now);
       }),
+
+      // GitHub runner'larından (yurt dışı IP) TCP düzeyinde erişilemeyen kaynaklar
+      // feed'de çalıştırılmaz; ayrıştırıcıları ve testleri durur:
+      //  - MEDAŞ (cc.meramedas.com.tr) ve DESKİ (sukesinti.deski.gov.tr): uygulama
+      //    Türkiye'den kendisi okur (ilçe sorgusu ~50 KB, ~12 KB).
+      //  - YEDAŞ (www.yedas.com): tek uç nokta, filtresiz ve sıkıştırmasız ~1,9 MB;
+      //    cihazdan okumak mobil veri açısından ağır. Uygulama resmi sayfayı gösterir.
     ];
 
 Source _ck(String company, String kurum, String name, String url, List<int> plakas) =>

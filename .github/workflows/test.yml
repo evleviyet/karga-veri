@@ -8,3 +8,5 @@ jobs:
       - uses: dart-lang/setup-dart@v1
       - run: dart pub get
       - run: dart test
+      - name: Zamanlayıcı (Cloudflare Worker) testi
+        run: node --test scheduler/worker.test.mjs

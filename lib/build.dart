@@ -333,7 +333,8 @@ String statusPage(FeedResult r, Registry reg) {
     sb.writeln('<span class="${liveKurum.contains(k.id) ? 'on' : ''}">${_esc(k.kisa)} · ${_esc(k.ad.split(' ').first)}</span>');
   }
   sb
-    ..writeln('</div><p>Yeşil: kesintileri otomatik okunuyor. Diğerlerinde uygulama kurumun resmi sayfasını gösterir.</p>')
+    ..writeln('</div><p>Yeşil: kesintileri feed okuyor. MEDAŞ ve DESKİ\'yi uygulama Türkiye\'den kendisi okur; '
+        'diğerlerinde uygulama kurumun resmi sayfasını ve arıza hattını gösterir.</p>')
     ..writeln('<h2>Kaynaklar</h2><table><tr><th>Kaynak</th><th>Tür</th><th>Durum</th><th class="num">Kayıt</th></tr>');
   for (final x in rows) {
     final cls = x.status == 'ok' ? 'ok' : 'bad';

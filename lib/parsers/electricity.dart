@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import '../models.dart';
 import '../registry.dart';
 
@@ -412,51 +414,89 @@ List<Notice> meramNotices(List<dynamic> rows,
 }
 
 // ---------------------------------------------------------------------------
-// UEDAŞ: edrimsapi.uedas.com.tr/api/DoimGeneral/KesintiGetirByKesintiTur
+// UEDAŞ: www.uedas.com.tr planlı kesintiler (ilçe başına "sec.asp" XML'i)
+//
+// edrimsapi.uedas.com.tr GitHub runner IP'lerine kapalı; ana sitenin kendi
+// planlı kesinti uç noktası açık ve aynı resmi veriyi verir.
 // ---------------------------------------------------------------------------
 
-List<Notice> uedasNotices(Map<String, dynamic> j,
-    {required bool planned, required Registry reg, required DateTime now}) {
-  if (j['SonucDurum'] != 1) {
-    throw FormatException('UEDAŞ: ${j['SonucMesaj']}');
+/// Kesintiler sayfasındaki ilçe listesi (UAVT ilçe kodları).
+List<int> uedasDistrictIds(String html) {
+  final m = RegExp(r'uavt\s*=\s*(\[[\s\S]*?\])\s*\$\(function').firstMatch(html);
+  if (m == null) throw const FormatException('UEDAŞ: ilçe listesi bulunamadı');
+  final ids = <int>[];
+  for (final il in (jsonDecode(m.group(1)!) as List).whereType<Map>()) {
+    for (final d in (il['alt'] as List? ?? const []).whereType<Map>()) {
+      if (d['id'] is int) ids.add(d['id'] as int);
+    }
   }
-  final rows = j['SonucIcerik'] as List? ?? const []; // boş: kesinti yok
-  final plakas = const [16, 10, 17, 77];
+  if (ids.isEmpty) throw const FormatException('UEDAŞ: ilçe listesi boş');
+  return ids;
+}
+
+String _unescapeXml(String s) => s
+    .replaceAll('&lt;', '<')
+    .replaceAll('&gt;', '>')
+    .replaceAll('&quot;', '"')
+    .replaceAll('&#39;', "'")
+    .replaceAll('&amp;', '&');
+
+/// "sec.asp" yanıtları (ilçe başına bir XML). Satır: Tarih ("7 Ekim Çarşamba") |
+/// Saat ("09:30-14:00") | Neden | İl | İlçe | Mahalle | Sokak/trafo.
+/// Komşu ilçelerin satırları da gelebilir; aynı satır bir kez sayılır.
+List<Notice> uedasNotices(Iterable<String> responses,
+    {required Registry reg, required DateTime now}) {
+  final rows = <String, List<String>>{};
+  for (final xml in responses) {
+    if (!xml.contains('<kesinti')) {
+      throw const FormatException('UEDAŞ: beklenmeyen yanıt');
+    }
+    for (final b in RegExp(r'<metinTablo>([\s\S]*?)</metinTablo>').allMatches(xml)) {
+      for (final r in RegExp(r'<tr>([\s\S]*?)</tr>').allMatches(_unescapeXml(b.group(1)!))) {
+        final c = _cells(r.group(1)!);
+        if (c.length < 6) continue;
+        rows['${c[0]}|${c[1]}|${c[2]}|${c[3]}|${c[4]}|${c[5]}'] = c;
+      }
+    }
+  }
+  final groups = <String, (List<String>, Set<String>)>{};
+  for (final c in rows.values) {
+    final key = '${c[0]}|${c[1]}|${c[2]}|${c[3]}|${c[4]}';
+    (groups[key] ??= (c, <String>{})).$2.add(c[5]);
+  }
   final out = <Notice>[];
-  for (final r in rows.whereType<Map>()) {
-    final start = parseIsoTr('${r['olusmaZamani'] ?? ''}');
-    final end = _endAfter(start, parseIsoTr('${r['tahminiGiderilmeZamani'] ?? ''}'));
-    if (!inWindow(start, end, now)) continue;
-    final hit = resolveDistrict(reg, plakas,
-        ilAdi: '${r['il']}',
-        ilceAdi: '${r['ilce']}',
-        lat: (r['enlem'] as num?)?.toDouble(),
-        lon: (r['boylam'] as num?)?.toDouble());
+  for (final g in groups.entries) {
+    final c = g.value.$1;
+    final parts = c[1].split('-');
+    final start = parseDayMonthHm('${c[0].split(RegExp(r'\s+')).take(2).join(' ')} ${parts.first}', now);
+    var end = parts.length > 1
+        ? parseDayMonthHm('${c[0].split(RegExp(r'\s+')).take(2).join(' ')} ${parts[1]}', now)
+        : null;
+    if (start != null && end != null && !end.isAfter(start)) {
+      end = end.add(const Duration(days: 1));
+    }
+    if (start == null || !inWindow(start, end, now)) continue;
+    final hit = resolveDistrict(reg, const [16, 10, 17, 77], ilAdi: c[3], ilceAdi: c[4]);
     if (hit == null) continue;
     final (il, ilce) = hit;
-    final mahalleler = '${r['etkilenenMahaller'] ?? ''}'
-        .split(',')
-        .map((m) => m.trim())
-        .where((m) => m.isNotEmpty)
-        .toList()
-      ..sort();
-    final reason = '${r['kesintiNedeni'] ?? r['kesintiTipi'] ?? ''}'.trim();
+    final mahalleler = g.value.$2.where((m) => m.isNotEmpty).toList()..sort();
+    final reason = c[2].trim();
     out.add(Notice(
       kind: NoticeKind.power,
       source: 'UEDAŞ',
-      title: planned ? _plannedTitle : _faultTitle,
+      title: _plannedTitle,
       detail: [
         if (mahalleler.isNotEmpty) neighborhoodsLine(mahalleler),
-        if (reason.isNotEmpty) '($reason)',
+        if (reason.isNotEmpty) '(${titleTr(reason)})',
       ].join(' '),
       district: ilce.ad,
       plaka: il.plaka,
       start: start,
       end: end,
       neighborhoods: mahalleler,
-      url: 'https://online.uedas.com.tr/#/AktifElektrikKesintileri',
-      planned: planned,
-      id: 'uedas:${stableId('${r['il']}|${r['ilce']}|${r['olusmaZamani']}|${r['etkilenenMahaller']}')}',
+      url: 'https://www.uedas.com.tr/tr/kesintiler',
+      planned: true,
+      id: 'uedas:${stableId(g.key)}',
     ));
   }
   return out;
