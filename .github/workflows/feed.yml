@@ -13,6 +13,15 @@ on:
   schedule:
     - cron: '7,37 * * * *'
   workflow_dispatch:
+  # Kaynak kodu ya da kayıt defteri değişince beklemeden yeniden üret.
+  # (Botun kendi commit'leri GITHUB_TOKEN ile atıldığı için tetiklemez.)
+  push:
+    branches: [main]
+    paths:
+      - 'lib/**'
+      - 'bin/**'
+      - 'registry/**'
+      - '.github/workflows/feed.yml'
 
 permissions:
   contents: write
