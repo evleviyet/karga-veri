@@ -129,7 +129,7 @@ void main() {
       ];
       final net = Net();
       final r = await runSources(Ctx(net, reg, now, cache), sources, nowUtc: nowUtc);
-      net.client.close();
+      net.close();
 
       final ankara = r.byPlaka[6]!;
       expect(ankara.map((x) => x.id), containsAll(['a:1', 'c:1']));
@@ -207,7 +207,7 @@ void main() {
       final net = Net();
       final r = await runSources(
           Ctx(net, reg, now, Directory('${tmp.path}/cache')), sources);
-      net.client.close();
+      net.close();
       final out = Directory('${tmp.path}/site');
       writeSite(r, reg, out);
       final meta = jsonDecode(File('${out.path}/data/meta.json').readAsStringSync());

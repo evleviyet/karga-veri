@@ -1,17 +1,41 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:http/http.dart' as http;
+import 'package:http/io_client.dart';
 
 const browserUa =
     'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120 Mobile Safari/537.36';
 
 /// Kaynaklara saygılı HTTP: tarayıcı kimliği, zaman aşımı, bir kez yeniden deneme.
+///
+/// Yanıt vermeyen sunucular (ör. yurt dışı IP'lerini sessizce düşürenler)
+/// bağlantıyı açık tutabilir; [close] bunları zorla kapatır ki iş beklemesin.
 class Net {
   final http.Client client;
+  final HttpClient? _io;
   final Duration timeout;
-  Net([http.Client? client, this.timeout = const Duration(seconds: 40)])
-      : client = client ?? http.Client();
+
+  Net._(this.client, this._io, this.timeout);
+
+  factory Net([http.Client? client, Duration timeout = const Duration(seconds: 30)]) {
+    if (client != null) return Net._(client, null, timeout);
+    final io = HttpClient()
+      ..connectionTimeout = const Duration(seconds: 15)
+      ..idleTimeout = const Duration(seconds: 15);
+    return Net._(IOClient(io), io, timeout);
+  }
+
+  /// Açık bağlantıları beklemeden kapatır.
+  void close() {
+    final io = _io;
+    if (io != null) {
+      io.close(force: true);
+    } else {
+      client.close();
+    }
+  }
 
   Future<String> get(String url, {Map<String, String>? headers}) =>
       _send(() => client.get(Uri.parse(url),

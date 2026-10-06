@@ -34,11 +34,14 @@ Future<void> main(List<String> args) async {
 
   final result = await runSources(ctx, sources);
   writeSite(result, reg, out);
-  net.client.close();
+  net.close();
   if (legacy != null && syncLegacy(out, legacy, result.generatedUtc)) {
     stdout.writeln('Eski sürüm dosyaları güncellendi: ${legacy.path}');
   }
 
   final ok = result.runs.where((r) => r.status == 'ok').length;
   stdout.writeln('Bitti: $ok/${result.runs.length} kaynak okundu -> ${out.path}');
+  // Zaman aşımına düşmüş istekler arka planda sürebilir; onları beklemeden çık.
+  await stdout.flush();
+  exit(0);
 }
