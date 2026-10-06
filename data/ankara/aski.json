@@ -1,33 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Zafer Mahallesi Bir Kısmı, Cumhuriyet mahallesi bir bölümü Yeni mah bir bölümü",
-      "district": "POLATLI",
-      "start": "2026-10-05T21:30:00.000",
-      "end": "2026-10-06T01:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yakacık Mahallesi 3601 cadde 3604 cadde ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-05T11:10:00.000",
-      "end": "2026-10-05T22:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": ": Aşağıyurtçu Mahallesi Bir Kısmı ve Golfkent Civarı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-05T16:40:00.000",
-      "end": "2026-10-05T23:00:00.000"
-    }
-  ]
+  "notices": []
 }
