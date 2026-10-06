@@ -6,6 +6,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Selcuklu cad.- günsazak cad. - gülgün sokak tezol sokak- ve civarı",
+      "district": "KEÇİÖREN",
+      "start": "2026-10-06T20:45:00.000",
+      "end": "2026-10-07T08:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Aşağıyurtçu Mahallesi Bir Kısmı ve Golfkent Civarı",
       "district": "ETİMESGUT",
       "start": "2026-10-06T21:25:00.000",
