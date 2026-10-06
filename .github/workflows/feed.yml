@@ -2,8 +2,9 @@
 # yayımlar (81 ilin verisi depo geçmişini şişirmesin diye).
 #
 # Bir kez yapılacak ayar: Settings → Pages → Build and deployment → Source:
-# "GitHub Actions". Bu seçilene kadar "deploy" işi başarısız olur ve eski yayın
-# (depodaki data/ klasörü) sürer.
+# "GitHub Actions". Kaynak "branch" iken de "deploy" işi paketi yayınlar, ama
+# botun data/ commit'i hemen ardından branch derlemesini tetikler ve site eski
+# içeriğe (yalnızca sürüm 1) döner. Ayar yapılınca branch derlemeleri durur.
 #
 # Eski uygulama sürümlerinin okuduğu Ankara dosyaları (data/) değiştikçe yine
 # commit'lenir; bu commit'ler zamanlanmış işin 60 gün hareketsizlikte
