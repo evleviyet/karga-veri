@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Selcuklu cad.- . - gülgün sokak tezol sokak- bilinç sokak-26 sokak -27 sokak-tansel sokak -gezi sokak ve civarı",
-      "district": "KEÇİÖREN",
-      "start": "2026-10-07T11:05:00.000",
-      "end": "2026-10-07T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Serhat Mahallesi Mahallesi Mehmet Zahit Kotku Caddesi alt kotları",
       "district": "YENİMAHALLE",
       "start": "2026-10-07T10:15:00.000",
@@ -37,6 +28,15 @@
       "district": "HAYMANA",
       "start": "2026-10-07T14:35:00.000",
       "end": "2026-10-07T21:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Macun mahhallesi ve toki blokları civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-07T15:00:00.000",
+      "end": "2026-10-07T18:05:00.000"
     }
   ]
 }
