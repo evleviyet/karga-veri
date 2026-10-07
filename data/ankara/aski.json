@@ -10,6 +10,15 @@
       "district": "ETİMESGUT",
       "start": "2026-10-07T18:00:00.000",
       "end": "2026-10-08T06:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": ": tatlıca mahallesi bi kısmı yenice mahallesi tamamı ismetpaşa mahallesi bi kısmı yenipınar mahallesi tamamı yenidoğan mahallesi tamamı kurtuluş mahallesi bi kısmı",
+      "district": "ELMADAĞ",
+      "start": "2026-10-08T01:00:00.000",
+      "end": "2026-10-08T12:00:00.000"
     }
   ]
 }
