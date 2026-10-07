@@ -9,16 +9,7 @@
       "detail": "seyran mahallesi üst kotlar",
       "district": "HAYMANA",
       "start": "2026-10-07T14:35:00.000",
-      "end": "2026-10-07T21:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Şahap Gürler mahallesi",
-      "district": "MAMAK",
-      "start": "2026-10-07T16:20:00.000",
-      "end": "2026-10-07T20:00:00.000"
+      "end": "2026-10-07T23:55:00.000"
     },
     {
       "kind": "water",
