@@ -6,24 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Serhat Mahallesi Mahallesi Mehmet Zahit Kotku Caddesi alt kotları",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-07T10:15:00.000",
-      "end": "2026-10-07T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Balıkhisar Mahallesi",
-      "district": "AKYURT",
-      "start": "2026-10-07T14:10:00.000",
-      "end": "2026-10-07T16:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "seyran mahallesi üst kotlar",
       "district": "HAYMANA",
       "start": "2026-10-07T14:35:00.000",
@@ -37,6 +19,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-07T15:00:00.000",
       "end": "2026-10-07T18:05:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Ravza sokağa bağlanan sokaklar",
+      "district": "ÇUBUK",
+      "start": "2026-10-07T15:20:00.000",
+      "end": "2026-10-07T17:30:00.000"
     }
   ]
 }
