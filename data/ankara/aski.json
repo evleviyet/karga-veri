@@ -10,6 +10,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-06T23:10:00.000",
       "end": "2026-10-07T11:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "ostim teknik işyerleri sitesi ,Melih Gökçek bulvarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-07T09:10:00.000",
+      "end": "2026-10-07T13:30:00.000"
     }
   ]
 }
