@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Başkent sanayi sitesi ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-06T23:10:00.000",
-      "end": "2026-10-07T14:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "ostim teknik işyerleri sitesi ,Melih Gökçek bulvarı",
       "district": "YENİMAHALLE",
       "start": "2026-10-07T09:10:00.000",
