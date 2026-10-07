@@ -24,19 +24,19 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "ŞEHİTLİK Mahallesi Bir Kısmı",
-      "district": "POLATLI",
-      "start": "2026-10-07T17:40:00.000",
-      "end": "2026-10-07T22:00:00.000"
+      "detail": "Orhun Mahallesi geneli, Yapracık Mahallesi bir kısmı",
+      "district": "ETİMESGUT",
+      "start": "2026-10-07T18:00:00.000",
+      "end": "2026-10-07T23:55:00.000"
     },
     {
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Orhun Mahallesi geneli, Yapracık Mahallesi bir kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-07T18:00:00.000",
-      "end": "2026-10-07T23:55:00.000"
+      "detail": "Yavuz selim mahallesi Hazar sokak ve bağlı sokaklar",
+      "district": "ÇUBUK",
+      "start": "2026-10-07T19:30:00.000",
+      "end": "2026-10-07T21:00:00.000"
     }
   ]
 }
