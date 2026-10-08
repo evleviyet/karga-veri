@@ -10,15 +10,6 @@
       "district": "ÇANKAYA",
       "start": "2026-10-08T22:00:00.000",
       "end": "2026-10-09T07:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Alsancak Mahallesi, Süvari Mahallesi ve 30 Ağustos Mahallesi Bir Kısımları",
-      "district": "ETİMESGUT",
-      "start": "2026-10-09T00:40:00.000",
-      "end": "2026-10-09T06:00:00.000"
     }
   ]
 }
