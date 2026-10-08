@@ -19,6 +19,15 @@
       "district": "AKYURT",
       "start": "2026-10-08T15:00:00.000",
       "end": "2026-10-08T21:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Akyurt Galaba Mahallesi",
+      "district": "AKYURT",
+      "start": "2026-10-08T09:00:00.000",
+      "end": "2026-10-08T11:00:00.000"
     }
   ]
 }
