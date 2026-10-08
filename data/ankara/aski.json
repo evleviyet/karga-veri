@@ -42,15 +42,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Emniyet mahallesi Mevlana bulvarı Ankara Üniversitesi kampüsü ve çevresi.",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-08T11:55:00.000",
-      "end": "2026-10-08T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Gökçehöyük Mahallesi bir kısmına",
       "district": "GÖLBAŞI",
       "start": "2026-10-08T13:00:00.000",
