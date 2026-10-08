@@ -37,6 +37,15 @@
       "district": "PURSAKLAR",
       "start": "2026-10-08T10:30:00.000",
       "end": "2026-10-08T12:30:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Emek Mahallesi ve civarı",
+      "district": "ÇANKAYA",
+      "start": "2026-10-08T10:45:00.000",
+      "end": "2026-10-08T15:00:00.000"
     }
   ]
 }
