@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Akyurt Galaba Mahallesi",
-      "district": "AKYURT",
-      "start": "2026-10-08T09:00:00.000",
-      "end": "2026-10-08T11:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Cumhuriyet mahallesi Bulgurdede 1 sk. ve civarı",
       "district": "BEYPAZARI",
       "start": "2026-10-08T09:10:00.000",
