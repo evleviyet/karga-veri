@@ -9,7 +9,7 @@
       "detail": ": tatlıca mahallesi bi kısmı yenice mahallesi tamamı ismetpaşa mahallesi bi kısmı yenipınar mahallesi tamamı yenidoğan mahallesi tamamı kurtuluş mahallesi bi kısmı",
       "district": "ELMADAĞ",
       "start": "2026-10-08T01:00:00.000",
-      "end": "2026-10-08T12:00:00.000"
+      "end": "2026-10-08T15:30:00.000"
     },
     {
       "kind": "water",
@@ -55,6 +55,15 @@
       "district": "GÖLBAŞI",
       "start": "2026-10-08T11:30:00.000",
       "end": "2026-10-08T16:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Ankara Üniversitesi kampüsü ve çevresi.",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-08T11:55:00.000",
+      "end": "2026-10-08T15:00:00.000"
     }
   ]
 }
