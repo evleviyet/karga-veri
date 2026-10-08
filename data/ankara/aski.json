@@ -37,6 +37,15 @@
       "district": "ÇANKAYA",
       "start": "2026-10-08T22:00:00.000",
       "end": "2026-10-09T07:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İstiklal Mahallesi bir kısmı",
+      "district": "SİNCAN",
+      "start": "2026-10-08T16:25:00.000",
+      "end": "2026-10-08T19:00:00.000"
     }
   ]
 }
