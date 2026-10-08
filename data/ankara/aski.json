@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": ": tatlıca mahallesi bi kısmı yenice mahallesi tamamı ismetpaşa mahallesi bi kısmı yenipınar mahallesi tamamı yenidoğan mahallesi tamamı kurtuluş mahallesi bi kısmı",
-      "district": "ELMADAĞ",
-      "start": "2026-10-08T01:00:00.000",
-      "end": "2026-10-08T15:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yeşiltepe mahallesi Toki blokları civarı-Timurhan Mahallesi küme evleri - Büğdüz Mahallesi özel imar ve Güldarpı yolu mevki",
       "district": "AKYURT",
       "start": "2026-10-08T15:00:00.000",
