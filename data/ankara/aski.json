@@ -10,15 +10,6 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-09T21:30:00.000",
       "end": "2026-10-10T13:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Etkilenen Yerler: Doğankent konutları",
-      "district": "ETİMESGUT",
-      "start": "2026-10-09T12:40:00.000",
-      "end": "2026-10-10T01:00:00.000"
     }
   ]
 }
