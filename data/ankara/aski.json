@@ -6,24 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Etkilenen yer Macun mahallesi Toki ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-09T10:20:00.000",
-      "end": "2026-10-09T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Mesut evler sitesi İlayda Garden ve 2220 cad çevresi",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-09T11:20:00.000",
-      "end": "2026-10-09T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yenibatı Mahallesi 5609 cadde 5610 sokak çimtaş göksu konutları ve civarı",
       "district": "YENİMAHALLE",
       "start": "2026-10-09T11:20:00.000",
@@ -46,15 +28,6 @@
       "district": "ETİMESGUT",
       "start": "2026-10-09T12:40:00.000",
       "end": "2026-10-09T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Kazım Özalp Mahallesi Koza Caddesi, Kelebek Sokak, Karaca Sokak, Kehribar Sokak ve civarı",
-      "district": "ÇANKAYA",
-      "start": "2026-10-09T13:05:00.000",
-      "end": "2026-10-09T15:00:00.000"
     },
     {
       "kind": "water",
