@@ -1,5 +1,24 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": []
+  "notices": [
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Etkilenen yer Macun mahallesi Toki ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-09T10:20:00.000",
+      "end": "2026-10-09T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Ayvaşık mahallesi 75. Yıl (Mehmet Cengiz ÖZALP) ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-10-09T10:40:00.000",
+      "end": "2026-10-09T14:00:00.000"
+    }
+  ]
 }
