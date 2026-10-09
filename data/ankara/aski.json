@@ -24,19 +24,19 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yenibatı Mahallesi 5609 cadde 5610 sokak çimtaş göksu konutları ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-09T11:20:00.000",
-      "end": "2026-10-09T19:00:00.000"
+      "detail": "ŞENTEPE Mahallesi Bir Kısmı, İĞCİLER Mahallesi Bir Kısmı",
+      "district": "POLATLI",
+      "start": "2026-10-09T17:45:00.000",
+      "end": "2026-10-10T00:00:00.000"
     },
     {
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": ": Yeşilova Mahallesi Bir Kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-09T12:10:00.000",
-      "end": "2026-10-09T18:00:00.000"
+      "detail": "Yenibatı Mahallesi 5609 cadde 5610 sokak çimtaş göksu konutları ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-09T11:20:00.000",
+      "end": "2026-10-09T19:00:00.000"
     },
     {
       "kind": "water",
