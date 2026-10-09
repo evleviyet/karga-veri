@@ -24,6 +24,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Kızılcaşar Mahallesi 30 Ağustos Caddesi ve Civarı",
+      "district": "GÖLBAŞI",
+      "start": "2026-10-09T19:00:00.000",
+      "end": "2026-10-09T23:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Yenibatı Mahallesi 5609 cadde 5610 sokak çimtaş göksu konutları ve civarı",
       "district": "YENİMAHALLE",
       "start": "2026-10-09T11:20:00.000",
