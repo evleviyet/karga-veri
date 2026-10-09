@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Kale mahallesinin bir kısmı",
-      "district": "ALTINDAĞ",
-      "start": "2026-10-09T16:25:00.000",
-      "end": "2026-10-09T20:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "İlkyerleşim mahallesi 1991 cadde ve civarı.",
       "district": "YENİMAHALLE",
       "start": "2026-10-09T17:10:00.000",
