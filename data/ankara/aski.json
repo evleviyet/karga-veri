@@ -33,6 +33,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Yakacık mahallesi 3602 cadde ve civarı.",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-09T21:30:00.000",
+      "end": "2026-10-10T01:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Yenibatı Mahallesi 5609 cadde 5610 sokak çimtaş göksu konutları ve civarı",
       "district": "YENİMAHALLE",
       "start": "2026-10-09T11:20:00.000",
