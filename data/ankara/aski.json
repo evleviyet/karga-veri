@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Mesut evler sitesi İlayda Garden ve 2220 cad çevresi",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-09T11:20:00.000",
-      "end": "2026-10-09T13:45:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yenibatı Mahallesi 5609 cadde 5610 sokak çimtaş göksu konutları ve civarı",
       "district": "YENİMAHALLE",
       "start": "2026-10-09T11:20:00.000",
@@ -46,15 +37,6 @@
       "district": "ETİMESGUT",
       "start": "2026-10-09T12:10:00.000",
       "end": "2026-10-09T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "–saray gümüşoluk mahallesi nin bir kısmı",
-      "district": "PURSAKLAR",
-      "start": "2026-10-09T12:30:00.000",
-      "end": "2026-10-09T14:30:00.000"
     },
     {
       "kind": "water",
