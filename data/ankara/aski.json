@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Karşıyaka ve Hacılar Mahalleleri bir kısmına",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-10T10:00:00.000",
-      "end": "2026-10-10T14:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Etkilenen yerler: Misket mahallesi, Şahintepe mahallerin nin üst kotlar",
       "district": "MAMAK",
       "start": "2026-10-10T10:00:00.000",
@@ -24,10 +15,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Maden Şehidi Ahmet Kaymak sokak - Çocuklara Sevgi sokak - Park Sokak. - İşçiler Caddesi - İnönü Caddesi - Postane Sokak - Dört dönümler Sokak",
-      "district": "NALLIHAN",
-      "start": "2026-10-10T11:05:00.000",
-      "end": "2026-10-10T14:00:00.000"
+      "detail": "Gazi Mahallesi tamamı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-10T13:50:00.000",
+      "end": "2026-10-10T17:00:00.000"
     }
   ]
 }
