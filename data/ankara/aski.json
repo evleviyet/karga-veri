@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Üniversiteler mahallesi üst kotları 1623 sokak ve civarı 1637 cadde civarlar",
-      "district": "ÇANKAYA",
-      "start": "2026-10-10T14:25:00.000",
-      "end": "2026-10-10T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "ÇAMLICA Mahallesi Bir Kısmı, MEHMET AKİF Mahallesi Bir Kısmı",
       "district": "POLATLI",
       "start": "2026-10-10T17:30:00.000",
