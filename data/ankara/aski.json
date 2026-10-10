@@ -33,10 +33,19 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Maden Şehidi Ahmet Kaymak sokak - Çocuklara Sevgi sokak",
+      "detail": "Maden Şehidi Ahmet Kaymak sokak - Çocuklara Sevgi sokak - Park Sokak. - İşçiler Caddesi - İnönü Caddesi - Postane Sokak - Dört dönümler Sokak",
       "district": "NALLIHAN",
       "start": "2026-10-10T11:05:00.000",
       "end": "2026-10-10T14:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Merkez Mahallesi nin bir kısmı – Yunus Emre Mahallesi nin bir kısmı –Fatih Mahallesi nin bir kısmı",
+      "district": "PURSAKLAR",
+      "start": "2026-10-10T11:25:00.000",
+      "end": "2026-10-10T13:35:00.000"
     }
   ]
 }
