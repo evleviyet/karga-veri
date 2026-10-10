@@ -19,15 +19,6 @@
       "district": "GÖLBAŞI",
       "start": "2026-10-10T10:00:00.000",
       "end": "2026-10-10T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Etkilenen yerler: Misket mahallesi, Şahintepe mahallerin nin üst kotlar",
-      "district": "MAMAK",
-      "start": "2026-10-10T10:00:00.000",
-      "end": "2026-10-10T16:00:00.000"
     }
   ]
 }
