@@ -1,5 +1,15 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": []
+  "notices": [
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Ayaş Hocasinan Mahallesi",
+      "district": "AYAŞ",
+      "start": "2026-10-11T09:25:00.000",
+      "end": "2026-10-11T13:00:00.000"
+    }
+  ]
 }
