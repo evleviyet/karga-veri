@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-11T23:34:31.968838Z",
+  "generatedAt": "2026-10-11T23:49:35.059350Z",
   "sources": {
     "ankara-aski": {
       "status": "ok",
@@ -11,8 +11,8 @@
       "count": 0
     },
     "ankara-valilik": {
-      "status": "degraded",
-      "error": "ClientException with SocketException: Connection reset by peer (OS Error: Connection reset by peer, errno = 104), address = www.ankara.gov.tr, port = 45342, uri=https://www.ankara.gov.tr/duyurular"
+      "status": "ok",
+      "count": 0
     }
   }
 }
