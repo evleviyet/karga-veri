@@ -6,6 +6,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Ayaş Hocasinan Mahallesi",
+      "district": "AYAŞ",
+      "start": "2026-10-11T09:25:00.000",
+      "end": "2026-10-11T14:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Kurtuluş mah üst kodları",
       "district": "ELMADAĞ",
       "start": "2026-10-11T12:10:00.000",
