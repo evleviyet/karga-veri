@@ -60,15 +60,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Cumhuriyet Mahallesi",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-12T10:40:00.000",
-      "end": "2026-10-12T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "TAHTACIÖRENCİK MAHALLESİ",
       "district": "GÜDÜL",
       "start": "2026-10-12T11:00:00.000",
