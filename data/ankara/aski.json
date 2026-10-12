@@ -109,6 +109,15 @@
       "district": "MAMAK",
       "start": "2026-10-12T11:35:00.000",
       "end": "2026-10-12T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yakacık 3607 sokak ve civarı.",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-12T12:00:00.000",
+      "end": "2026-10-12T18:00:00.000"
     }
   ]
 }
