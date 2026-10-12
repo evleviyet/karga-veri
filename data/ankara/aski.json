@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İSMETPAŞA MH ÜST KOTLAR KEMALPAŞA MH ÜST KOTLARGÜMÜŞPALA MH ÜST KOTLAR TATLICA MH ÜST KOTLAR ÜÇEVLER MH ÜST KOTLAR YENİMAHALLE MH ÜST KOTLAR",
-      "district": "ELMADAĞ",
-      "start": "2026-10-12T18:05:00.000",
-      "end": "2026-10-13T06:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Aşağıyurtçu Mahallesi Bir Kısmı ve Golfkent Civarı",
       "district": "ETİMESGUT",
       "start": "2026-10-12T21:30:00.000",
