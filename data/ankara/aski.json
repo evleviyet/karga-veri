@@ -33,24 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Kale mahallesi, Örnek mahallesi ve Atıfbey mahallesi bir kısmı",
-      "district": "ALTINDAĞ",
-      "start": "2026-10-12T10:25:00.000",
-      "end": "2026-10-12T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": ": Aydınlıkevler mahallesi Bir Kısmı ,Önder mahallesi bir kısmı.Güneşevler mahallesinin Bir kısmı",
-      "district": "ALTINDAĞ",
-      "start": "2026-10-12T10:30:00.000",
-      "end": "2026-10-12T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Beştepe Mahallesi",
       "district": "YENİMAHALLE",
       "start": "2026-10-12T11:10:00.000",
@@ -63,7 +45,7 @@
       "detail": "Yakacık 3607 sokak ve civarı.",
       "district": "YENİMAHALLE",
       "start": "2026-10-12T12:00:00.000",
-      "end": "2026-10-12T18:00:00.000"
+      "end": "2026-10-12T19:00:00.000"
     },
     {
       "kind": "water",
