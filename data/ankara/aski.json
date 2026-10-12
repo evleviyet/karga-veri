@@ -60,7 +60,7 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": ": Aydınlıkevler mahallesi ve Öder mahallesi bir kısmı",
+      "detail": ": Aydınlıkevler mahallesi Bir Kısmı ,Önder mahallesi bir kısmı.Güneşevler mahallesinin Bir kısmı",
       "district": "ALTINDAĞ",
       "start": "2026-10-12T10:30:00.000",
       "end": "2026-10-12T18:00:00.000"
@@ -73,6 +73,24 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-12T10:40:00.000",
       "end": "2026-10-12T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "TAHTACIÖRENCİK MAHALLESİ",
+      "district": "GÜDÜL",
+      "start": "2026-10-12T11:00:00.000",
+      "end": "2026-10-12T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Ahlatlıbel mahallesi bir kısımı",
+      "district": "ÇANKAYA",
+      "start": "2026-10-12T11:05:00.000",
+      "end": "2026-10-12T13:00:00.000"
     }
   ]
 }
