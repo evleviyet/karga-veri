@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Şehitali Köyü Bir Kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-12T08:40:00.000",
-      "end": "2026-10-12T20:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Beştepe Mahallesi",
       "district": "YENİMAHALLE",
       "start": "2026-10-12T11:10:00.000",
@@ -37,15 +28,6 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-13T08:00:00.000",
       "end": "2026-10-13T23:55:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "ŞENTEPE Mahallesi Bir Kısmı",
-      "district": "POLATLI",
-      "start": "2026-10-12T17:45:00.000",
-      "end": "2026-10-12T22:00:00.000"
     },
     {
       "kind": "water",
