@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İSMETPASA MH BIR KISMI TATLICA MH BIR KISMI YENIDOGAN MH TAMAMI YENIPINAR MH TAMAMI YENICE MH BIR KISMI",
-      "district": "ELMADAĞ",
-      "start": "2026-10-12T09:30:00.000",
-      "end": "2026-10-12T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Beştepe Mahallesi",
       "district": "YENİMAHALLE",
       "start": "2026-10-12T11:10:00.000",
@@ -64,6 +55,15 @@
       "district": "POLATLI",
       "start": "2026-10-12T17:45:00.000",
       "end": "2026-10-12T22:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İSMETPAŞA MH ÜST KOTLAR KEMALPAŞA MH ÜST KOTLARGÜMÜŞPALA MH ÜST KOTLAR TATLICA MH ÜST KOTLAR ÜÇEVLER MH ÜST KOTLAR YENİMAHALLE MH ÜST KOTLAR",
+      "district": "ELMADAĞ",
+      "start": "2026-10-12T18:05:00.000",
+      "end": "2026-10-13T06:00:00.000"
     }
   ]
 }
