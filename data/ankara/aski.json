@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Boğaziçi, Kale, Sanayi, Sarıkaya, Mustafacık, İstiklal, Ekici, Yeni, Hürriyet Mahalleleri",
-      "district": "SEREFLIKOÇHISAR",
-      "start": "2026-10-12T10:00:00.000",
-      "end": "2026-10-12T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Kale mahallesi, Örnek mahallesi ve Atıfbey mahallesi bir kısmı",
       "district": "ALTINDAĞ",
       "start": "2026-10-12T10:25:00.000",
@@ -73,6 +64,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-12T12:00:00.000",
       "end": "2026-10-12T18:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Ostim Mahallesi , İvedik Mahallesi , Turgut Özal Mahallesi , Yuva Mahallesi , Karacakaya Mahallesi , Kardelen Mahallesi, Çakırlar mahallesi.",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-13T08:00:00.000",
+      "end": "2026-10-13T23:55:00.000"
     }
   ]
 }
