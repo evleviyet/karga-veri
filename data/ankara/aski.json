@@ -9,7 +9,7 @@
       "detail": "Aşağıyurtçu Mahallesi Bir Kısmı ve Golfkent Civarı",
       "district": "ETİMESGUT",
       "start": "2026-10-11T22:20:00.000",
-      "end": "2026-10-12T15:00:00.000"
+      "end": "2026-10-12T21:00:00.000"
     },
     {
       "kind": "water",
@@ -91,6 +91,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-12T12:00:00.000",
       "end": "2026-10-12T18:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Bağlıca Mahallesi Bir Kısmı",
+      "district": "ETİMESGUT",
+      "start": "2026-10-12T13:40:00.000",
+      "end": "2026-10-12T19:00:00.000"
     }
   ]
 }
