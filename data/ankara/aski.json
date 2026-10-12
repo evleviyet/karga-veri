@@ -78,18 +78,18 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Bağlıca Mahallesi Bir Kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-12T13:40:00.000",
-      "end": "2026-10-12T19:00:00.000"
+      "detail": "–mimar sinan mahallesi nin bir kısmı",
+      "district": "PURSAKLAR",
+      "start": "2026-10-12T15:00:00.000",
+      "end": "2026-10-12T17:00:00.000"
     },
     {
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "–mimar sinan mahallesi nin bir kısmı",
-      "district": "PURSAKLAR",
-      "start": "2026-10-12T15:00:00.000",
+      "detail": "Ayvaşık mahallesi Demirciler San. Sit.3 Sokak ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-10-12T15:10:00.000",
       "end": "2026-10-12T17:00:00.000"
     }
   ]
