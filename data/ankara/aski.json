@@ -100,6 +100,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-12T11:10:00.000",
       "end": "2026-10-12T16:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Etkilenen yerler: Genaral Zeki Doğan, Şahintepe, Şirintepe, Mutlu, Kutlu,Ege, Cengizhan,Duralialıç, Fahri Korutürk, Akşemsettin, Boğaziçi, Tuzluçayır, Misket, Zirvekent Mahalleleri üst kotları",
+      "district": "MAMAK",
+      "start": "2026-10-12T11:35:00.000",
+      "end": "2026-10-12T17:00:00.000"
     }
   ]
 }
