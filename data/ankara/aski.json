@@ -87,15 +87,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ahlatlıbel mahallesi bir kısımı",
-      "district": "ÇANKAYA",
-      "start": "2026-10-12T11:05:00.000",
-      "end": "2026-10-12T13:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Beştepe Mahallesi",
       "district": "YENİMAHALLE",
       "start": "2026-10-12T11:10:00.000",
