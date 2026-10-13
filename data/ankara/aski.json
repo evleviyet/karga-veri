@@ -42,15 +42,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Hacıkara mahallesi çamlık 3 Sokak ve civarı",
-      "district": "BEYPAZARI",
-      "start": "2026-10-13T10:30:00.000",
-      "end": "2026-10-13T13:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Akyurt yıldırım mahallesi etkilenmektedir",
       "district": "AKYURT",
       "start": "2026-10-13T11:15:00.000",
