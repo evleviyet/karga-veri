@@ -15,6 +15,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "ŞEHİTLİK Mahallesi Bir Kısmı",
+      "district": "POLATLI",
+      "start": "2026-10-13T09:20:00.000",
+      "end": "2026-10-13T14:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Ostim Mahallesi , İvedik OSB Mahallesi , Turgut Özal Mahallesi , Yuva Mahallesi , Karacakaya Mahallesi , Çakırlar mahallesi.",
       "district": "YENİMAHALLE",
       "start": "2026-10-13T08:00:00.000",
