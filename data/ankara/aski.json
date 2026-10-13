@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Orhun Mahallesi Ve Yapracık Mahallesi",
-      "district": "ETİMESGUT",
-      "start": "2026-10-13T09:45:00.000",
-      "end": "2026-10-13T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Etkilenen yerler:Yeni Bayındır, Küçük Kayaş, Yeşilbayır, Kıbrıs köyü, Şahap Gürler, Kutludüğün, Lalahan, Karşıyaka Mahalleleri üst kotları",
       "district": "MAMAK",
       "start": "2026-10-13T11:30:00.000",
@@ -37,15 +28,6 @@
       "district": "BEYPAZARI",
       "start": "2026-10-13T14:40:00.000",
       "end": "2026-10-13T23:55:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yuva köyü köy içi",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-13T15:10:00.000",
-      "end": "2026-10-13T19:00:00.000"
     },
     {
       "kind": "water",
