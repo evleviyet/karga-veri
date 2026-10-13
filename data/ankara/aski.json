@@ -24,6 +24,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Aydınlıkevler, Örnek, Hacı Bayram, Zübeyde Hanım, Atıfbey Mahallelerinin bir kısmı",
+      "district": "ALTINDAĞ",
+      "start": "2026-10-13T09:30:00.000",
+      "end": "2026-10-13T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Ostim Mahallesi , İvedik OSB Mahallesi , Turgut Özal Mahallesi , Yuva Mahallesi , Karacakaya Mahallesi , Çakırlar mahallesi.",
       "district": "YENİMAHALLE",
       "start": "2026-10-13T08:00:00.000",
