@@ -15,6 +15,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Aydınlıkevler, Örnek, Hacı Bayram, Zübeyde Hanım, Atıfbey Mahallelerinin bir kısmı",
+      "district": "ALTINDAĞ",
+      "start": "2026-10-13T09:30:00.000",
+      "end": "2026-10-13T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Orhun Mahallesi Ve Yapracık Mahallesi",
       "district": "ETİMESGUT",
       "start": "2026-10-13T09:45:00.000",
@@ -36,7 +45,7 @@
       "detail": "Kale Mahallesinin bir kısmı Kısmı",
       "district": "ALTINDAĞ",
       "start": "2026-10-13T11:20:00.000",
-      "end": "2026-10-13T16:00:00.000"
+      "end": "2026-10-13T17:00:00.000"
     },
     {
       "kind": "water",
@@ -73,6 +82,15 @@
       "district": "BEYPAZARI",
       "start": "2026-10-13T14:40:00.000",
       "end": "2026-10-13T23:55:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yuva köyü köy içi",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-13T15:10:00.000",
+      "end": "2026-10-13T19:00:00.000"
     },
     {
       "kind": "water",
