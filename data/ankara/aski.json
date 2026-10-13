@@ -51,6 +51,33 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Akyurt yıldırım mahallesi etkilenmektedir",
+      "district": "AKYURT",
+      "start": "2026-10-13T11:15:00.000",
+      "end": "2026-10-13T16:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Kale Mahallesinin bir kısmı Kısmı",
+      "district": "ALTINDAĞ",
+      "start": "2026-10-13T11:20:00.000",
+      "end": "2026-10-13T16:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Etkilenen yerler:Yeni Bayındır, Küçük Kayaş, Yeşilbayır, Kıbrıs köyü, Şahap Gürler, Kutludüğün, Lalahan, Karşıyaka Mahalleleri üst kotları",
+      "district": "MAMAK",
+      "start": "2026-10-13T11:30:00.000",
+      "end": "2026-10-13T23:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Ostim Mahallesi , İvedik OSB Mahallesi , Turgut Özal Mahallesi , Yuva Mahallesi , Karacakaya Mahallesi , Çakırlar mahallesi.",
       "district": "YENİMAHALLE",
       "start": "2026-10-13T08:00:00.000",
