@@ -54,7 +54,7 @@
       "detail": "Beytepe köyü tamamı",
       "district": "ÇANKAYA",
       "start": "2026-10-13T12:00:00.000",
-      "end": "2026-10-13T17:00:00.000"
+      "end": "2026-10-13T20:00:00.000"
     },
     {
       "kind": "water",
@@ -73,15 +73,6 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-13T15:10:00.000",
       "end": "2026-10-13T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Etkilenen Yerler: Yavuz Selim Mahallesi Şehit Uğur Kahraman Sokak ve Bağlı sokaklar",
-      "district": "ÇUBUK",
-      "start": "2026-10-13T15:30:00.000",
-      "end": "2026-10-13T17:00:00.000"
     },
     {
       "kind": "water",
