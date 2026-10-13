@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ayvaşık Mahallesi Geneli Hacıkara mahallesi Tamirciler 2 Sokak Aladağ Sokak ve civarı",
-      "district": "BEYPAZARI",
-      "start": "2026-10-13T14:40:00.000",
-      "end": "2026-10-13T23:55:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Kuşcağız , Çiçekli ,Pınarbaşı ,Tepebaşı , Şenlik , 19 Mayıs ,İncirli , Uyanış , Aktepe , Bağlarbaşı , Yeşiltepe ve Şenyuva Mahalleleri",
       "district": "KEÇİÖREN",
       "start": "2026-10-13T16:00:00.000",
