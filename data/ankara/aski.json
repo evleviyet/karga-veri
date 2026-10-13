@@ -10,15 +10,6 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-13T08:00:00.000",
       "end": "2026-10-13T23:55:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Aşağıyurtçu Mahallesi Bir Kısmı ve Golfkent Civarı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-12T21:30:00.000",
-      "end": "2026-10-13T06:00:00.000"
     }
   ]
 }
