@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ayvaşık mahallesi Marangozlar 3 Sokak ve civarı",
-      "district": "BEYPAZARI",
-      "start": "2026-10-14T11:10:00.000",
-      "end": "2026-10-14T13:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Gazi Mahallesi",
       "district": "YENİMAHALLE",
       "start": "2026-10-14T11:25:00.000",
