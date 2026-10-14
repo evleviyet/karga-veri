@@ -28,6 +28,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-14T09:50:00.000",
       "end": "2026-10-14T12:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Etkilenen Yerler: Atatürk Mahallesi Ayasofya Caddesi ve Bağlı sokaklar",
+      "district": "ÇUBUK",
+      "start": "2026-10-14T09:55:00.000",
+      "end": "2026-10-14T11:30:00.000"
     }
   ]
 }
