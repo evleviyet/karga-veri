@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İncek Mahallesi bir kısmına",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-14T09:30:00.000",
-      "end": "2026-10-14T14:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Emirler Mahallesi",
       "district": "GÖLBAŞI",
       "start": "2026-10-14T10:00:00.000",
@@ -37,6 +28,15 @@
       "district": "BEYPAZARI",
       "start": "2026-10-14T11:10:00.000",
       "end": "2026-10-14T13:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Gazi Mahallesi",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-14T11:25:00.000",
+      "end": "2026-10-14T15:00:00.000"
     }
   ]
 }
