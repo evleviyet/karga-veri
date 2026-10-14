@@ -15,10 +15,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "akyurt yıldırım mahllesi etkilenmektedir",
+      "detail": "akyurt yıldırım mahallesi etkilenmektedir",
       "district": "AKYURT",
       "start": "2026-10-14T15:30:00.000",
-      "end": "2026-10-14T19:00:00.000"
+      "end": "2026-10-14T21:00:00.000"
     }
   ]
 }
