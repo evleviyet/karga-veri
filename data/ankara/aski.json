@@ -6,24 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "ŞENTEPE Mahallesi Bir Kısmı",
-      "district": "POLATLI",
-      "start": "2026-10-14T12:15:00.000",
-      "end": "2026-10-14T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "İlksan toki blokları",
-      "district": "SİNCAN",
-      "start": "2026-10-14T12:40:00.000",
-      "end": "2026-10-14T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Tulumtaş ve Hacılar Mahalleleri bir kısmına 14 Ekim 2026 saat- 14:30 ile 14 Ekim 2026 saat- 20:00 saatleri arasında su verilemeyecektir.",
       "district": "GÖLBAŞI",
       "start": "2026-10-14T14:30:00.000",
