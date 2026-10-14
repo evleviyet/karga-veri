@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Emirler Mahallesi",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-14T10:00:00.000",
-      "end": "2026-10-14T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "ŞENTEPE Mahallesi Bir Kısmı",
       "district": "POLATLI",
       "start": "2026-10-14T12:15:00.000",
@@ -37,6 +28,15 @@
       "district": "GÖLBAŞI",
       "start": "2026-10-14T14:30:00.000",
       "end": "2026-10-14T20:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "akyurt yıldırım mahllesi etkilenmektedir",
+      "district": "AKYURT",
+      "start": "2026-10-14T15:30:00.000",
+      "end": "2026-10-14T19:00:00.000"
     }
   ]
 }
