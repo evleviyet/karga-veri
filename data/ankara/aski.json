@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ahlatlıbel mahallesi bir kısmı",
-      "district": "ÇANKAYA",
-      "start": "2026-10-15T12:10:00.000",
-      "end": "2026-10-15T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Başağaç mahallesi 12 Sokak ve civarı",
       "district": "BEYPAZARI",
       "start": "2026-10-15T12:30:00.000",
