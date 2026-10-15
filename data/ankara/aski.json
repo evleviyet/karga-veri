@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "ivedik köy mahallesi ivedik arıtma aski lojmanlar",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-15T11:50:00.000",
-      "end": "2026-10-15T15:45:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Başağaç mahallesi 12 Sokak ve civarı",
       "district": "BEYPAZARI",
       "start": "2026-10-15T12:30:00.000",
@@ -37,6 +28,15 @@
       "district": "ALTINDAĞ",
       "start": "2026-10-15T14:20:00.000",
       "end": "2026-10-15T18:30:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Hacıkara mahallesi Yuvam Sokak ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-10-15T15:30:00.000",
+      "end": "2026-10-15T17:00:00.000"
     }
   ]
 }
