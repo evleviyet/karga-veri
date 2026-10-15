@@ -42,6 +42,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Güneşevler Mahallesi Yıldıztepe Mahallesi bir kısmı",
+      "district": "ALTINDAĞ",
+      "start": "2026-10-15T14:20:00.000",
+      "end": "2026-10-15T18:30:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Şentepe Mahallesi Bağevleri Mevkii",
       "district": "POLATLI",
       "start": "2026-10-15T09:00:00.000",
