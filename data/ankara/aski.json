@@ -37,6 +37,15 @@
       "district": "BEYPAZARI",
       "start": "2026-10-15T15:30:00.000",
       "end": "2026-10-15T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Mürsel Uluç mahallesi bir kısmı,Oran mahallesi bir kısmı, Keklikpınarı mahallesi bir kısmı, Malazgirt mahallesi bir kısmı",
+      "district": "ÇANKAYA",
+      "start": "2026-10-15T16:15:00.000",
+      "end": "2026-10-15T18:30:00.000"
     }
   ]
 }
