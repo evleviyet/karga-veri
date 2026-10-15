@@ -28,6 +28,15 @@
       "district": "ÇAMLIDERE",
       "start": "2026-10-15T17:00:00.000",
       "end": "2026-10-16T05:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Şentepe Mahallesi bir bölümü",
+      "district": "POLATLI",
+      "start": "2026-10-15T17:30:00.000",
+      "end": "2026-10-15T21:30:00.000"
     }
   ]
 }
