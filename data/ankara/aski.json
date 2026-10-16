@@ -15,7 +15,7 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "ÇAMLICA Mah bir bölümü MEHMET AKİF Mah. bir bölümü",
+      "detail": "Çamlıca ve Mehmet Akif Mahallelerinin bir kısmı",
       "district": "POLATLI",
       "start": "2026-10-16T10:05:00.000",
       "end": "2026-10-16T14:00:00.000"
@@ -33,7 +33,7 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Kale Mahallesİ Ve Hacettepe Mahallesi Bir Kısmı",
+      "detail": "Kale Mahallesİ ve Hacettepe Mahallesi bir kısmı",
       "district": "ALTINDAĞ",
       "start": "2026-10-16T13:00:00.000",
       "end": "2026-10-16T17:00:00.000"
