@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-16T11:05:15.756677Z",
+  "generatedAt": "2026-10-16T11:20:19.844078Z",
   "sources": {
     "ankara-aski": {
       "status": "ok",
@@ -12,7 +12,7 @@
     },
     "ankara-valilik": {
       "status": "ok",
-      "count": 1
+      "count": 2
     }
   }
 }
