@@ -15,18 +15,18 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Şehitali Köyü Bir Kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-16T10:25:00.000",
-      "end": "2026-10-16T14:00:00.000"
+      "detail": "Kale Mahallesİ ve Hacettepe Mahallesi bir kısmı",
+      "district": "ALTINDAĞ",
+      "start": "2026-10-16T13:00:00.000",
+      "end": "2026-10-16T17:00:00.000"
     },
     {
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Kale Mahallesİ ve Hacettepe Mahallesi bir kısmı",
-      "district": "ALTINDAĞ",
-      "start": "2026-10-16T13:00:00.000",
+      "detail": "Ayvaşık mahallesi Esertepe Kümeevler Sokak ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-10-16T14:00:00.000",
       "end": "2026-10-16T17:00:00.000"
     }
   ]
