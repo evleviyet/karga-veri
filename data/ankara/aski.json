@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Çamlıca mahallesi 152 cadde Polis lojmanları ve 152 cadde civarı.",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-17T15:00:00.000",
-      "end": "2026-10-17T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Kızılcaşar Mahallesi, Tek Yapı Kooperatifi.",
       "district": "GÖLBAŞI",
       "start": "2026-10-17T16:00:00.000",
