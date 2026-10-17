@@ -37,6 +37,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-17T15:00:00.000",
       "end": "2026-10-17T19:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Etkilenen Yerler: Çubuk ilçesi Tahtayazı Mahallesi Yukarı Emirler mahallesi",
+      "district": "ÇUBUK",
+      "start": "2026-10-17T15:05:00.000",
+      "end": "2026-10-17T17:00:00.000"
     }
   ]
 }
