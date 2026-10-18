@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Şentepe Mah bir bölümü, Gülveren Mah. bir bölümü",
-      "district": "POLATLI",
-      "start": "2026-10-18T17:30:00.000",
-      "end": "2026-10-18T19:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Kargın Mahallesinin üst kotları",
       "district": "ÇUBUK",
       "start": "2026-10-18T18:00:00.000",
