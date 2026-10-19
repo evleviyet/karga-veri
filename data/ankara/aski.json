@@ -37,15 +37,6 @@
       "district": "ÇANKAYA",
       "start": "2026-10-19T15:15:00.000",
       "end": "2026-10-19T23:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yakacık Mahallesi 3601 cadde 4028 sokak 3956 sokak ve civari",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-19T15:45:00.000",
-      "end": "2026-10-19T19:00:00.000"
     }
   ]
 }
