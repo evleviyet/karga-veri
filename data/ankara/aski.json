@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Uğur Mumcu Mahallesi",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-19T09:20:00.000",
-      "end": "2026-10-19T13:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "YENİDOĞAN MAHALLESİ TAMAMI",
       "district": "ELMADAĞ",
       "start": "2026-10-19T09:35:00.000",
@@ -28,6 +19,15 @@
       "district": "POLATLI",
       "start": "2026-10-19T09:45:00.000",
       "end": "2026-10-19T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "ŞAHAPGÜRLER MAHALLESİ",
+      "district": "MAMAK",
+      "start": "2026-10-19T11:10:00.000",
+      "end": "2026-10-19T14:00:00.000"
     },
     {
       "kind": "water",
