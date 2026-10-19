@@ -6,7 +6,7 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "YENİDOĞAN MAHALLESİ TAMAMI",
+      "detail": "Yenidoğan Mahallesi geneli",
       "district": "ELMADAĞ",
       "start": "2026-10-19T09:35:00.000",
       "end": "2026-10-19T15:00:00.000"
@@ -15,7 +15,7 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "ÇAMLICA MAH BİR BÖLÜMÜ MEHMET AKİF MAH BİR BÖLÜMÜ",
+      "detail": "Çamlıca ve Mehmet Akif Mahallerinin bir kısmı",
       "district": "POLATLI",
       "start": "2026-10-19T09:45:00.000",
       "end": "2026-10-19T17:00:00.000"
@@ -42,7 +42,7 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Hacılar ve Ballıkpınar Mahallelerinin bir kısmına",
+      "detail": "Hacılar ve Ballıkpınar Mahallelerinin bir kısmı",
       "district": "GÖLBAŞI",
       "start": "2026-10-19T12:40:00.000",
       "end": "2026-10-19T16:00:00.000"
