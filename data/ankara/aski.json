@@ -1,24 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Taşpınar Mahallesi 2866 Sokak ve civar",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-19T15:15:00.000",
-      "end": "2026-10-19T23:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Etkilenen Yerler: Esenboğa Mahallesi ve Bağlı sokaklar",
-      "district": "ÇUBUK",
-      "start": "2026-10-19T20:55:00.000",
-      "end": "2026-10-19T23:00:00.000"
-    }
-  ]
+  "notices": []
 }
