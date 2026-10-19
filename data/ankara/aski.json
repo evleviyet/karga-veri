@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ahlatlıbel mahallesi tamamı",
-      "district": "ÇANKAYA",
-      "start": "2026-10-19T15:15:00.000",
-      "end": "2026-10-19T23:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Etkilenen Yerler: Esenboğa Mahallesi ve Bağlı sokaklar",
       "district": "ÇUBUK",
       "start": "2026-10-19T20:55:00.000",
