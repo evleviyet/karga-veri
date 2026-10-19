@@ -27,7 +27,7 @@
       "detail": "ŞAHAPGÜRLER MAHALLESİ",
       "district": "MAMAK",
       "start": "2026-10-19T11:10:00.000",
-      "end": "2026-10-19T14:00:00.000"
+      "end": "2026-10-19T17:00:00.000"
     },
     {
       "kind": "water",
@@ -46,6 +46,15 @@
       "district": "GÖLBAŞI",
       "start": "2026-10-19T12:40:00.000",
       "end": "2026-10-19T16:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "–mimar sinan mahallesi bir kısmı –fatih mahallesi nin bir kısmı –merkez mahallesi nin bir kısmı – tevfik ileri mahallesi nin bir kısmı",
+      "district": "PURSAKLAR",
+      "start": "2026-10-19T14:00:00.000",
+      "end": "2026-10-19T19:00:00.000"
     },
     {
       "kind": "water",
