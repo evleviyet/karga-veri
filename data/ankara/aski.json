@@ -6,6 +6,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Uğur Mumcu Mahallesi",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-19T09:20:00.000",
+      "end": "2026-10-19T13:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Örenköy Mahallesi.",
       "district": "ÇAMLIDERE",
       "start": "2026-10-17T16:00:00.000",
