@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Macun mahallesi Batı Bulvarı Öz Ankara Toptancılar Sitesi",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-20T09:30:00.000",
-      "end": "2026-10-20T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Konutkent mahallesi tamamı",
       "district": "ÇANKAYA",
       "start": "2026-10-20T10:00:00.000",
@@ -46,15 +37,6 @@
       "district": "KAZAN",
       "start": "2026-10-21T10:00:00.000",
       "end": "2026-10-21T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Başpınar Mahallesi Bir Kısmı",
-      "district": "ALTINDAĞ",
-      "start": "2026-10-20T15:45:00.000",
-      "end": "2026-10-20T18:00:00.000"
     }
   ]
 }
