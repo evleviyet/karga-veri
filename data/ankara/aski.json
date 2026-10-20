@@ -19,6 +19,15 @@
       "district": "ÇANKAYA",
       "start": "2026-10-20T10:00:00.000",
       "end": "2026-10-20T18:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "seyran mahalle yeni mahalle kayabaşı mahalle medrese mahalle çaldağ mahalle",
+      "district": "HAYMANA",
+      "start": "2026-10-20T11:30:00.000",
+      "end": "2026-10-20T20:30:00.000"
     }
   ]
 }
