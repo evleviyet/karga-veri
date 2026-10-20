@@ -6,33 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Konutkent mahallesi tamamı",
-      "district": "ÇANKAYA",
-      "start": "2026-10-20T10:00:00.000",
-      "end": "2026-10-20T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yakacık Mahallesi 3601 sokak 3695 sokak ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-20T12:10:00.000",
-      "end": "2026-10-20T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Etkilenen Yerler: Yıldırım Beyazıt Mahallesi Meydan Sokak ve Bağlı sokaklar",
-      "district": "ÇUBUK",
-      "start": "2026-10-20T15:05:00.000",
-      "end": "2026-10-20T18:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "SARAY , ORHANİYE VE DAĞYAKA MAH ÇANİÇİ CADDESİ, ATOM CADDESİ, DAĞYAKA CADDESİ 614 CAD 688 CADDE ,GİMAT CADDESİ ,115 CADDE YE. BAĞLI CADDE VE SOKAKLAR",
       "district": "KAZAN",
       "start": "2026-10-21T10:00:00.000",
