@@ -28,6 +28,15 @@
       "district": "HAYMANA",
       "start": "2026-10-20T11:30:00.000",
       "end": "2026-10-20T20:30:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yakacık Mahallesi 3601 sokak 3695 sokak ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-20T12:10:00.000",
+      "end": "2026-10-20T15:00:00.000"
     }
   ]
 }
