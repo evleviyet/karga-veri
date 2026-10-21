@@ -24,10 +24,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yıldırım Beyazıt Mahallesi İzzet Begoviç Caddesine Bağlı Sokaklar",
-      "district": "ÇUBUK",
-      "start": "2026-10-21T09:55:00.000",
-      "end": "2026-10-21T12:00:00.000"
+      "detail": "Ayaş Hocasinan,Cuma,Mahkeme Mahalleleri.",
+      "district": "AYAŞ",
+      "start": "2026-10-21T10:40:00.000",
+      "end": "2026-10-21T15:00:00.000"
     },
     {
       "kind": "water",
