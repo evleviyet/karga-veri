@@ -64,15 +64,6 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-21T11:15:00.000",
       "end": "2026-10-21T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yıldırım Beyazıt Mahallesi İbni Sina Caddesine Bağlı Sokaklar",
-      "district": "ÇUBUK",
-      "start": "2026-10-21T11:40:00.000",
-      "end": "2026-10-21T15:00:00.000"
     }
   ]
 }
