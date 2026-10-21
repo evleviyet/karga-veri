@@ -51,15 +51,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Başpınar Mahallesi Bir Kısmı",
-      "district": "ALTINDAĞ",
-      "start": "2026-10-21T15:30:00.000",
-      "end": "2026-10-21T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Ayvaşık Mahallesi Çevre yolu sokak ve civarı",
       "district": "BEYPAZARI",
       "start": "2026-10-21T15:40:00.000",
