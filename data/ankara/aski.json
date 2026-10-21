@@ -37,6 +37,15 @@
       "district": "KAZAN",
       "start": "2026-10-21T10:00:00.000",
       "end": "2026-10-21T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yenice Mahallesi Soğuksu Caddesi ve Milli Egemenlik Caddesi",
+      "district": "KIZILCAHAMAM",
+      "start": "2026-10-21T11:00:00.000",
+      "end": "2026-10-21T17:00:00.000"
     }
   ]
 }
