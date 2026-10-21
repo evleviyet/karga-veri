@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yenice Mahallesi Soğuksu Caddesi ve Milli Egemenlik Caddesi",
-      "district": "KIZILCAHAMAM",
-      "start": "2026-10-21T11:00:00.000",
-      "end": "2026-10-21T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Mutlukent mahallesi bir kısmı , Beytepe mahallesi alt kotları",
       "district": "ÇANKAYA",
       "start": "2026-10-21T11:20:00.000",
