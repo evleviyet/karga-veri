@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İvedik OSB tamamı.",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-21T01:50:00.000",
-      "end": "2026-10-21T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Peçenek Mahallesi Çiçektepe Mahallesi",
       "district": "SİNCAN",
       "start": "2026-10-21T09:05:00.000",
@@ -37,15 +28,6 @@
       "district": "ÇANKAYA",
       "start": "2026-10-21T11:20:00.000",
       "end": "2026-10-21T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "İsmetpaşa ve Yenice Mh bir kısmı.",
-      "district": "ELMADAĞ",
-      "start": "2026-10-21T14:05:00.000",
-      "end": "2026-10-21T17:00:00.000"
     },
     {
       "kind": "water",
