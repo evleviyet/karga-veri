@@ -24,33 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Mutlukent mahallesi bir kısmı , Beytepe mahallesi alt kotları",
-      "district": "ÇANKAYA",
-      "start": "2026-10-21T11:20:00.000",
-      "end": "2026-10-21T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "İsmetpaşa ve Yenice Mh bir kısmı.",
-      "district": "ELMADAĞ",
-      "start": "2026-10-21T14:05:00.000",
-      "end": "2026-10-21T20:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Etkilenen Yerler: Yıldırım Beyazıt Mahallesi Irmak 2 Sokak ve Bağlı Sokaklar",
-      "district": "ÇUBUK",
-      "start": "2026-10-21T16:05:00.000",
-      "end": "2026-10-21T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yuva mahallesi katre konutları ve çevresi karacakaya küme evleri.",
       "district": "YENİMAHALLE",
       "start": "2026-10-21T16:20:00.000",
@@ -64,6 +37,15 @@
       "district": "KEÇİÖREN",
       "start": "2026-10-21T16:40:00.000",
       "end": "2026-10-21T20:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Hacılar mahallesi",
+      "district": "GÖLBAŞI",
+      "start": "2026-10-21T18:00:00.000",
+      "end": "2026-10-21T22:00:00.000"
     }
   ]
 }
