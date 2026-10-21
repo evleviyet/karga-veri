@@ -24,24 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yuva mahallesi katre konutları ve çevresi karacakaya küme evleri.",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-21T16:20:00.000",
-      "end": "2026-10-21T20:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Tepabaşı mh Karargahtepe mh Kalaba mh Kuşcağız mh Çiçekli mh 19 Mayıs mh",
-      "district": "KEÇİÖREN",
-      "start": "2026-10-21T16:40:00.000",
-      "end": "2026-10-21T20:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Hacılar mahallesi",
       "district": "GÖLBAŞI",
       "start": "2026-10-21T18:00:00.000",
