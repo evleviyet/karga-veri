@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ayaş Hocasinan,Cuma,Mahkeme Mahalleleri.",
-      "district": "AYAŞ",
-      "start": "2026-10-21T10:40:00.000",
-      "end": "2026-10-21T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "SARAY , ORHANİYE VE DAĞYAKA MAH ÇANİÇİ CADDESİ, ATOM CADDESİ, DAĞYAKA CADDESİ 614 CAD 688 CADDE ,GİMAT CADDESİ ,115 CADDE YE. BAĞLI CADDE VE SOKAKLAR",
       "district": "KAZAN",
       "start": "2026-10-21T10:00:00.000",
@@ -55,15 +46,6 @@
       "district": "ÇANKAYA",
       "start": "2026-10-21T11:20:00.000",
       "end": "2026-10-21T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yuva Mahallesi Köy içi , Mermerciler sitesi , Anteks , Katre konutları , Maviler sitesi",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-21T11:15:00.000",
-      "end": "2026-10-21T15:00:00.000"
     },
     {
       "kind": "water",
