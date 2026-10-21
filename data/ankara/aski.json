@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Hacılar mahallesi",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-21T18:00:00.000",
-      "end": "2026-10-21T22:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "ek Yapı Kooperatifine 21 Ekim 2026 saat- 18:30 ile 21 Ekim 2026 saat- 23:00 saatleri arasında su verilemeyecektir.",
       "district": "GÖLBAŞI",
       "start": "2026-10-21T18:30:00.000",
