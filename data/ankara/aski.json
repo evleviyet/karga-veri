@@ -42,15 +42,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ayvaşık Mahallesi Çevre yolu sokak ve civarı",
-      "district": "BEYPAZARI",
-      "start": "2026-10-21T15:40:00.000",
-      "end": "2026-10-21T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Etkilenen Yerler: Yıldırım Beyazıt Mahallesi Irmak 2 Sokak ve Bağlı Sokaklar",
       "district": "ÇUBUK",
       "start": "2026-10-21T16:05:00.000",
