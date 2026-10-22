@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Fatih Mahallesi bir kısmı Tevfik ileri Mahallesi bir kısmı",
-      "district": "PURSAKLAR",
-      "start": "2026-10-22T10:00:00.000",
-      "end": "2026-10-22T14:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "ismetpaşa mah üst kotları",
       "district": "ELMADAĞ",
       "start": "2026-10-22T09:40:00.000",
