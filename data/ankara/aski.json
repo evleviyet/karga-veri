@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Kızılcaşar Mahallesinin bir kısmına 22 Ekim 2026 saat- 17:30 ile 22 Ekim 2026 saat- 21:00 saatleri arasında su verilemeyecektir.",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-22T17:30:00.000",
-      "end": "2026-10-22T21:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Etkilenen Yerler: Dumlupınar Mahallesi 71 Cadde ve Bağlı Sokaklar",
       "district": "ÇUBUK",
       "start": "2026-10-22T17:55:00.000",
