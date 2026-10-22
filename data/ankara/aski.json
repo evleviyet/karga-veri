@@ -1,24 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Tatlıca mahallesı tokı blokları",
-      "district": "ELMADAĞ",
-      "start": "2026-10-22T20:45:00.000",
-      "end": "2026-10-22T23:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Tatlıca mahallesı tokı blokları",
-      "district": "ELMADAĞ",
-      "start": "2026-10-22T20:45:00.000",
-      "end": "2026-10-22T23:30:00.000"
-    }
-  ]
+  "notices": []
 }
