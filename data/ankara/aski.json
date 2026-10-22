@@ -10,15 +10,6 @@
       "district": "KAZAN",
       "start": "2026-10-21T10:00:00.000",
       "end": "2026-10-22T09:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Muzaffer ekşi mahallesı",
-      "district": "ELMADAĞ",
-      "start": "2026-10-21T19:00:00.000",
-      "end": "2026-10-22T05:00:00.000"
     }
   ]
 }
