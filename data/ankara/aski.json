@@ -42,19 +42,19 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yuvaköy Antex civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-22T12:10:00.000",
-      "end": "2026-10-22T19:00:00.000"
+      "detail": "Kızılcaşar Mahallesinin bir kısmına 22 Ekim 2026 saat- 17:30 ile 22 Ekim 2026 saat- 21:00 saatleri arasında su verilemeyecektir.",
+      "district": "GÖLBAŞI",
+      "start": "2026-10-22T17:30:00.000",
+      "end": "2026-10-22T21:00:00.000"
     },
     {
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "ergenekon güzelyaka 547 sokak ve çevresi",
+      "detail": "Yuvaköy Antex civarı",
       "district": "YENİMAHALLE",
       "start": "2026-10-22T12:10:00.000",
-      "end": "2026-10-22T17:45:00.000"
+      "end": "2026-10-22T19:00:00.000"
     },
     {
       "kind": "water",
