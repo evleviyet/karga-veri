@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "yenipınar mah alt kotları yenidoğan mah üst kotları",
-      "district": "ELMADAĞ",
-      "start": "2026-10-22T09:45:00.000",
-      "end": "2026-10-22T12:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Mustafa Kemal Mahallesi'nin bir kısmı",
       "district": "SİNCAN",
       "start": "2026-10-22T10:10:00.000",
