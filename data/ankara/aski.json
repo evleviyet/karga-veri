@@ -55,6 +55,24 @@
       "district": "ETİMESGUT",
       "start": "2026-10-23T15:10:00.000",
       "end": "2026-10-23T19:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yıldırımlar Sanayi Sitesi",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-23T15:40:00.000",
+      "end": "2026-10-23T19:30:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yukarıyurtçu Köyü Bir Kısmı",
+      "district": "ETİMESGUT",
+      "start": "2026-10-23T15:45:00.000",
+      "end": "2026-10-23T22:00:00.000"
     }
   ]
 }
