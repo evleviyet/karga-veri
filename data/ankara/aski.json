@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İstiklal Mahallesi Bir Bölümü, Yeni Mahalle Bir Bölümü",
-      "district": "POLATLI",
-      "start": "2026-10-23T10:30:00.000",
-      "end": "2026-10-23T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yukarıyurtçu Köyü Bir Kısmı",
       "district": "ETİMESGUT",
       "start": "2026-10-23T15:45:00.000",
