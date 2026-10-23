@@ -19,6 +19,15 @@
       "district": "AKYURT",
       "start": "2026-10-23T09:00:00.000",
       "end": "2026-10-23T20:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İSMETPAŞA MAHALLESİ ÜST KOTLAR",
+      "district": "ELMADAĞ",
+      "start": "2026-10-23T09:00:00.000",
+      "end": "2026-10-23T15:00:00.000"
     }
   ]
 }
