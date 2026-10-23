@@ -10,6 +10,15 @@
       "district": "ETİMESGUT",
       "start": "2026-10-24T01:20:00.000",
       "end": "2026-10-24T04:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "3346 cadde üst kotları , 4888 cadde ve civarları , İncek toki , 4844 cadde",
+      "district": "ÇANKAYA",
+      "start": "2026-10-24T01:50:00.000",
+      "end": "2026-10-24T09:00:00.000"
     }
   ]
 }
