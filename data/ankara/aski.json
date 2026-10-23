@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ahi Mesut Mahallesi ve Ayyıldız Mahallesi Bir Kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-23T15:10:00.000",
-      "end": "2026-10-23T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yukarıyurtçu Köyü Bir Kısmı",
       "district": "ETİMESGUT",
       "start": "2026-10-23T15:45:00.000",
@@ -73,6 +64,15 @@
       "district": "MAMAK",
       "start": "2026-10-23T18:20:00.000",
       "end": "2026-10-23T23:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Garipçe mahallesi",
+      "district": "GÜDÜL",
+      "start": "2026-10-23T18:40:00.000",
+      "end": "2026-10-23T21:30:00.000"
     }
   ]
 }
