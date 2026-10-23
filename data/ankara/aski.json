@@ -64,6 +64,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-23T17:20:00.000",
       "end": "2026-10-23T23:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Etkilenen yerler: Şahap Gürler mahallesi",
+      "district": "MAMAK",
+      "start": "2026-10-23T18:20:00.000",
+      "end": "2026-10-23T23:00:00.000"
     }
   ]
 }
