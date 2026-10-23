@@ -15,10 +15,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İSMETPAŞA MAHALLESİ ÜST KOTLAR YENİPINAR MH ÜST KOTLAR",
-      "district": "ELMADAĞ",
-      "start": "2026-10-23T09:00:00.000",
-      "end": "2026-10-23T18:00:00.000"
+      "detail": "İstiklal Mahallesi Bir Bölümü, Yeni Mahalle Bir Bölümü",
+      "district": "POLATLI",
+      "start": "2026-10-23T10:30:00.000",
+      "end": "2026-10-23T19:00:00.000"
     },
     {
       "kind": "water",
@@ -73,6 +73,15 @@
       "district": "POLATLI",
       "start": "2026-10-23T17:05:00.000",
       "end": "2026-10-23T23:55:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yakacık Toki konutları ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-23T17:20:00.000",
+      "end": "2026-10-23T23:00:00.000"
     }
   ]
 }
