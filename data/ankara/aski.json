@@ -63,7 +63,16 @@
       "detail": "Merkez Mahallesi bir kısmı",
       "district": "PURSAKLAR",
       "start": "2026-10-23T12:30:00.000",
-      "end": "2026-10-23T14:00:00.000"
+      "end": "2026-10-23T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İncek, Kızılcaşar ile Hacılar mahallelerinin bir kısmı",
+      "district": "GÖLBAŞI",
+      "start": "2026-10-23T14:00:00.000",
+      "end": "2026-10-23T20:00:00.000"
     }
   ]
 }
