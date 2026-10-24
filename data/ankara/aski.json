@@ -1,5 +1,15 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": []
+  "notices": [
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Mustafa Kemal Mahallesi'nin bir kısmı",
+      "district": "SİNCAN",
+      "start": "2026-10-24T08:55:00.000",
+      "end": "2026-10-24T12:00:00.000"
+    }
+  ]
 }
