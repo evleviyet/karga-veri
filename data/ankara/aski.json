@@ -28,15 +28,6 @@
       "district": "GÖLBAŞI",
       "start": "2026-10-24T15:55:00.000",
       "end": "2026-10-24T21:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": ".Karaoğlan Mahallesine 24 Ekim 2026 saat- 17:30 ile 24 Ekim 2026 saat- 21:00 saatleri arasında su verilemeyecektir.",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-24T17:30:00.000",
-      "end": "2026-10-24T21:00:00.000"
     }
   ]
 }
