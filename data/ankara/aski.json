@@ -28,6 +28,15 @@
       "district": "BEYPAZARI",
       "start": "2026-10-24T13:30:00.000",
       "end": "2026-10-24T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": ": Goksu Mahallesi Bir Kısmı",
+      "district": "ETİMESGUT",
+      "start": "2026-10-24T13:50:00.000",
+      "end": "2026-10-24T17:00:00.000"
     }
   ]
 }
