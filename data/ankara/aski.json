@@ -1,33 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Saraycık TOKİ 6. bölge 1. etap bir kısmı.",
-      "district": "SİNCAN",
-      "start": "2026-10-24T11:40:00.000",
-      "end": "2026-10-24T23:55:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yuva Mahallesi üst kotları",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-24T15:20:00.000",
-      "end": "2026-10-24T23:55:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "",
-      "district": "ÇAMLIDERE",
-      "start": "2026-10-24T19:40:00.000",
-      "end": "2026-10-24T23:55:00.000"
-    }
-  ]
+  "notices": []
 }
