@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ömerağa Mahallesi, Körler Mahallesi.",
-      "district": "ÇAMLIDERE",
-      "start": "2026-10-24T11:50:00.000",
-      "end": "2026-10-24T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "İvedik köyü aski lojmanları",
       "district": "YENİMAHALLE",
       "start": "2026-10-24T13:55:00.000",
