@@ -19,6 +19,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-24T15:20:00.000",
       "end": "2026-10-24T23:55:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "",
+      "district": "ÇAMLIDERE",
+      "start": "2026-10-24T19:40:00.000",
+      "end": "2026-10-24T23:55:00.000"
     }
   ]
 }
