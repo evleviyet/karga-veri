@@ -15,19 +15,28 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "–Merkez Mahallesi bir kısmı ‐Yunus Emre Mahallesi bir kismi",
-      "district": "PURSAKLAR",
-      "start": "2026-10-25T13:35:00.000",
-      "end": "2026-10-25T15:35:00.000"
+      "detail": "Ayvaşık Mahallesi Akyazı 4 sokak ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-10-25T14:30:00.000",
+      "end": "2026-10-25T17:00:00.000"
     },
     {
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ayvaşık Mahallesi Akyazı 4 sokak ve civarı",
-      "district": "BEYPAZARI",
-      "start": "2026-10-25T14:30:00.000",
-      "end": "2026-10-25T17:00:00.000"
+      "detail": "ismetpaşa mh tamamı yenice mh bi kısmı yenipınar mh bi kısmı",
+      "district": "ELMADAĞ",
+      "start": "2026-10-25T15:30:00.000",
+      "end": "2026-10-25T19:30:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "ismetpaşa mh tamamı yenice mh bi kısmı yenipınar mh bi kısmı",
+      "district": "ELMADAĞ",
+      "start": "2026-10-25T15:30:00.000",
+      "end": "2026-10-25T19:30:00.000"
     }
   ]
 }
