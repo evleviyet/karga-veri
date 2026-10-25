@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yuva Mahallesi üst kotları",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-25T08:35:00.000",
-      "end": "2026-10-25T16:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Ayvaşık Mahallesi Akyazı 4 sokak ve civarı",
       "district": "BEYPAZARI",
       "start": "2026-10-25T14:30:00.000",
@@ -37,6 +28,15 @@
       "district": "ELMADAĞ",
       "start": "2026-10-25T15:30:00.000",
       "end": "2026-10-25T19:30:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Tevfik ileri Mahallesi nin bir kısmı",
+      "district": "PURSAKLAR",
+      "start": "2026-10-25T16:00:00.000",
+      "end": "2026-10-25T18:00:00.000"
     }
   ]
 }
