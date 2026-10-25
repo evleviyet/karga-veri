@@ -55,6 +55,15 @@
       "district": "SİNCAN",
       "start": "2026-10-25T12:00:00.000",
       "end": "2026-10-25T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Ahlatlıbel mahallesi bir kısmı",
+      "district": "ÇANKAYA",
+      "start": "2026-10-25T12:15:00.000",
+      "end": "2026-10-25T14:30:00.000"
     }
   ]
 }
