@@ -28,6 +28,24 @@
       "district": "GÖLBAŞI",
       "start": "2026-10-25T10:30:00.000",
       "end": "2026-10-25T14:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Hacı Bayram mahallesinin bir kısmı",
+      "district": "ALTINDAĞ",
+      "start": "2026-10-25T10:40:00.000",
+      "end": "2026-10-25T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İvedik köyü aski lojmanları",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-25T10:40:00.000",
+      "end": "2026-10-25T18:00:00.000"
     }
   ]
 }
