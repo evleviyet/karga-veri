@@ -1,24 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "ismetpaşa mh tamamı yenice mh bi kısmı yenipınar mh bi kısmı",
-      "district": "ELMADAĞ",
-      "start": "2026-10-25T15:30:00.000",
-      "end": "2026-10-25T19:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "ismetpaşa mh tamamı yenice mh bi kısmı yenipınar mh bi kısmı",
-      "district": "ELMADAĞ",
-      "start": "2026-10-25T15:30:00.000",
-      "end": "2026-10-25T19:30:00.000"
-    }
-  ]
+  "notices": []
 }
