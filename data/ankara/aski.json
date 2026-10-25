@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İvedik köyü aski lojmanları",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-25T10:40:00.000",
-      "end": "2026-10-25T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Saraycık TOKİ 6. bölge 1. etap bir kısmı.",
       "district": "SİNCAN",
       "start": "2026-10-25T12:00:00.000",
