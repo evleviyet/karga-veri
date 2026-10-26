@@ -42,6 +42,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Saraycık Mahallesinin bir kısmı",
+      "district": "SİNCAN",
+      "start": "2026-10-26T10:55:00.000",
+      "end": "2026-10-26T18:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Susuz Mahallesi tamamı",
       "district": "YENİMAHALLE",
       "start": "2026-10-26T12:30:00.000",
@@ -54,6 +63,15 @@
       "detail": "Şentepe Mah. Bir Kısmı",
       "district": "POLATLI",
       "start": "2026-10-26T14:30:00.000",
+      "end": "2026-10-26T18:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "PINARBAŞI MAH BİR KISMI",
+      "district": "SİNCAN",
+      "start": "2026-10-26T15:55:00.000",
       "end": "2026-10-26T18:00:00.000"
     }
   ]
