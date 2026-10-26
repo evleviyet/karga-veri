@@ -42,15 +42,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Büyükesat mahallesi bir kısmı",
-      "district": "ÇANKAYA",
-      "start": "2026-10-26T09:50:00.000",
-      "end": "2026-10-26T12:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yavuz Sultan Selim Mahallesi Ve Kanuni Sultan Süleyman Mahallesine bağlı cadde sokaklar",
       "district": "KAZAN",
       "start": "2026-10-26T10:20:00.000",
@@ -82,6 +73,15 @@
       "district": "PURSAKLAR",
       "start": "2026-10-26T11:00:00.000",
       "end": "2026-10-26T13:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Susuz Mahallesi tamamı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-26T12:30:00.000",
+      "end": "2026-10-26T18:00:00.000"
     }
   ]
 }
