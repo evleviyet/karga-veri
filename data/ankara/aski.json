@@ -15,10 +15,28 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Susuz Mahallesi tamamı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-26T12:30:00.000",
+      "end": "2026-10-26T21:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Küçükkayaş mahallesi ,yeşilbayır mahallesi , şahapgürler mahallesi ,yeni bayındır mahallesi alt kotlar",
       "district": "MAMAK",
       "start": "2026-10-26T16:10:00.000",
       "end": "2026-10-26T20:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Başağaç Mahallesi Mehmet Akif ERSOY CD. ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-10-26T18:15:00.000",
+      "end": "2026-10-26T22:00:00.000"
     }
   ]
 }
