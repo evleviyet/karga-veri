@@ -51,15 +51,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ulubey ve Önder mahallelerinin bir kısmı",
-      "district": "ALTINDAĞ",
-      "start": "2026-10-26T10:05:00.000",
-      "end": "2026-10-26T13:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yavuz Sultan Selim Mahallesi Ve Kanuni Sultan Süleyman Mahallesine bağlı cadde sokaklar",
       "district": "KAZAN",
       "start": "2026-10-26T10:20:00.000",
