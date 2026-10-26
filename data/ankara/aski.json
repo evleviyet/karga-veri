@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "PINARBAŞI MAH BİR KISMI",
-      "district": "SİNCAN",
-      "start": "2026-10-26T15:55:00.000",
-      "end": "2026-10-26T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Küçükkayaş mahallesi ,yeşilbayır mahallesi , şahapgürler mahallesi ,yeni bayındır mahallesi alt kotlar",
       "district": "MAMAK",
       "start": "2026-10-26T16:10:00.000",
