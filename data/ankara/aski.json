@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Küçükkayaş mahallesi ,yeşilbayır mahallesi , şahapgürler mahallesi ,yeni bayındır mahallesi alt kotlar",
-      "district": "MAMAK",
-      "start": "2026-10-26T16:10:00.000",
-      "end": "2026-10-27T00:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Şeyh Şamil Mahallesi bir kısmı",
       "district": "ETİMESGUT",
       "start": "2026-10-26T20:50:00.000",
