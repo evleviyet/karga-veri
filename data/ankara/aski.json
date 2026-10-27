@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Karacakaya Mahallesi 2700 Cadde Tip 3 ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-27T09:20:00.000",
-      "end": "2026-10-27T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yapracık Köyü",
       "district": "ETİMESGUT",
       "start": "2026-10-27T09:45:00.000",
@@ -37,15 +28,6 @@
       "district": "ALTINDAĞ",
       "start": "2026-10-27T11:05:00.000",
       "end": "2026-10-27T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Hacettepe mahallesinin bir kısmı",
-      "district": "ALTINDAĞ",
-      "start": "2026-10-27T11:25:00.000",
-      "end": "2026-10-27T15:00:00.000"
     }
   ]
 }
