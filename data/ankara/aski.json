@@ -9,7 +9,7 @@
       "detail": "Şeyh Şamil Mahallesi bir kısmı",
       "district": "ETİMESGUT",
       "start": "2026-10-26T20:50:00.000",
-      "end": "2026-10-27T09:00:00.000"
+      "end": "2026-10-27T12:00:00.000"
     },
     {
       "kind": "water",
@@ -37,6 +37,15 @@
       "district": "ÇANKAYA",
       "start": "2026-10-27T08:25:00.000",
       "end": "2026-10-27T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Şentepe Mah.Bir kısmı",
+      "district": "POLATLI",
+      "start": "2026-10-27T08:40:00.000",
+      "end": "2026-10-27T12:00:00.000"
     }
   ]
 }
