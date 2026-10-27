@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Göksu Mahallesi bir kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-27T03:10:00.000",
-      "end": "2026-10-27T12:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Susuz Mahallesinin tamamı",
       "district": "YENİMAHALLE",
       "start": "2026-10-27T06:55:00.000",
@@ -36,7 +27,7 @@
       "detail": "Şentepe Mah.Bir kısmı",
       "district": "POLATLI",
       "start": "2026-10-27T08:40:00.000",
-      "end": "2026-10-27T12:00:00.000"
+      "end": "2026-10-27T14:00:00.000"
     },
     {
       "kind": "water",
