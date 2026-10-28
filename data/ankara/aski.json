@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Bahçelievler ve Karaoğlan Mahallelerinin bir kısmına",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-28T09:00:00.000",
-      "end": "2026-10-28T14:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Birlik mahallesi 391 Cadde ve Civarı",
       "district": "ÇANKAYA",
       "start": "2026-10-28T09:10:00.000",
@@ -99,6 +90,15 @@
       "detail": "Çayırhan mahallesi yüksek kısımları ile TOKİ Blokları",
       "district": "NALLIHAN",
       "start": "2026-10-28T13:05:00.000",
+      "end": "2026-10-28T19:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Şentepe Mahallesi Bir Kısmı",
+      "district": "POLATLI",
+      "start": "2026-10-28T14:30:00.000",
       "end": "2026-10-28T19:00:00.000"
     }
   ]
