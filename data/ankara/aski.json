@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Kentkoop Mahallesi tamamı ve İlkyerleşim Mahallesi bir kısmı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-28T12:20:00.000",
-      "end": "2026-10-28T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Çayırhan mahallesi yüksek kısımları ile TOKİ Blokları",
       "district": "NALLIHAN",
       "start": "2026-10-28T13:05:00.000",
