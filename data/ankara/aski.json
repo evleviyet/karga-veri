@@ -51,15 +51,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İsmetpaşa,Yenice,Yenipınar Mh bir kısmı.",
-      "district": "ELMADAĞ",
-      "start": "2026-10-28T10:50:00.000",
-      "end": "2026-10-28T12:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Karacakaya Mahallesi Mebuskent villaları ve sitesi civarı",
       "district": "YENİMAHALLE",
       "start": "2026-10-28T10:50:00.000",
@@ -69,7 +60,7 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Akyurt yeşiltepe mahallesi ve galaba mahallesi etkilenmektededir",
+      "detail": "Akyurt Yeşiltepe Mahallesi ve Kalaba Mahallesi etkilenmektedir",
       "district": "AKYURT",
       "start": "2026-10-28T11:50:00.000",
       "end": "2026-10-28T16:30:00.000"
