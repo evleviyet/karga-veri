@@ -100,6 +100,15 @@
       "district": "GÖLBAŞI",
       "start": "2026-10-28T14:00:00.000",
       "end": "2026-10-28T19:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Lalabel mahallesı",
+      "district": "ELMADAĞ",
+      "start": "2026-10-28T14:05:00.000",
+      "end": "2026-10-28T17:00:00.000"
     }
   ]
 }
