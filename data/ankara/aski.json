@@ -15,6 +15,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "3336 sokak ve civarı, Yıldız 88 sitesi tamamı",
+      "district": "ÇANKAYA",
+      "start": "2026-10-28T21:00:00.000",
+      "end": "2026-10-29T02:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Şentepe Mahallesi Bir Kısmı",
       "district": "POLATLI",
       "start": "2026-10-28T14:30:00.000",
