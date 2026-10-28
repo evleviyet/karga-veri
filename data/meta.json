@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-28T09:34:30.745176Z",
+  "generatedAt": "2026-10-28T10:19:33.511301Z",
   "sources": {
     "ankara-aski": {
       "status": "ok",
-      "count": 8
+      "count": 11
     },
     "ankara-abb": {
       "status": "ok",
