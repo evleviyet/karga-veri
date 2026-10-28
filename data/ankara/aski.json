@@ -10,6 +10,24 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-28T07:55:00.000",
       "end": "2026-10-28T12:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Şahap Gürler mahallesi",
+      "district": "MAMAK",
+      "start": "2026-10-28T08:45:00.000",
+      "end": "2026-10-28T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Bahçelievler ve Karaoğlan Mahallelerinin bir kısmına",
+      "district": "GÖLBAŞI",
+      "start": "2026-10-28T09:00:00.000",
+      "end": "2026-10-28T14:00:00.000"
     }
   ]
 }
