@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Alacaatlı mahallesi şehit Mesut yagan caddesi , Alacaatlı köyü üst kotları",
-      "district": "ÇANKAYA",
-      "start": "2026-10-28T10:20:00.000",
-      "end": "2026-10-28T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Karacakaya Mahallesi Mebuskent villaları ve sitesi civarı",
       "district": "YENİMAHALLE",
       "start": "2026-10-28T10:50:00.000",
@@ -109,6 +100,33 @@
       "district": "ELMADAĞ",
       "start": "2026-10-28T14:05:00.000",
       "end": "2026-10-28T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Susuz mahallesi Hisar caddesi.",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-28T15:00:00.000",
+      "end": "2026-10-28T19:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Sultan Mahmut Bulvarı Civarı",
+      "district": "ETİMESGUT",
+      "start": "2026-10-28T14:45:00.000",
+      "end": "2026-10-28T19:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Kızılcaşar Mahalles ( Tek Yapı Kooperatifi )",
+      "district": "GÖLBAŞI",
+      "start": "2026-10-28T15:00:00.000",
+      "end": "2026-10-28T18:00:00.000"
     }
   ]
 }
