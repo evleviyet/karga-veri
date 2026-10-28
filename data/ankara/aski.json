@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Akseki Mahallesi, Karamollauşağı Mahallesi, Hamzalı Mahallesi, Çavuşköy Mahallesi",
-      "district": "SEREFLIKOÇHISAR",
-      "start": "2026-10-28T13:15:00.000",
-      "end": "2026-10-28T16:15:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Çayırhan mahallesi yüksek kısımları ile TOKİ Blokları",
       "district": "NALLIHAN",
       "start": "2026-10-28T13:05:00.000",
