@@ -1,51 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Çayırhan mahallesi yüksek kısımları ile TOKİ Blokları",
-      "district": "NALLIHAN",
-      "start": "2026-10-28T13:05:00.000",
-      "end": "2026-10-28T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Şentepe Mahallesi Bir Kısmı",
-      "district": "POLATLI",
-      "start": "2026-10-28T14:30:00.000",
-      "end": "2026-10-28T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Susuz mahallesi Hisar caddesi.",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-28T15:00:00.000",
-      "end": "2026-10-28T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Sultan Mahmut Bulvarı Civarı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-28T14:45:00.000",
-      "end": "2026-10-28T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Göksu Mahallesi Bir Kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-10-28T15:00:00.000",
-      "end": "2026-10-28T19:00:00.000"
-    }
-  ]
+  "notices": []
 }
