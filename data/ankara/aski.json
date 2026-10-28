@@ -42,15 +42,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Esenboğa Mahallesi Turgut Reis Caddesine Bağlı Sokaklar",
-      "district": "ÇUBUK",
-      "start": "2026-10-28T09:25:00.000",
-      "end": "2026-10-28T12:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Alacaatlı mahallesi şehit Mesut yagan caddesi , Alacaatlı köyü üst kotları",
       "district": "ÇANKAYA",
       "start": "2026-10-28T10:20:00.000",
@@ -73,6 +64,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-28T10:50:00.000",
       "end": "2026-10-28T16:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Akyurt yeşiltepe mahallesi ve galaba mahallesi etkilenmektededir",
+      "district": "AKYURT",
+      "start": "2026-10-28T11:50:00.000",
+      "end": "2026-10-28T16:30:00.000"
     }
   ]
 }
