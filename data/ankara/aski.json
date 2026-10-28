@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Birlik mahallesi 391 Cadde ve Civarı",
-      "district": "ÇANKAYA",
-      "start": "2026-10-28T09:10:00.000",
-      "end": "2026-10-28T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Çayırhan mahallesi yüksek kısımları ile TOKİ Blokları",
       "district": "NALLIHAN",
       "start": "2026-10-28T13:05:00.000",
@@ -33,24 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Taşpınar Mahallesinin bir kısmına",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-28T14:00:00.000",
-      "end": "2026-10-28T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Lalabel mahallesı",
-      "district": "ELMADAĞ",
-      "start": "2026-10-28T14:05:00.000",
-      "end": "2026-10-28T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Susuz mahallesi Hisar caddesi.",
       "district": "YENİMAHALLE",
       "start": "2026-10-28T15:00:00.000",
@@ -64,15 +37,6 @@
       "district": "ETİMESGUT",
       "start": "2026-10-28T14:45:00.000",
       "end": "2026-10-28T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Kızılcaşar Mahalles ( Tek Yapı Kooperatifi )",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-28T15:00:00.000",
-      "end": "2026-10-28T18:00:00.000"
     },
     {
       "kind": "water",
