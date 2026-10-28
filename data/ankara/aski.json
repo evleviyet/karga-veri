@@ -10,15 +10,6 @@
       "district": "ÇANKAYA",
       "start": "2026-10-28T21:00:00.000",
       "end": "2026-10-29T02:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "29 Ekim Mahallesi, Menderes Mahallesi Bir Kısmı",
-      "district": "SİNCAN",
-      "start": "2026-10-28T22:00:00.000",
-      "end": "2026-10-29T01:00:00.000"
     }
   ]
 }
