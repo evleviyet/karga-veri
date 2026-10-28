@@ -46,6 +46,15 @@
       "district": "ÇUBUK",
       "start": "2026-10-28T09:25:00.000",
       "end": "2026-10-28T12:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Alacaatlı mahallesi şehit Mesut yagan caddesi , Alacaatlı köyü üst kotları",
+      "district": "ÇANKAYA",
+      "start": "2026-10-28T10:20:00.000",
+      "end": "2026-10-28T17:00:00.000"
     }
   ]
 }
