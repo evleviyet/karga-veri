@@ -82,15 +82,6 @@
       "district": "ETİMESGUT",
       "start": "2026-10-28T15:00:00.000",
       "end": "2026-10-28T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Zafer Mahallesi Zafer 1 Sokak civarı",
-      "district": "BEYPAZARI",
-      "start": "2026-10-28T15:30:00.000",
-      "end": "2026-10-28T17:00:00.000"
     }
   ]
 }
