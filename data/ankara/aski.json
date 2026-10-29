@@ -28,6 +28,15 @@
       "district": "ÇANKAYA",
       "start": "2026-10-29T09:00:00.000",
       "end": "2026-10-29T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yenice Mahallesi",
+      "district": "ÇUBUK",
+      "start": "2026-10-29T09:40:00.000",
+      "end": "2026-10-29T13:00:00.000"
     }
   ]
 }
