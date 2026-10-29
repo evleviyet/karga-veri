@@ -42,15 +42,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ömerağa Mahallesi, Orta Mahallesi.",
-      "district": "ÇAMLIDERE",
-      "start": "2026-10-29T10:10:00.000",
-      "end": "2026-10-29T13:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Kale mahallesinin bir kısmı",
       "district": "ALTINDAĞ",
       "start": "2026-10-29T10:25:00.000",
@@ -63,6 +54,15 @@
       "detail": "İsmetpaşa Mahallesi Geneli",
       "district": "KIZILCAHAMAM",
       "start": "2026-10-29T10:35:00.000",
+      "end": "2026-10-29T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Karacakaya Mahallesi Mebuskent villaları ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-10-29T11:20:00.000",
       "end": "2026-10-29T15:00:00.000"
     }
   ]
