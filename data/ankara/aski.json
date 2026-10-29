@@ -55,6 +55,15 @@
       "district": "ALTINDAĞ",
       "start": "2026-10-29T10:25:00.000",
       "end": "2026-10-29T18:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İsmetpaşa Mahallesi Geneli",
+      "district": "KIZILCAHAMAM",
+      "start": "2026-10-29T10:35:00.000",
+      "end": "2026-10-29T15:00:00.000"
     }
   ]
 }
