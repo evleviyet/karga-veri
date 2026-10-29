@@ -19,15 +19,6 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-29T11:20:00.000",
       "end": "2026-10-29T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Battalgazi mahallesinin bir kısmı",
-      "district": "ALTINDAĞ",
-      "start": "2026-10-29T14:45:00.000",
-      "end": "2026-10-29T18:00:00.000"
     }
   ]
 }
