@@ -2,6 +2,8 @@
 //   dart run bin/build_feed.dart [çıktı-klasörü=site] [--legacy data]
 // --legacy <klasör>: eski uygulama sürümlerinin okuduğu Ankara dosyalarını
 //   depodaki klasöre eşitler (yalnızca değiştiğinde).
+// static/ klasörü (uygulamanın gizlilik sayfası, telif bildirimiyle gizlenen
+//   kostümler: data/takedown.json) siteye aynen kopyalanır.
 // ONLY=<önek> ortam değişkeni yalnızca o önekle başlayan kaynakları çalıştırır
 // (ör. ONLY=ck- ya da ONLY=valilik-ankara).
 import 'dart:io';
@@ -34,6 +36,7 @@ Future<void> main(List<String> args) async {
 
   final result = await runSources(ctx, sources);
   writeSite(result, reg, out);
+  copyStatic(Directory('static'), out);
   net.close();
   if (legacy != null && syncLegacy(out, legacy, result.generatedUtc)) {
     stdout.writeln('Eski sürüm dosyaları güncellendi: ${legacy.path}');
@@ -44,4 +47,14 @@ Future<void> main(List<String> args) async {
   // Zaman aşımına düşmüş istekler arka planda sürebilir; onları beklemeden çık.
   await stdout.flush();
   exit(0);
+}
+
+/// static/ altındaki elle düzenlenen dosyaları siteye aynı yollarla kopyalar.
+void copyStatic(Directory from, Directory out) {
+  if (!from.existsSync()) return;
+  for (final f in from.listSync(recursive: true).whereType<File>()) {
+    final rel = f.path.substring(from.path.length + 1);
+    final dest = File('${out.path}/$rel')..parent.createSync(recursive: true);
+    f.copySync(dest.path);
+  }
 }
