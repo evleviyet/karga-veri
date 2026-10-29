@@ -6,37 +6,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Mutlukent mahallesi bir kısmı , Ahmet Taner Kışlalı mahallesi bir kısmı",
-      "district": "ÇANKAYA",
-      "start": "2026-10-29T07:30:00.000",
-      "end": "2026-10-29T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Tek Yapı Kooperatifine",
-      "district": "GÖLBAŞI",
-      "start": "2026-10-29T09:00:00.000",
-      "end": "2026-10-29T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Birlik mahallesi bir kısmı",
       "district": "ÇANKAYA",
       "start": "2026-10-29T09:00:00.000",
       "end": "2026-10-29T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "İsmetpaşa Mahallesi Geneli",
-      "district": "KIZILCAHAMAM",
-      "start": "2026-10-29T10:35:00.000",
-      "end": "2026-10-29T15:00:00.000"
     },
     {
       "kind": "water",
