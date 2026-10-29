@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Karacakaya Mahallesi Mebuskent villaları ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-29T11:20:00.000",
-      "end": "2026-10-29T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Şentepe Mahallesi Bir Kısmı",
       "district": "POLATLI",
       "start": "2026-10-29T17:30:00.000",
