@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Esenboğa Mahallesi Atatürk Caddesine Bağlı Sokaklar",
-      "district": "ÇUBUK",
-      "start": "2026-10-30T12:25:00.000",
-      "end": "2026-10-30T16:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Karacakaya Mahallesi Mebuskent villaları ve civarı",
       "district": "YENİMAHALLE",
       "start": "2026-10-30T14:15:00.000",
