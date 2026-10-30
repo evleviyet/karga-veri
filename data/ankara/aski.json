@@ -6,6 +6,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Erler Mahallesi ve Bahçekapı Mahallesi Bir kısımları",
+      "district": "ETİMESGUT",
+      "start": "2026-10-30T11:50:00.000",
+      "end": "2026-10-30T23:55:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Şentepe Mah.Bir kısmı",
       "district": "POLATLI",
       "start": "2026-10-30T08:30:00.000",
