@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "BAHÇELİEVLER MAHALLESİ ÜST KODLARI",
-      "district": "ELMADAĞ",
-      "start": "2026-10-30T11:50:00.000",
-      "end": "2026-10-30T15:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Esenboğa Mahallesi Atatürk Caddesine Bağlı Sokaklar",
       "district": "ÇUBUK",
       "start": "2026-10-30T12:25:00.000",
