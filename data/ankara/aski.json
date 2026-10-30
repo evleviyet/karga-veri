@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Karacakaya Mahallesi Mebuskent villaları ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-10-30T14:15:00.000",
-      "end": "2026-10-30T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "İncek Mahallesi bir kısmı ve Kızılcaşar Mahallesi Park 28 sitesine",
       "district": "GÖLBAŞI",
       "start": "2026-10-30T15:30:00.000",
@@ -55,15 +46,6 @@
       "district": "YENİMAHALLE",
       "start": "2026-10-30T17:25:00.000",
       "end": "2026-10-30T22:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Kale mahallesi",
-      "district": "ALTINDAĞ",
-      "start": "2026-10-30T09:35:00.000",
-      "end": "2026-10-30T18:00:00.000"
     }
   ]
 }
