@@ -19,6 +19,15 @@
       "district": "AKYURT",
       "start": "2026-10-31T15:25:00.000",
       "end": "2026-10-31T18:30:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Başağaç Mahallesi 4 Sokak Ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-10-31T15:45:00.000",
+      "end": "2026-10-31T18:00:00.000"
     }
   ]
 }
