@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Akyurt Yıldırım Mahallesi",
-      "district": "AKYURT",
-      "start": "2026-10-31T15:25:00.000",
-      "end": "2026-10-31T18:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Başağaç Mahallesi 4 Sokak Ve civarı",
       "district": "BEYPAZARI",
       "start": "2026-10-31T15:45:00.000",
@@ -46,6 +37,15 @@
       "district": "SİNCAN",
       "start": "2026-10-31T16:20:00.000",
       "end": "2026-10-31T23:55:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yukarı Yurtçu Köyü ve Fuzuli Cadde Bir Kısmı",
+      "district": "ETİMESGUT",
+      "start": "2026-10-31T16:45:00.000",
+      "end": "2026-10-31T20:00:00.000"
     }
   ]
 }
