@@ -10,15 +10,6 @@
       "district": "ALTINDAĞ",
       "start": "2026-10-31T09:00:00.000",
       "end": "2026-10-31T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Fevzi Çakmak Mahallesinin bir kısmı",
-      "district": "SİNCAN",
-      "start": "2026-10-31T11:40:00.000",
-      "end": "2026-10-31T16:00:00.000"
     }
   ]
 }
