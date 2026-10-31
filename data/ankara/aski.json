@@ -19,6 +19,15 @@
       "district": "SİNCAN",
       "start": "2026-10-31T11:40:00.000",
       "end": "2026-10-31T16:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Akyurt yeşiltepe mahallesi etkilenmektedir",
+      "district": "AKYURT",
+      "start": "2026-10-31T12:30:00.000",
+      "end": "2026-10-31T15:30:00.000"
     }
   ]
 }
