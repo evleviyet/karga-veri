@@ -10,6 +10,15 @@
       "district": "ALTINDAĞ",
       "start": "2026-10-31T09:00:00.000",
       "end": "2026-10-31T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Akyurt Yıldırım Mahallesi",
+      "district": "AKYURT",
+      "start": "2026-10-31T15:25:00.000",
+      "end": "2026-10-31T18:30:00.000"
     }
   ]
 }
