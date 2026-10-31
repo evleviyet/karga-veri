@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Başağaç Mahallesi 4 Sokak Ve civarı",
-      "district": "BEYPAZARI",
-      "start": "2026-10-31T15:45:00.000",
-      "end": "2026-10-31T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Taşpınar Mahallesinin bir kısmına",
       "district": "GÖLBAŞI",
       "start": "2026-10-31T16:30:00.000",
