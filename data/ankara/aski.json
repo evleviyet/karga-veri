@@ -24,6 +24,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Akpınar mahallesi bir kısmı, Karapınar mahallesi bir kısmı, Dikmen caddesi üst kotları",
+      "district": "ÇANKAYA",
+      "start": "2026-11-01T09:45:00.000",
+      "end": "2026-11-01T12:30:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Cumhuriyet Bulvarı ve bağlı sokaklar",
       "district": "ALTINDAĞ",
       "start": "2026-10-31T09:00:00.000",
