@@ -55,15 +55,6 @@
       "district": "SİNCAN",
       "start": "2026-10-31T16:20:00.000",
       "end": "2026-11-01T12:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Etkilenen Yerler: Yıldırım Beyazıt Mahallesi Ziya Ülhak Caddesi ve Bağlı Sokaklar",
-      "district": "ÇUBUK",
-      "start": "2026-11-01T07:40:00.000",
-      "end": "2026-11-01T12:00:00.000"
     }
   ]
 }
