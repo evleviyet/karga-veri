@@ -10,6 +10,15 @@
       "district": "ETİMESGUT",
       "start": "2026-11-02T11:20:00.000",
       "end": "2026-11-02T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Aşağı yahyalar Mahallesi 994 sokak ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-02T13:05:00.000",
+      "end": "2026-11-02T17:00:00.000"
     }
   ]
 }
