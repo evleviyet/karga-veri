@@ -1,0 +1,20 @@
+# Kurulum (bir kez, bu klasörde):
+#   npx wrangler kv namespace create SEEN      → çıkan id'yi aşağıya yaz
+#   npx wrangler deploy
+#   npx wrangler secret put FCM_SA             → Firebase servis hesabı JSON'u (yapıştır)
+name = "karga-quakepush"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+# Herkese açık adres yok: Worker yalnızca zamanlayıcıyla çalışır.
+workers_dev = false
+preview_urls = false
+
+[[kv_namespaces]]
+binding = "SEEN"
+id = "KV_ID_BURAYA"
+
+[triggers]
+crons = ["* * * * *"]
+
+[observability]
+enabled = true
