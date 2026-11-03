@@ -14,9 +14,10 @@ import 'package:http/http.dart' as http;
 const epiasLogin = 'https://giris.epias.com.tr/cas/v1/tickets';
 const epiasBase = 'https://seffaflik.epias.com.tr/electricity-service/v1/consumption/data';
 
-/// Ayın ilk günü, Türkiye saati: "2026-11-01T00:00:00+03:00".
-String epiasPeriod(DateTime trNow) =>
-    '${trNow.year}-${trNow.month.toString().padLeft(2, '0')}-01T00:00:00+03:00';
+/// Gün başı, Türkiye saati: "2026-11-03T00:00:00+03:00". (Kayıtların "date"
+/// alanı istenen güne eşit geliyor: dönem bir gündür.)
+String epiasPeriod(DateTime trDay) =>
+    '${trDay.year}-${trDay.month.toString().padLeft(2, '0')}-${trDay.day.toString().padLeft(2, '0')}T00:00:00+03:00';
 
 Future<String> epiasTgt(http.Client c, String user, String pass) async {
   final res = await c
@@ -61,7 +62,6 @@ Future<void> epiasProbe(Directory out, DateTime trNow) async {
   final c = http.Client();
   final report = <String, dynamic>{
     'generatedAt': DateTime.now().toUtc().toIso8601String(),
-    'period': epiasPeriod(trNow),
   };
   try {
     final tgt = await epiasTgt(c, user, pass);
@@ -79,10 +79,13 @@ Future<void> epiasProbe(Directory out, DateTime trNow) async {
     } catch (e) {
       report['provinces'] = {'error': '$e'};
     }
-    for (final (name, path, province) in [
-      ('planned', 'planned-power-outage-info', null),
-      ('unplanned', 'unplanned-power-outage-info', null),
-      ('plannedAnkara', 'planned-power-outage-info', ankara),
+    final today = DateTime(trNow.year, trNow.month, trNow.day);
+    for (final (name, path, province, day) in [
+      ('plannedToday', 'planned-power-outage-info', null, today),
+      ('plannedTomorrow', 'planned-power-outage-info', null, today.add(const Duration(days: 1))),
+      ('plannedIn2', 'planned-power-outage-info', null, today.add(const Duration(days: 2))),
+      ('unplannedToday', 'unplanned-power-outage-info', null, today),
+      ('plannedAnkara', 'planned-power-outage-info', ankara, today.add(const Duration(days: 1))),
     ]) {
       if (name == 'plannedAnkara' && province == null) continue;
       try {
@@ -92,7 +95,7 @@ Future<void> epiasProbe(Directory out, DateTime trNow) async {
         Map? page;
         for (var n = 1; n <= 20; n++) {
           final j = await epiasPost(c, tgt, path, {
-            'period': epiasPeriod(trNow),
+            'period': epiasPeriod(day),
             if (province != null) 'provinceId': province,
             'page': {'number': n, 'size': 500},
           });
