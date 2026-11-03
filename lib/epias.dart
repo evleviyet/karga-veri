@@ -86,16 +86,33 @@ Future<void> epiasProbe(Directory out, DateTime trNow) async {
     ]) {
       if (name == 'plannedAnkara' && province == null) continue;
       try {
-        final j = await epiasPost(c, tgt, path, {
-          'period': epiasPeriod(trNow),
-          if (province != null) 'provinceId': province,
-          'page': {'number': 1, 'size': 100},
-        });
-        final items = (j['items'] as List?) ?? const [];
+        // Tüm sayfalar: kayıtların hangi günlere ait olduğu (önceden mi,
+        // sonradan mı yayımlanıyor) görülsün.
+        final items = <dynamic>[];
+        Map? page;
+        for (var n = 1; n <= 20; n++) {
+          final j = await epiasPost(c, tgt, path, {
+            'period': epiasPeriod(trNow),
+            if (province != null) 'provinceId': province,
+            'page': {'number': n, 'size': 500},
+          });
+          final got = (j['items'] as List?) ?? const [];
+          items.addAll(got);
+          page = j['page'] as Map?;
+          if (got.length < 500) break;
+        }
+        final byDay = <String, int>{};
+        for (final e in items) {
+          final d = '${(e as Map)['startTime']}';
+          final day = d.length >= 10 ? d.substring(0, 10) : d;
+          byDay[day] = (byDay[day] ?? 0) + 1;
+        }
+        items.sort((a, b) => '${(b as Map)['startTime']}'.compareTo('${(a as Map)['startTime']}'));
         report[name] = {
           'count': items.length,
-          'page': j['page'],
-          'sample': items.take(5).toList(),
+          'page': page,
+          'byStartDay': Map.fromEntries(byDay.entries.toList()..sort((a, b) => a.key.compareTo(b.key))),
+          'latest': items.take(5).toList(),
         };
       } catch (e) {
         report[name] = {'error': '$e'};
