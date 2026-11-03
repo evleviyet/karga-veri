@@ -53,8 +53,8 @@
       "title": "Su kesintisi",
       "detail": "İstiklal, Boğaziçi, Hürriyet, Yeni, Sanayi, Sarıkaya, Kale, Mustafacık Mahalleleri",
       "district": "SEREFLIKOÇHISAR",
-      "start": "2026-11-03T09:50:00.000",
-      "end": "2026-11-03T13:50:00.000"
+      "start": "2026-11-03T13:00:00.000",
+      "end": "2026-11-03T17:00:00.000"
     },
     {
       "kind": "water",
@@ -73,6 +73,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-11-03T10:10:00.000",
       "end": "2026-11-03T16:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Serhat Mahallesi Süleyman Şah Caddesi ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-03T10:25:00.000",
+      "end": "2026-11-03T17:00:00.000"
     }
   ]
 }
