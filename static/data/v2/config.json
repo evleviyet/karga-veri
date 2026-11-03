@@ -3,8 +3,8 @@
   "_not": "Uygulamanın uzaktan ayarı. Uygulama bunu 6 saatte bir okur; okunamazsa son okunan, o da yoksa uygulamadaki varsayılan geçerlidir. quake.order: deprem kaynaklarının sırası (afad, feed = data/v2/quakes.json, kandilli). off: geçici olarak hiç okunmayacak kaynaklar (afad, kandilli, feed, openmeteo, air). urls: kaynak adresi değişirse yeni adres. weather: hava tahmini kaynağı (openmeteo | met = MET Norway, ticari kullanım serbest). instantGapMin: arka plandaki anlık kontroller arası en az dakika (0: sınırsız).",
   "quake": {
     "order": [
-      "afad",
       "feed",
+      "afad",
       "kandilli"
     ],
     "feedMaxAgeMin": 30
