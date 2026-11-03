@@ -56,7 +56,9 @@ jobs:
 
       - name: Feed'i üret
         run: dart run bin/build_feed.dart site --legacy data
-
+        env:
+          EPIAS_USER: ${{ secrets.EPIAS_USER }}
+          EPIAS_PASS: ${{ secrets.EPIAS_PASS }}
       - name: Önbelleği kaydet
         if: always()
         uses: actions/cache/save@v4
