@@ -101,6 +101,14 @@ export async function run(env, now) {
     return { sent: 0, noSecret: true };
   }
 
+  // Elle deneme: KV'de "test" anahtarı varsa o mesaj bir kez gönderilir ve silinir
+  // (npx wrangler kv key put test '<mesaj JSON>' --binding SEEN --remote).
+  const test = await env.SEEN.get('test');
+  if (test) {
+    await env.SEEN.delete('test');
+    console.log(`Deneme mesajı: HTTP ${await send(env, JSON.parse(test))}`);
+  }
+
   const raw = await env.SEEN.get('seen');
   const seen = raw ? JSON.parse(raw) : null;
   // İlk çalışma: o anki listeyi görüldü say, eski depremleri bildirme. Anahtar

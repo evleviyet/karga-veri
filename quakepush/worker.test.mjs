@@ -17,6 +17,7 @@ function kv(initial) {
   return {
     get: async (k) => store.get(k) ?? null,
     put: async (k, v) => { writes++; store.set(k, v); },
+    delete: async (k) => { writes++; store.delete(k); },
     get writes() { return writes; },
     read: () => JSON.parse(store.get('seen')),
   };
