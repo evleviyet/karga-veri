@@ -15,27 +15,9 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yeşilova, Hacıenbiya, Emek,Tuzla, Cumhuriyet Mahalleleri",
-      "district": "SEREFLIKOÇHISAR",
-      "start": "2026-11-03T08:30:00.000",
-      "end": "2026-11-03T13:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Cumhuriyet Mahallesi 5609 Cadde ve civarı",
       "district": "YENİMAHALLE",
       "start": "2026-11-03T06:50:00.000",
-      "end": "2026-11-03T13:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "İstiklal Mahallesi",
-      "district": "SEREFLIKOÇHISAR",
-      "start": "2026-11-03T09:00:00.000",
       "end": "2026-11-03T13:00:00.000"
     },
     {
@@ -73,6 +55,15 @@
       "district": "SEREFLIKOÇHISAR",
       "start": "2026-11-03T09:50:00.000",
       "end": "2026-11-03T13:50:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Varlık Mahallesi tamamı Yunus Emre Mahallesi bir kısmı Ragıptüzün Mahallesi bir kısmı Yenicağ Mahallesi bir kısmı Işınlar Mahallesi bir kısmı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-03T09:50:00.000",
+      "end": "2026-11-03T16:00:00.000"
     }
   ]
 }
