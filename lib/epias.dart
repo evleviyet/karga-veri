@@ -32,6 +32,14 @@ Future<String> epiasTgt(http.Client c, String user, String pass) async {
   return body;
 }
 
+Future<dynamic> epiasGet(http.Client c, String tgt, String path) async {
+  final res = await c.get(
+      Uri.parse('https://seffaflik.epias.com.tr/electricity-service/v1/$path'),
+      headers: {'Accept': 'application/json', 'TGT': tgt}).timeout(const Duration(seconds: 60));
+  if (res.statusCode != 200) throw Exception('EPİAŞ $path: HTTP ${res.statusCode}');
+  return jsonDecode(utf8.decode(res.bodyBytes));
+}
+
 Future<Map<String, dynamic>> epiasPost(http.Client c, String tgt, String path, Map<String, dynamic> body) async {
   final res = await c
       .post(Uri.parse('$epiasBase/$path'),
@@ -58,19 +66,36 @@ Future<void> epiasProbe(Directory out, DateTime trNow) async {
   try {
     final tgt = await epiasTgt(c, user, pass);
     report['login'] = 'ok';
-    for (final (name, path) in [
-      ('planned', 'planned-power-outage-info'),
-      ('unplanned', 'unplanned-power-outage-info'),
+    // EPİAŞ'ın il kimlikleri plaka değil (İstanbul Asya/Avrupa ayrı).
+    int? ankara;
+    try {
+      final provinces = await epiasGet(c, tgt, 'main/province-list');
+      report['provinces'] = provinces;
+      for (final p in (provinces as List)) {
+        if (p is Map && '${p.values.join(' ')}'.toUpperCase().contains('ANKARA')) {
+          ankara = (p['id'] as num?)?.toInt();
+        }
+      }
+    } catch (e) {
+      report['provinces'] = {'error': '$e'};
+    }
+    for (final (name, path, province) in [
+      ('planned', 'planned-power-outage-info', null),
+      ('unplanned', 'unplanned-power-outage-info', null),
+      ('plannedAnkara', 'planned-power-outage-info', ankara),
     ]) {
+      if (name == 'plannedAnkara' && province == null) continue;
       try {
-        final j = await epiasPost(c, tgt, path, {'period': epiasPeriod(trNow), 'provinceId': 6});
+        final j = await epiasPost(c, tgt, path, {
+          'period': epiasPeriod(trNow),
+          if (province != null) 'provinceId': province,
+          'page': {'number': 1, 'size': 100},
+        });
         final items = (j['items'] as List?) ?? const [];
         report[name] = {
-          'keys': j.keys.toList(),
           'count': items.length,
-          if (items.isNotEmpty && items.first is Map) 'fields': (items.first as Map).keys.toList(),
-          'sample': items.take(4).toList(),
-          if (j['page'] != null) 'page': j['page'],
+          'page': j['page'],
+          'sample': items.take(5).toList(),
         };
       } catch (e) {
         report[name] = {'error': '$e'};
