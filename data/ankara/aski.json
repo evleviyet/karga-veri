@@ -64,6 +64,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-11-03T09:50:00.000",
       "end": "2026-11-03T16:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Sezai Karakoç Caddesi ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-03T10:10:00.000",
+      "end": "2026-11-03T16:00:00.000"
     }
   ]
 }
