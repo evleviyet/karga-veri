@@ -92,27 +92,9 @@ List<Source> allSources(Registry reg) => [
             now: c.now);
       }),
 
-      Source('asat', 'ASAT', NoticeKind.water, [7], kurum: 'asat', (c) async {
-        return asatNotices(
-            await c.net.get('https://kesinti.asat.gov.tr/dbo_kesintiListe/list?pagesize=500'),
-            reg: c.reg,
-            now: c.now);
-      }),
-      Source('oski', 'OSKİ', NoticeKind.water, [52], kurum: 'oski', (c) async {
-        const url = 'https://www.oski.gov.tr/sukesintileri';
-        return etkilenenYerlerNotices(await c.net.get(url),
-            source: 'OSKİ', plaka: 52, url: url, reg: c.reg, now: c.now);
-      }),
       Source('muski', 'MUSKİ', NoticeKind.water, [48], kurum: 'muski', (c) async {
         return muskiNotices(await c.net.get('https://www.muski.gov.tr/su-kesintileri'),
             reg: c.reg, now: c.now);
-      }),
-      Source('eski-eskisehir', 'ESKİ', NoticeKind.water, [26], kurum: 'eski-eskisehir',
-          (c) async {
-        return eskiEskisehirNotices(
-            await c.net.get('https://www.eskisehir-eski.gov.tr/basin/su-kesintileri'),
-            reg: c.reg,
-            now: c.now);
       }),
 
       // --- Belediye ---
@@ -156,6 +138,8 @@ List<Source> allSources(Registry reg) => [
       // feed'de çalıştırılmaz; ayrıştırıcıları ve testleri durur:
       //  - MEDAŞ (cc.meramedas.com.tr) ve DESKİ (sukesinti.deski.gov.tr): uygulama
       //    Türkiye'den kendisi okur (ilçe sorgusu ~50 KB, ~12 KB).
+      //  - ASAT (Antalya), OSKİ (Ordu), ESKİ (Eskişehir): yurt dışından bağlantı
+      //    zaman aşımına düşüyor; uygulama Türkiye'den okur.
       //  - KCETAŞ (www.kcetas.com.tr): Kasım 2026'dan beri yurt dışı IP'lerine
       //    kesinti tablosu olmayan sayfa döndürüyor; uygulama Türkiye'den okur.
       //  - YEDAŞ (www.yedas.com): tek uç nokta, filtresiz ve sıkıştırmasız ~1,9 MB;
