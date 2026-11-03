@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İstiklal, Boğaziçi, Hürriyet, Yeni, Sanayi, Sarıkaya, Kale, Mustafacık Mahalleleri",
-      "district": "SEREFLIKOÇHISAR",
-      "start": "2026-11-03T13:00:00.000",
-      "end": "2026-11-03T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Varlık Mahallesi tamamı Yunus Emre Mahallesi bir kısmı Ragıptüzün Mahallesi bir kısmı Yenicağ Mahallesi bir kısmı Işınlar Mahallesi bir kısmı",
       "district": "YENİMAHALLE",
       "start": "2026-11-03T09:50:00.000",
