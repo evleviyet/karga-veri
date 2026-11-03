@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'epias.dart';
 import 'models.dart';
 import 'net.dart';
 import 'parsers/announcements.dart';
@@ -133,6 +134,17 @@ List<Source> allSources(Registry reg) => [
         }
         return uedasNotices(ok, reg: c.reg, now: c.now);
       }),
+
+      // --- Elektrik (EPİAŞ Şeffaflık Platformu; kendi okuyucusu olmayan şirketler) ---
+      if (epiasConfigured)
+        for (final k in epiasKurumlar)
+          Source('epias-$k', reg.kurumlar[k]?.kisa ?? k, NoticeKind.power,
+              [
+                for (final il in reg.iller)
+                  if (il.elektrik == k || il.elektrikIlce.values.contains(k)) il.plaka
+              ],
+              kurum: k,
+              (c) async => epiasNotices(await epiasPlanned(c, c.now), k, c.reg, c.now)),
 
       // GitHub runner'larından (yurt dışı IP) TCP düzeyinde erişilemeyen kaynaklar
       // feed'de çalıştırılmaz; ayrıştırıcıları ve testleri durur:

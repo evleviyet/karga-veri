@@ -13,11 +13,13 @@ kurumların "kara haber"leri (kesinti, uyarı, tatil, afet...) iletilir.
 |---|---|---|
 | Hava uyarısı | MGM MeteoUyarı (sarı/turuncu/kırmızı) | 81 il, ilçe düzeyinde |
 | Resmi duyuru | 81 valilik duyuru sayfası (tatil, afet, yasak, karantina, yol...) | 81 il |
-| Deprem | AFAD (uygulama doğrudan okur) | Türkiye |
+| Deprem | AFAD (yedeği EMSC) → data/v2/quakes.json; anlık bildirim quakepush/ Worker'ı | Türkiye |
+| Yangın | kanari.io uydu tespitleri (güçlü, doğrulanmış) → data/v2/fires.json | Türkiye |
 | Elektrik | BEDAŞ, AEDAŞ, ÇEDAŞ (CK Enerji), Çoruh, Fırat, KCETAŞ, UEDAŞ | 26 il + İstanbul Avrupa yakası |
-| Elektrik (cihazdan) | MEDAŞ — uygulama Türkiye'den kendisi okur | 6 il |
-| Su | ASKİ (Ankara), İZSU, SASKİ (Samsun), TİSKİ | 4 büyükşehir |
-| Su (cihazdan) | DESKİ — uygulama Türkiye'den kendisi okur | Denizli |
+| Elektrik (EPİAŞ) | Başkent EDAŞ, AYEDAŞ, Toroslar, GDZ, TREDAŞ, SEDAŞ, OEDAŞ, Akedaş, ADM, YEDAŞ, Dicle, VEDAŞ, Aras — EPİAŞ Şeffaflık Platformu planlı kesintileri (bugün + 3 gün; EPIAS_USER/EPIAS_PASS secret'ları) | kalan iller |
+| Elektrik (cihazdan) | MEDAŞ, KCETAŞ — uygulama Türkiye'den kendisi okur | 7 il |
+| Su | ASKİ (Ankara), İZSU, SASKİ (Samsun), TİSKİ, MUSKİ | 5 büyükşehir |
+| Su (cihazdan) | DESKİ, ASAT, OSKİ, ESKİ — uygulama Türkiye'den kendisi okur | Denizli, Antalya, Ordu, Eskişehir |
 | Belediye | Ankara Büyükşehir duyuruları | Ankara |
 
 MEDAŞ (`cc.meramedas.com.tr`), DESKİ (`sukesinti.deski.gov.tr`) ve YEDAŞ (`www.yedas.com`)

@@ -9,7 +9,6 @@
 import 'dart:io';
 
 import 'package:karga_feed/build.dart';
-import 'package:karga_feed/epias.dart';
 import 'package:karga_feed/fires.dart';
 import 'package:karga_feed/models.dart';
 import 'package:karga_feed/net.dart';
@@ -44,8 +43,6 @@ Future<void> main(List<String> args) async {
   writeSite(result, reg, out);
   writeQuakes(out, await quakes);
   await fires;
-  // EPİAŞ hesabı tanımlıysa (EPIAS_USER/EPIAS_PASS secret'ları) keşif dosyası.
-  await epiasProbe(out, ctx.now);
   copyStatic(Directory('static'), out);
   net.close();
   if (legacy != null && syncLegacy(out, legacy, result.generatedUtc)) {

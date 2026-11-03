@@ -3,14 +3,19 @@ import 'dart:io';
 
 import 'package:http/http.dart' as http;
 
+import 'models.dart';
+import 'registry.dart';
+
 /// EPİAŞ Şeffaflık Platformu: tüm dağıtım şirketlerinin planlı ve plansız
-/// elektrik kesintileri (il bazında). Ücretsiz hesap ister; kullanıcı adı ve
-/// şifre yalnızca GitHub Actions secret'larında durur (EPIAS_USER, EPIAS_PASS),
-/// depoda ve çıktıda yoktur.
+/// elektrik kesintileri (ilçe ve mahalle adlarıyla). Ücretsiz hesap ister;
+/// kullanıcı adı ve şifre yalnızca GitHub Actions secret'larında durur
+/// (EPIAS_USER, EPIAS_PASS), depoda ve çıktıda yoktur.
 ///
-/// Şimdilik keşif: verinin ayrıntı düzeyi (ilçe/mahalle/saat) görülsün diye
-/// her türden ilk birkaç kayıt data/v2/epias_probe.json'a yazılır. Kayıtlar
-/// zaten herkese açık kesinti bilgisidir; giriş bilgisi yazılmaz.
+/// Planlı kesintiler gün gün yayımlanır (bugün ve sonraki günler); plansız
+/// kesintiler olaydan sonra yayımlandığı için anlık uyarıda kullanılmaz.
+/// Feed, kendi okuyucusu olmayan dağıtım şirketleri için EPİAŞ'ı kullanır
+/// ([epiasKurumlar]); kendi okuyucusu olanlarda (BEDAŞ, CK, Aksa, UEDAŞ, MEDAŞ,
+/// KCETAŞ) daha ayrıntılı olan kendi kaynağı kalır.
 const epiasLogin = 'https://giris.epias.com.tr/cas/v1/tickets';
 const epiasBase = 'https://seffaflik.epias.com.tr/electricity-service/v1/consumption/data';
 
@@ -33,14 +38,6 @@ Future<String> epiasTgt(http.Client c, String user, String pass) async {
   return body;
 }
 
-Future<dynamic> epiasGet(http.Client c, String tgt, String path) async {
-  final res = await c.get(
-      Uri.parse('https://seffaflik.epias.com.tr/electricity-service/v1/$path'),
-      headers: {'Accept': 'application/json', 'TGT': tgt}).timeout(const Duration(seconds: 60));
-  if (res.statusCode != 200) throw Exception('EPİAŞ $path: HTTP ${res.statusCode}');
-  return jsonDecode(utf8.decode(res.bodyBytes));
-}
-
 Future<Map<String, dynamic>> epiasPost(http.Client c, String tgt, String path, Map<String, dynamic> body) async {
   final res = await c
       .post(Uri.parse('$epiasBase/$path'),
@@ -54,79 +51,131 @@ Future<Map<String, dynamic>> epiasPost(http.Client c, String tgt, String path, M
   return j as Map<String, dynamic>;
 }
 
-/// Keşif dosyası: her türün kayıt sayısı, alan adları ve ilk kayıtlar.
-Future<void> epiasProbe(Directory out, DateTime trNow) async {
-  final user = Platform.environment['EPIAS_USER'];
-  final pass = Platform.environment['EPIAS_PASS'];
-  if (user == null || user.isEmpty || pass == null || pass.isEmpty) return;
-  final c = http.Client();
-  final report = <String, dynamic>{
-    'generatedAt': DateTime.now().toUtc().toIso8601String(),
-  };
-  try {
-    final tgt = await epiasTgt(c, user, pass);
-    report['login'] = 'ok';
-    // EPİAŞ'ın il kimlikleri plaka değil (İstanbul Asya/Avrupa ayrı).
-    int? ankara;
-    try {
-      final provinces = await epiasGet(c, tgt, 'main/province-list');
-      report['provinces'] = provinces;
-      for (final p in (provinces as List)) {
-        if (p is Map && '${p.values.join(' ')}'.toUpperCase().contains('ANKARA')) {
-          ankara = (p['id'] as num?)?.toInt();
-        }
-      }
-    } catch (e) {
-      report['provinces'] = {'error': '$e'};
+/// EPİAŞ'tan okunan dağıtım şirketleri (providers.json kimlikleri).
+const epiasKurumlar = [
+  'baskent', 'ayedas', 'toroslar', 'gdz', 'tredas', 'sedas', 'oedas',
+  'akedas', 'adm', 'yedas', 'dicle', 'vedas', 'aras',
+];
+
+/// EPİAŞ şirket adı ("BASKENT_EDAS", "CK_CAMLIBEL_EDAS", "AKEDAS") -> kurum.
+/// Sıra önemli: "ayedas" içinde "yedas", "yesilirmakedas" içinde "akedas" geçer.
+String? epiasKurum(String name) {
+  final n = normTr(name).replaceAll(RegExp(r'[^a-z]'), '');
+  const keys = [
+    ('baskent', 'baskent'), ('yesilirmak', 'yedas'), ('ayedas', 'ayedas'), ('anadoluyakasi', 'ayedas'),
+    ('bogazici', 'bedas'), ('bedas', 'bedas'), ('toroslar', 'toroslar'),
+    ('gediz', 'gdz'), ('gdz', 'gdz'), ('trakya', 'tredas'), ('tredas', 'tredas'),
+    ('akedas', 'akedas'), ('sakarya', 'sedas'), ('sedas', 'sedas'),
+    ('osmangazi', 'oedas'), ('oedas', 'oedas'), ('menderes', 'adm'), ('adm', 'adm'),
+    ('yedas', 'yedas'), ('dicle', 'dicle'),
+    ('vangolu', 'vedas'), ('vedas', 'vedas'), ('aras', 'aras'),
+    ('akdeniz', 'akdeniz'), ('camlibel', 'cedas'), ('coruh', 'coruh'),
+    ('firat', 'firat'), ('uludag', 'uedas'), ('meram', 'meram'), ('kayseri', 'kcetas'),
+  ];
+  for (final (k, id) in keys) {
+    if (n.contains(k)) return id;
+  }
+  return null;
+}
+
+/// "HASANOĞLAN BAHÇELİEVLER Mah.", "Igde Mh.", "TAVŞANLI KÖYÜ" -> adlar.
+/// Mahalle işareti yoksa (yalnızca ilçe adı) boş: kesinti ilçe genelidir.
+List<String> epiasMahalleler(String text) {
+  final out = <String, String>{};
+  for (final m in RegExp(r'([^,;]+?)\s+(?:MAHALLESİ|MAHALLESI|Mahallesi|MAH\.?|Mah\.?|Mh\.?|KÖYÜ|Köyü|KOYU)(?=[\s,;.]|$)')
+      .allMatches(text)) {
+    final name = m.group(1)!.trim();
+    if (name.isNotEmpty) out.putIfAbsent(placeKey(name), () => name);
+  }
+  return out.values.toList();
+}
+
+/// Bir şirketin planlı kesinti kayıtları -> feed kayıtları. İlçesi tanınmayan
+/// kayıt atlanır (il geneline yayılmasın).
+List<Notice> epiasNotices(List<Map<String, dynamic>> rows, String kurum, Registry reg, DateTime now) {
+  final groups = <String, (Map<String, dynamic>, int, Ilce, Map<String, String>, List<String>)>{};
+  for (final r in rows) {
+    if (epiasKurum('${r['distributionCompanyName']}') != kurum) continue;
+    final prov = '${r['province'] ?? ''}';
+    final il = placeKey(prov).startsWith('istanbul') ? reg.byPlaka(34) : reg.byName(prov);
+    if (il == null) continue;
+    final ilce = il.ilce('${r['district'] ?? ''}'.split('/').first.trim());
+    if (ilce == null) continue;
+    final key = '${il.plaka}|${ilce.key}|${r['startTime']}|${r['endTime']}|${r['reason']}';
+    final g = groups[key] ??= (r, il.plaka, ilce, <String, String>{}, <String>[]);
+    final text = '${r['effectedNeighbourhoods'] ?? ''}'.trim();
+    for (final m in epiasMahalleler(text)) {
+      g.$4.putIfAbsent(placeKey(m), () => m);
     }
-    final today = DateTime(trNow.year, trNow.month, trNow.day);
-    for (final (name, path, province, day) in [
-      ('plannedToday', 'planned-power-outage-info', null, today),
-      ('plannedTomorrow', 'planned-power-outage-info', null, today.add(const Duration(days: 1))),
-      ('plannedIn2', 'planned-power-outage-info', null, today.add(const Duration(days: 2))),
-      ('unplannedToday', 'unplanned-power-outage-info', null, today),
-      ('plannedAnkara', 'planned-power-outage-info', ankara, today.add(const Duration(days: 1))),
-    ]) {
-      if (name == 'plannedAnkara' && province == null) continue;
-      try {
-        // Tüm sayfalar: kayıtların hangi günlere ait olduğu (önceden mi,
-        // sonradan mı yayımlanıyor) görülsün.
-        final items = <dynamic>[];
-        Map? page;
-        for (var n = 1; n <= 20; n++) {
-          final j = await epiasPost(c, tgt, path, {
-            'period': epiasPeriod(day),
-            if (province != null) 'provinceId': province,
+    if (text.isNotEmpty && g.$5.length < 6) g.$5.add(text);
+  }
+  final out = <Notice>[];
+  for (final e in groups.entries) {
+    final (r, plaka, ilce, mah, texts) = e.value;
+    final start = DateTime.tryParse('${r['startTime']}')?.toUtc().add(const Duration(hours: 3));
+    var end = DateTime.tryParse('${r['endTime']}')?.toUtc().add(const Duration(hours: 3));
+    // Türkiye saati, saat dilimi eksiz (feed'in diğer kaynakları gibi)
+    DateTime? local(DateTime? d) => d == null ? null : DateTime(d.year, d.month, d.day, d.hour, d.minute);
+    final s0 = local(start), e0 = local(end);
+    if (s0 == null || !inWindow(s0, e0, now)) continue;
+    final mahalleler = mah.values.toList()..sort();
+    final reason = '${r['reason'] ?? ''}'.trim();
+    out.add(Notice(
+      kind: NoticeKind.power,
+      source: reg.kurumlar[kurum]?.kisa ?? kurum,
+      title: 'Planlı elektrik kesintisi',
+      detail: [
+        mahalleler.isNotEmpty ? neighborhoodsLine(mahalleler) : texts.join(', '),
+        if (reason.isNotEmpty) '(${titleTr(reason.split(' - ').first)})',
+      ].join(' '),
+      district: ilce.ad,
+      plaka: plaka,
+      start: s0,
+      end: e0 != null && e0.isAfter(s0) ? e0 : null,
+      neighborhoods: mahalleler,
+      url: 'https://seffaflik.epias.com.tr/electricity/electricity-consumption/failure-information/planned-failure-information',
+      planned: true,
+      id: 'epias:${stableId(e.key)}',
+    ));
+  }
+  return out;
+}
+
+/// Bu turun EPİAŞ planlı kesintileri (bugün ve sonraki 3 gün), turda bir kez
+/// okunur; şirket kaynakları aynı listeyi paylaşır.
+final _planned = Expando<Future<List<Map<String, dynamic>>>>();
+
+Future<List<Map<String, dynamic>>> epiasPlanned(Object turn, DateTime trNow,
+    {String? user, String? pass}) {
+  return _planned[turn] ??= () async {
+    final u = user ?? Platform.environment['EPIAS_USER'];
+    final p = pass ?? Platform.environment['EPIAS_PASS'];
+    if (u == null || u.isEmpty || p == null || p.isEmpty) {
+      throw Exception('EPİAŞ hesabı tanımlı değil');
+    }
+    final c = http.Client();
+    try {
+      final tgt = await epiasTgt(c, u, p);
+      final today = DateTime(trNow.year, trNow.month, trNow.day);
+      final rows = <Map<String, dynamic>>[];
+      for (var d = 0; d <= 3; d++) {
+        for (var n = 1; n <= 10; n++) {
+          final j = await epiasPost(c, tgt, 'planned-power-outage-info', {
+            'period': epiasPeriod(today.add(Duration(days: d))),
             'page': {'number': n, 'size': 500},
           });
           final got = (j['items'] as List?) ?? const [];
-          items.addAll(got);
-          page = j['page'] as Map?;
+          rows.addAll(got.whereType<Map<String, dynamic>>());
           if (got.length < 500) break;
         }
-        final byDay = <String, int>{};
-        for (final e in items) {
-          final d = '${(e as Map)['startTime']}';
-          final day = d.length >= 10 ? d.substring(0, 10) : d;
-          byDay[day] = (byDay[day] ?? 0) + 1;
-        }
-        items.sort((a, b) => '${(b as Map)['startTime']}'.compareTo('${(a as Map)['startTime']}'));
-        report[name] = {
-          'count': items.length,
-          'page': page,
-          'byStartDay': Map.fromEntries(byDay.entries.toList()..sort((a, b) => a.key.compareTo(b.key))),
-          'latest': items.take(5).toList(),
-        };
-      } catch (e) {
-        report[name] = {'error': '$e'};
       }
+      return rows;
+    } finally {
+      c.close();
     }
-  } catch (e) {
-    report['login'] = '$e';
-  } finally {
-    c.close();
-  }
-  File('${out.path}/data/v2/epias_probe.json')
-    ..parent.createSync(recursive: true)
-    ..writeAsStringSync(const JsonEncoder.withIndent('  ').convert(report));
+  }();
 }
+
+bool get epiasConfigured =>
+    (Platform.environment['EPIAS_USER'] ?? '').isNotEmpty &&
+    (Platform.environment['EPIAS_PASS'] ?? '').isNotEmpty;
