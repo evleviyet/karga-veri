@@ -94,6 +94,12 @@ export async function run(env, now) {
   );
   if (res.status !== 200) throw new Error(`AFAD HTTP ${res.status}`);
   const quakes = parseAfad(await res.json());
+  // Anahtar girilmeden KV'ye dokunulmaz: yeni depremler "görüldü" sayılıp
+  // kaybolmasın (AFAD yine okunur ki erişim günlükte görülsün).
+  if (!env.FCM_SA) {
+    console.log(`FCM_SA yok; AFAD ${quakes.length} kayıt`);
+    return { sent: 0, noSecret: true };
+  }
 
   const raw = await env.SEEN.get('seen');
   const seen = raw ? JSON.parse(raw) : null;

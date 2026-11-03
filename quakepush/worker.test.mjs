@@ -95,3 +95,11 @@ test('yeni deprem: imzalı jetonla ilgili konulara veri mesajı', async () => {
   assert.ok('3' in SEEN.read());
   assert.equal(SEEN.writes, 1);
 });
+
+test('anahtar yokken KV\'ye dokunulmaz', async () => {
+  stub([afad('9', 4.2, 39.78, 30.52, '2026-11-03T11:58:00')]);
+  const SEEN = kv({ 1: now.getTime() });
+  const r = await run({ SEEN }, now);
+  assert.equal(r.noSecret, true);
+  assert.equal(SEEN.writes, 0);
+});
