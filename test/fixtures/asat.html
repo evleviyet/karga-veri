@@ -1,0 +1,621 @@
+
+<!doctype html>
+<HTML >
+	<head>
+		<META http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<META name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kesinti Liste</title>
+
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<LINK REL="stylesheet" href="/styles/default.css" type="text/css" />
+		<LINK REL="stylesheet" href="/styles/bootstrap/cerulean/normal/style.css" type="text/css" />
+		<LINK REL="stylesheet" href="/styles/font-awesome/css/font-awesome.min.css" type="text/css" />
+		<LINK REL="stylesheet" href="/styles/pages/dbo_kesintiListe_list.css" type="text/css" />
+		<LINK REL="stylesheet" href="/include/jquery-ui/smoothness/jquery-ui.min.css" type="text/css" />
+		<LINK REL="stylesheet" href="/include/bootstrap/css/jquery.mCustomScrollbar.css" type="text/css" />
+		<LINK REL="stylesheet" href="/include/bootstrap/css/bootstrap-datetimepicker.min.css" type="text/css" />
+	</head>
+	<BODY class=" function-list" >
+<script type="text/javascript">window.runnerWebRootPath="%2f"</script><script type="text/javascript" src="/include/loadfirst.js"></script><script type="text/javascript" src="/include/lang/Turkish.js"></script><div id="search_suggest" class="search_suggest"></div>		<style></style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+<NAV class="navbar navbar-default" data-location="supertop" id="form_supertop_1" data-makeup="topbar"  data-pageid="1">
+			 
+			 
+				<SPAN data-cellId="supertop_c1" data-pageid="1" class="r-align-left navbar-header" data-itemid="logo" >
+	<A data-itemtype="logo" data-itemid="logo"  data-pageid="1" class="navbar-brand" href="/menu" data-pageid="1" >
+		Asat Genel Müdürlüğü Planlı Kesintiler
+	</A>
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+		 
+				<SPAN data-cellId="supertop_c1" data-pageid="1" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu"  data-pageid="1">
+				
+<ul class="nav navbar-nav">
+	
+	
+	<LI class="  active">
+		<A  id="itemlink1" itemtitle="Kesinti Listesi" href="/dbo_kesintiListe/list"> Kesinti Listesi</a>
+
+	</li>
+</ul>			</span>
+				 
+			 
+				<SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="1" data-itemid="list_options"  data-topcell-item-type="list_options">
+				<SPAN data-itemtype="list_options" data-itemid="list_options"  data-pageid="1" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+	<LI data-itemtype="export_selected" data-itemid="export_selected"  data-pageid="1" data-small>
+				<A href="#" name="export_selected1" 
+				id="export_selected1"
+				href = '/dbo_kesintiListe/export'  title>
+				
+		Seçili olanı gönder		
+		</a>
+	</li>
+							<li role="separator" class="divider"></li>								<LI data-itemtype="advsearch_link" data-itemid="advsearch_link"  data-pageid="1" data-small>
+				<A href="/dbo_kesintiListe/search" id="advButton1" title>
+				
+		Gelişmiş Arama		
+		</a>
+	</li>
+	<LI data-itemtype="show_search_panel" data-itemid="show_search_panel"  data-pageid="1" data-small>
+				<A id="showOptPanel1" title>
+				
+		Show search panel		
+		</a>
+	</li>
+	<LI data-itemtype="hide_search_panel" data-itemid="hide_search_panel" data-hidden data-pageid="1" data-small>
+				<A id="hideOptPanel1" title>
+				
+		Hide search panel		
+		</a>
+	</li>
+							<li role="separator" class="divider"></li>								<LI data-itemtype="export" data-itemid="export"  data-pageid="1" data-small>
+				<A href="#" id='export_1' title>
+				
+		Sonuçları Gönder		
+		</a>
+	</li>
+							<li role="separator" class="divider"></li>					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="1" data-itemid="simple_search"  data-topcell-item-type="simple_search">
+				<SPAN data-itemtype="simple_search" data-itemid="simple_search"  data-pageid="1" class="form-group">
+
+<div  class="input-group">
+	<INPUT type="search" class="form-control" name="ctlSearchFor1" id="ctlSearchFor1" placeholder="Arama" size="25" />
+	<span class="input-group-btn">
+		<BUTTON class="btn btn-default" style="display: none;" id="showAll1" style="display: none;" title="Hepsini göster">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	<BUTTON id="searchButtTop1" title="Ara" class="btn btn-primary">
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	</span>
+</div>
+		
+</span>			</span>
+					</nav>
+				</div>	
+			
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+<DIV class="r-form" data-location="top" id="form_top_1" data-makeup="topbar"  data-pageid="1">		
+	 
+		<div class="row">
+			 
+				<DIV data-cellId="top_c1" data-pageid="1"  class=" r-ori-vert			col-md-12
+	
+">
+		 
+<OL class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb"  data-pageid="1">
+<li ><A href="/menu"><span class="glyphicon glyphicon-home"></span></a></li>
+  <LI class="">
+	<A href="/dbo_kesintiListe/list">Kesinti Listesi</a>
+	
+  </li>
+</ol>
+		</div>					</div>
+	</div>		
+					</div>
+				<div class="r-content">
+										<DIV class="r-left"  >
+<TABLE class="r-fluid r-form" data-location="left" id="form_left_1" data-makeup="topbar"  data-pageid="1">
+						<tbody>
+			
+								<tr>
+									<TD class=" r-ori-vert			" data-cellId="left_c1" data-pageid="1">
+ 
+<!-- Begin Search panel content -->
+<DIV class="searchOptions panel panel-primary searchPanelContainer "  data-itemtype="search_panel" data-itemid="search_panel" data-hidden data-pageid="1">
+
+	<div class="panel-heading">
+		<DIV class="btn-group" id="addSearchFieldButton1">
+			<BUTTON id="showHideControlChooseMenu1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<DIV class="btn-group searchpanel-options" id="searchPanelOptions1">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<LI id="showHideSearchType1" style="display: none;"><a>Seçenekleri göster</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><INPUT type="radio" name="srchType1" id="radioAll" id="all_checkbox" value="and"  checked /><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><INPUT type="radio" name="srchType1" id="radioAny" id="any_checkbox" value="or"  /><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>gizle</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<DIV class="panel-body controlsBlock" style="display: none;">
+
+
+		
+		
+
+	</div>
+
+	<DIV class="panel-footer bottomSearchButt" style="display: none;">
+		<BUTTON class="btn btn-primary" id="searchButton1" id="searchButtTop1" title="Ara">Ara</button>
+		<BUTTON class="btn btn-default" style="display: none;" id="showAll1" style="display: none;">Hepsini göster</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+</td>
+							</tr>
+											<tr>
+									<TD class=" r-ori-vert			" data-cellId="left_c2" data-pageid="1">
+ 
+<DIV data-itemtype="filter_panel" data-itemid="filter_panel"  data-pageid="1">
+<!--
+	<button type="button" class="btn btn-info bs-togglebutton bottom-margin collapsed" data-runner-toggle="collapse" data-target=".filterPanelContainer">	
+		<span class="glyphicon glyphicon-filter"><span> Filter	
+	</button>
+-->	
+	<DIV class="filterPanelContainer ">
+
+
+
+			
+	 	
+
+		
+		 
+		 
+
+		 	
+
+		<div class="panel panel-info filter-field filter-IlceId-container">
+			<div class="panel-heading filter-expander">
+																	<span class="filter-indicator glyphicon glyphicon-triangle-bottom"></span>	
+
+			
+				<label>Ilce</label>
+
+			</div>
+
+			<ul class="list-group">
+				<LI class="list-group-item filter-values filter-values-IlceId filter-collapsed  filter-link">
+					<span dir="LTR"><a href="/dbo_kesintiListe/list?f=(IlceId~equals~12)" data-filtervalue="12"  class="IlceId-filter-value">KEMER</a></span>
+								
+			
+			
+				</li>				
+
+			
+
+
+			
+
+				
+	
+			</ul>			
+		</div>
+	 
+	</div>
+</div></td>
+							</tr>
+					
+					</tbody>
+				</table>
+						</div>
+										<div class="r-data-block" data-body-width="standard" >
+						
+<DIV class="r-form" data-location="above-grid" id="form_above-grid_1" data-makeup="topbar"  data-pageid="1">		
+	 
+		<div class="row">
+			 
+				<DIV data-cellId="above-grid_c1" data-pageid="1"  class=" r-ori-vert			col-md-6
+	
+">
+	</div>			 
+				<DIV data-cellId="above-grid_c2" data-pageid="1"  class="r-align-right			col-md-6
+	
+">
+		 
+		<SPAN data-itemtype="details_found" data-itemid="details_found"  data-pageid="1">
+Displaying <span class="bs-number">1</span> - <span class="bs-number">1</span> of <span class="bs-number">1</span>
+</span>	 
+		<SPAN data-itemtype="page_size" data-itemid="page_size"  data-pageid="1">
+		<select class="form-control" id="recordspp1"><option value="10" >10</option><option value="20" selected>20</option><option value="30" >30</option><option value="50" >50</option><option value="100" >100</option><option value="500" >500</option><option value="-1" >All</option></select>
+</span>	 
+<SPAN id="printpanelblock1" data-pageid="1"  data-itemtype="print_panel" data-itemid="print_panel"  data-pageid="1">
+	<button title="Sayfayi yazdir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<DIV id="print_friendly_scope1">
+	<div class="row">
+		<div class="col-md-4">
+			Scope:		</div>
+
+		<div class="col-md-8">
+			<LABEL for="printAll1">
+				<INPUT type="radio" id="printAll1" data-href="dbo_kesintiListe_print.aspx?all=1&amp;" name="printScope" />
+									Print all pages							</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<LABEL for="printPage1">
+				<INPUT name="printScope" id="printPage1" type="radio" checked data-href="dbo_kesintiListe_print.aspx?" />
+				Print this page			</label>
+		</div>
+	</div>
+	
+		<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<LABEL style="color: gray;" for="printSelection1">
+			<INPUT name="printScope" disabled="disabled" id="printSelection1" type="radio" />
+			Print selected			</label>
+		</div>
+	</div>
+	</div>				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<LABEL for="printPerPage1">
+					Sayfadaki kayıt sayısı							
+	</label>
+	<INPUT type="number" id="printPerPage1" value="40" class="rnr-printrecspp" />		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<SPAN data-itemtype="print_button" data-itemid="print_button"  data-pageid="1" data-small data-button-item>
+	<A type="button" title class="btn btn-primary   
+	" id="print_friendly_button1">
+							Print			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+		</div>					</div>
+	</div>		
+							
+						<div class="r-grid">
+	<style>
+@media (max-width: 767px) {
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="ID"]:before {
+		content: "ID";
+	}
+	
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="IlceId"]:before {
+		content: "Ilce";
+	}
+	
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="MahalleId"]:before {
+		content: "Mahalle";
+	}
+	
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="Sokak"]:before {
+		content: "Sokak";
+	}
+	
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="EtkilenenMahalleler"]:before {
+		content: "Etkilenen Mahalleler";
+	}
+	
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="KesintiNedeniId"]:before {
+		content: "Kesinti Nedeni";
+	}
+	
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="BaslangicTarihSaat"]:before {
+		content: "Baslangic Tarih Saat";
+	}
+	
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="BitisTarihiSaat"]:before {
+		content: "Bitis Tarihi Saat";
+	}
+	
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="Aciklama"]:before {
+		content: "Aciklama";
+	}
+	
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="KesintiSonlandi"]:before {
+		content: "Kesinti Sonlandi";
+	}
+	
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="Kullanici"]:before {
+		content: "Kullanici";
+	}
+	
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="WebYayin"]:before {
+		content: "Web Yayin";
+	}
+	
+	[data-pageid="1"][data-itemtype="grid_field"][data-field="TahminiBitisTarihSaat"]:before {
+		content: "Tahmini Bitis Tarih Saat";
+	}
+	
+}</style>
+<TABLE data-location="grid" id="form_grid_1" data-makeup="topbar"  data-pageid="1" class=" table table-bordered table-striped  r-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" data-body-height="1">
+						<thead>
+						<TR   class=" 
+									
+									
+								r-gridrow
+							">
+				 
+	<TH   class="
+		 r-ori-vert			" data-cellId="grid_headcell_checkbox" data-pageid="1" data-record-id="" data-page="dbo_kesintiListe_list" data-checkbox-cell>
+
+	 
+<SPAN data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head"  data-pageid="1" data-record-id="">
+	<INPUT type="checkbox" id="chooseAll_1" class="chooseAll1" />
+</span>
+	
+	</th>
+				 
+	<TH   class="
+		 r-ori-vert				
+			" data-field="IlceId" data-cellId="grid_headcell_field" data-pageid="1" data-record-id="">
+
+	 
+	<SPAN data-href="/dbo_kesintiListe/list?orderby=aIlceId" data-order="aIlceId" id="order_IlceId_1" name="order_IlceId_1" data-multisort="" class="rnr-orderlink" data-itemtype="grid_field_label" data-itemid="simple_grid_field"  data-pageid="1" data-record-id="" data-field="IlceId">
+	Ilce	
+	</SPAN>
+
+	
+	</th>
+				 
+	<TH   class="
+		 r-ori-vert				
+			" data-field="MahalleId" data-cellId="grid_headcell_field1" data-pageid="1" data-record-id="">
+
+	 
+	<SPAN data-href="/dbo_kesintiListe/list?orderby=aMahalleId" data-order="aMahalleId" id="order_MahalleId_1" name="order_MahalleId_1" data-multisort="" class="rnr-orderlink" data-itemtype="grid_field_label" data-itemid="simple_grid_field8"  data-pageid="1" data-record-id="" data-field="MahalleId">
+	Mahalle	
+	</SPAN>
+
+	
+	</th>
+				 
+	<TH   class="
+		 r-ori-vert				r-field-text
+			" data-field="Sokak" data-cellId="grid_headcell_field2" data-pageid="1" data-record-id="">
+
+	 
+	<SPAN data-href="/dbo_kesintiListe/list?orderby=aSokak" data-order="aSokak" id="order_Sokak_1" name="order_Sokak_1" data-multisort="" class="rnr-orderlink" data-itemtype="grid_field_label" data-itemid="simple_grid_field9"  data-pageid="1" data-record-id="" data-field="Sokak">
+	Sokak	
+	</SPAN>
+
+	
+	</th>
+				 
+	<TH   class="
+		 r-ori-vert				r-field-text
+			" data-field="EtkilenenMahalleler" data-cellId="grid_headcell_field3" data-pageid="1" data-record-id="">
+
+	 
+	<SPAN data-href="/dbo_kesintiListe/list?orderby=aEtkilenenMahalleler" data-order="aEtkilenenMahalleler" id="order_EtkilenenMahalleler_1" name="order_EtkilenenMahalleler_1" data-multisort="" class="rnr-orderlink" data-itemtype="grid_field_label" data-itemid="simple_grid_field10"  data-pageid="1" data-record-id="" data-field="EtkilenenMahalleler">
+	Etkilenen Mahalleler	
+	</SPAN>
+
+	
+	</th>
+				 
+	<TH   class="
+		 r-ori-vert				
+			" data-field="KesintiNedeniId" data-cellId="grid_headcell_field4" data-pageid="1" data-record-id="">
+
+	 
+	<SPAN data-href="/dbo_kesintiListe/list?orderby=aKesintiNedeniId" data-order="aKesintiNedeniId" id="order_KesintiNedeniId_1" name="order_KesintiNedeniId_1" data-multisort="" class="rnr-orderlink" data-itemtype="grid_field_label" data-itemid="simple_grid_field11"  data-pageid="1" data-record-id="" data-field="KesintiNedeniId">
+	Kesinti Nedeni	
+	</SPAN>
+
+	
+	</th>
+				 
+	<TH   class="
+		 r-ori-vert				r-field-text
+			" data-field="BaslangicTarihSaat" data-cellId="grid_headcell_field5" data-pageid="1" data-record-id="">
+
+	 
+	<SPAN data-href="/dbo_kesintiListe/list?orderby=aBaslangicTarihSaat" data-order="aBaslangicTarihSaat" id="order_BaslangicTarihSaat_1" name="order_BaslangicTarihSaat_1" data-multisort="" class="rnr-orderlink" data-itemtype="grid_field_label" data-itemid="simple_grid_field13"  data-pageid="1" data-record-id="" data-field="BaslangicTarihSaat">
+	Baslangic Tarih Saat	
+	</SPAN>
+
+	
+	</th>
+				 
+	<TH   class="
+		 r-ori-vert				r-field-text
+			" data-field="TahminiBitisTarihSaat" data-cellId="grid_headcell_field6" data-pageid="1" data-record-id="">
+
+	 
+	<SPAN data-href="/dbo_kesintiListe/list?orderby=aTahminiBitisTarihSaat" data-order="aTahminiBitisTarihSaat" id="order_TahminiBitisTarihSaat_1" name="order_TahminiBitisTarihSaat_1" data-multisort="" class="rnr-orderlink" data-itemtype="grid_field_label" data-itemid="simple_grid_field14"  data-pageid="1" data-record-id="" data-field="TahminiBitisTarihSaat">
+	Tahmini Bitis Tarih Saat	
+	</SPAN>
+
+	
+	</th>
+				 
+	<TH   class="
+		 r-ori-vert				r-field-text
+			" data-field="BitisTarihiSaat" data-cellId="grid_headcell_field7" data-pageid="1" data-record-id="">
+
+	 
+	<SPAN data-href="/dbo_kesintiListe/list?orderby=aBitisTarihiSaat" data-order="aBitisTarihiSaat" id="order_BitisTarihiSaat_1" name="order_BitisTarihiSaat_1" data-multisort="" class="rnr-orderlink" data-itemtype="grid_field_label" data-itemid="simple_grid_field15"  data-pageid="1" data-record-id="" data-field="BitisTarihiSaat">
+	Bitis Tarihi Saat	
+	</SPAN>
+
+	
+	</th>
+							</tr>
+			</thead>
+															<tbody>
+						<TR  id="gridRow4"  class=" 
+								
+								r-gridrow
+							">
+				 
+	<TD  data-record-id="4" class="
+		 r-ori-vert			" data-cellId="grid_cell_checkbox" data-pageid="1" data-record-id="4" data-control-cell data-checkbox-cell>
+
+	 
+<SPAN data-itemtype="grid_checkbox" data-itemid="grid_checkbox"  data-pageid="1" data-record-id="4">
+	<INPUT type="checkbox" name="selection[]" value="48191" id="check1_4" />
+</span>	
+	
+	</td>
+				 
+	<TD  data-record-id="4" class="
+		 r-ori-vert				
+			" data-field="IlceId" data-cellId="grid_cell_field" data-pageid="1" data-record-id="4">
+
+	 
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field1"  data-pageid="1" data-record-id="4" data-field="IlceId" data-default-width>
+<span id="edit4_IlceId" >KEMER</span>
+</span>
+	</td>
+				 
+	<TD  data-record-id="4" class="
+		 r-ori-vert				
+			" data-field="MahalleId" data-cellId="grid_cell_field1" data-pageid="1" data-record-id="4">
+
+	 
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field2"  data-pageid="1" data-record-id="4" data-field="MahalleId" data-default-width>
+<span id="edit4_MahalleId" >Arslanbucak</span>
+</span>
+	</td>
+				 
+	<TD  data-record-id="4" class="
+		 r-ori-vert				r-field-text
+			" data-field="Sokak" data-cellId="grid_cell_field2" data-pageid="1" data-record-id="4">
+
+	 
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field3"  data-pageid="1" data-record-id="4" data-field="Sokak" data-default-width>
+<span id="edit4_Sokak" >ÇAMYUVA, KİRİŞ, KUZDERE, MERKEZ, YENİ, GÖYNÜK, BELDİBİ</span>
+</span>
+	</td>
+				 
+	<TD  data-record-id="4" class="
+		 r-ori-vert				r-field-text
+			" data-field="EtkilenenMahalleler" data-cellId="grid_cell_field3" data-pageid="1" data-record-id="4">
+
+	 
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field4"  data-pageid="1" data-record-id="4" data-field="EtkilenenMahalleler" data-default-width>
+<span id="edit4_EtkilenenMahalleler" >İMALATI GERÇEKLEŞTIRILEN İÇME SUYU HATLARININ BAĞLANTISI NEDENİYLE; 03.11.2026 0 <a href="javascript:void(0);" data-gridlink data-query="/fulltext?pagetype=list&table=dbo_kesintiListe&field=EtkilenenMahalleler&&key1=48191&page=list" data-field="EtkilenenMahalleler">Devamı&nbsp;...</a></span>
+</span>
+	</td>
+				 
+	<TD  data-record-id="4" class="
+		 r-ori-vert				
+			" data-field="KesintiNedeniId" data-cellId="grid_cell_field4" data-pageid="1" data-record-id="4">
+
+	 
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field5"  data-pageid="1" data-record-id="4" data-field="KesintiNedeniId" data-default-width>
+<span id="edit4_KesintiNedeniId" >İMALAT<br /></span>
+</span>
+	</td>
+				 
+	<TD  data-record-id="4" class="
+		 r-ori-vert				r-field-text
+			" data-field="BaslangicTarihSaat" data-cellId="grid_cell_field5" data-pageid="1" data-record-id="4">
+
+	 
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field6"  data-pageid="1" data-record-id="4" data-field="BaslangicTarihSaat" data-default-width>
+<span id="edit4_BaslangicTarihSaat" >3.11.2026 08:00:00</span>
+</span>
+	</td>
+				 
+	<TD  data-record-id="4" class="
+		 r-ori-vert				r-field-text
+			" data-field="TahminiBitisTarihSaat" data-cellId="grid_cell_field6" data-pageid="1" data-record-id="4">
+
+	 
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field12"  data-pageid="1" data-record-id="4" data-field="TahminiBitisTarihSaat" data-default-width>
+<span id="edit4_TahminiBitisTarihSaat" ></span>
+</span>
+	</td>
+				 
+	<TD  data-record-id="4" class="
+		 r-ori-vert				r-field-text
+			" data-field="BitisTarihiSaat" data-cellId="grid_cell_field7" data-pageid="1" data-record-id="4">
+
+	 
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field7"  data-pageid="1" data-record-id="4" data-field="BitisTarihiSaat" data-default-width>
+<span id="edit4_BitisTarihiSaat" >3.12.2026 17:00:00</span>
+</span>
+	</td>
+							</tr>
+					</tbody>
+													<tfoot>
+			</tfoot>
+				</table>
+							</div>
+						
+							
+					</div>
+				</div>
+			</div>
+		</div>
+<script>
+			window.controlsMap = {"dbo.kesintiListe":{"list":{"1":{"oldLayout":false,"layoutVersion":4,"layoutName":"","video":[],"toolTips":[],"searchPanelActivated":true,"controls":[],"search":{"searchBlocks":[],"allSearchFields":["TahminiBitisTarihSaat","Sokak","MahalleId","KesintiNedeniId","IlceId","EtkilenenMahalleler","BitisTarihiSaat","BaslangicTarihSaat"],"allSearchFieldsLabels":{"TahminiBitisTarihSaat":"Tahmini Bitis Tarih Saat","Sokak":"Sokak","MahalleId":"Mahalle","KesintiNedeniId":"Kesinti Nedeni","IlceId":"Ilce","EtkilenenMahalleler":"Etkilenen Mahalleler","BitisTarihiSaat":"Bitis Tarihi Saat","BaslangicTarihSaat":"Baslangic Tarih Saat"},"panelSearchFields":[],"googleLikeFields":["IlceId","MahalleId","Sokak"],"inflexSearchPanel":false,"requiredSearchFields":[],"isSearchRequired":false,"searchTableName":"dbo.kesintiListe","shortSearchTableName":"dbo_kesintiListe","submitPageType":"list","searchPanelRunByUserApi":false,"usedSrch":false},"filters":{"controls":[{"fieldName":"IlceId","gfieldName":"IlceId","filterFormat":"Values list","multiSelect":0,"filtered":false,"separator":"~equals~","collapsed":false}]},"gridRows":[{"id":4,"rowInd":0,"contextRowId":4,"isEditOwnRow":true,"gridLayout":0,"keyFields":["ID"],"keys":[48191]}],"gMaps":{"isUseMainMaps":false,"isUseFieldsMaps":false,"isUseGoogleMap":false,"APIcode":"","mainMapIds":[],"fieldMapsIds":[],"mapsData":[],"tName":"dbo.kesintiListe"}}}}};
+			window.viewControlsMap = {"dbo.kesintiListe":{"list":{"1":[]}}};
+			window.settings = {"tableSettings":{"dbo.kesintiListe":{"proxy":{"proxy":""},"fieldSettings":{"ID":{"list":{"strName":"ID","editFormat":"Text field","mask":false}},"IlceId":{"list":{"strName":"IlceId","editFormat":"Lookup wizard","mask":false,"lookupTable":"dbo.Ilceler","linkField":"ID","dispField":"AD"},"search":{"strName":"IlceId","editFormat":"Lookup wizard","mask":false,"lookupTable":"dbo.Ilceler","linkField":"ID","dispField":"AD"}},"MahalleId":{"list":{"strName":"MahalleId","editFormat":"Lookup wizard","mask":false,"lookupTable":"dbo.Muhtarlar","linkField":"ID","dispField":"Mahalle"},"search":{"strName":"MahalleId","editFormat":"Lookup wizard","mask":false,"lookupTable":"dbo.Muhtarlar","linkField":"ID","dispField":"Mahalle"}},"Sokak":{"list":{"strName":"Sokak","editFormat":"Text field","mask":false},"search":{"strName":"Sokak","editFormat":"Text field","mask":false}},"EtkilenenMahalleler":{"list":{"strName":"EtkilenenMahalleler","editFormat":"Text area","mask":false},"search":{"strName":"EtkilenenMahalleler","editFormat":"Text area","mask":false}},"KesintiNedeniId":{"list":{"strName":"KesintiNedeniId","editFormat":"Lookup wizard","mask":false,"lookupTable":"dbo.KesintiNedeni","linkField":"ID","dispField":"KesintiNedeni"},"search":{"strName":"KesintiNedeniId","editFormat":"Lookup wizard","mask":false,"lookupTable":"dbo.KesintiNedeni","linkField":"ID","dispField":"KesintiNedeni"}},"BaslangicTarihSaat":{"list":{"strName":"BaslangicTarihSaat","showTime":true,"editFormat":"Date","dateEditType":11,"viewFormat":"Datetime","mask":false},"search":{"strName":"BaslangicTarihSaat","showTime":true,"editFormat":"Date","dateEditType":11,"viewFormat":"Datetime","mask":false}},"BitisTarihiSaat":{"list":{"strName":"BitisTarihiSaat","showTime":true,"editFormat":"Date","dateEditType":11,"viewFormat":"Datetime","mask":false},"search":{"strName":"BitisTarihiSaat","showTime":true,"editFormat":"Date","dateEditType":11,"viewFormat":"Datetime","mask":false}},"Aciklama":{"list":{"strName":"Aciklama","editFormat":"Text area","mask":false}},"KesintiSonlandi":{"list":{"strName":"KesintiSonlandi","editFormat":"Checkbox","viewFormat":"Checkbox","mask":false}},"Kullanici":{"list":{"strName":"Kullanici","editFormat":"Text field","mask":false}},"WebYayin":{"list":{"strName":"WebYayin","editFormat":"Checkbox","viewFormat":"Checkbox","mask":false}},"TahminiBitisTarihSaat":{"list":{"strName":"TahminiBitisTarihSaat","editFormat":"Text field","viewFormat":"Datetime","mask":false},"search":{"strName":"TahminiBitisTarihSaat","editFormat":"Text field","viewFormat":"Datetime","mask":false}}},"strCaption":"Kesinti Liste","pageMode":0,"defaultPages":{"export":"export","import":"import","list":"list","print":"print","search":"search"},"simpleSearchActive":false,"totalFields":[],"scrollGridBody":false,"permissions":{"add":true,"delete":true,"edit":true,"search":true,"export":true,"import":true},"listFields":["IlceId","MahalleId","Sokak","EtkilenenMahalleler","KesintiNedeniId","BaslangicTarihSaat","TahminiBitisTarihSaat","BitisTarihiSaat"],"maxPages":1.0,"showRows":true,"entityType":1,"hasEvents":true,"isUseHighlite":true,"isUseToolTips":true,"ajaxSuggest":false,"isUseCK":false}},"global":{"shortTNames":{"dbo.kesintiListe":"dbo_kesintiListe","dbo.Ilceler":"","dbo.Muhtarlar":"","dbo.KesintiNedeni":""},"webRootPath":"/","ext":"aspx","charSet":"utf-8","curretLang":"Turkish","debugMode":false,"googleMapsApiCode":"","useCookieBanner":false,"cookieBanner":"Bu web sitesi kullanıcı deneyimini geliştirmek için çerezler kullanır","isMobile":false,"mobileDeteced":false,"s508":false,"mapProvider":0,"staticMapsOnly":false,"locale":{"dateFormat":"1","langName":"tr","ctryName":"TR","startWeekDay":"0","dateDelimiter":".","is24hoursFormat":"1","leadingZero":"1","timeDelimiter":":","timePmLetter":"ÖS","timeAmLetter":"ÖÖ"},"showDetailedError":true,"customErrorMessage":"","idStartFrom":5}};
+			Runner.applyPagesData( {"1":{"proxy":[],"pageName":"list","helperFormItems":{"formItems":{"supertop":["logo","menu","simple_search","list_options"],"left":["search_panel","filter_panel"],"top":["breadcrumb"],"above-grid":["details_found","page_size","print_panel"],"below-grid":["pagination"],"grid":["simple_grid_field","simple_grid_field1","simple_grid_field8","simple_grid_field2","simple_grid_field9","simple_grid_field3","simple_grid_field10","simple_grid_field4","simple_grid_field11","simple_grid_field5","simple_grid_field13","simple_grid_field6","simple_grid_field14","simple_grid_field12","simple_grid_field15","simple_grid_field7","grid_checkbox_head","grid_checkbox"]},"formXtTags":{"top":["breadcrumb"],"above-grid":["records_indicator","recsPerPage","print_friendly"],"below-grid":["pagination"]},"itemForms":{"logo":"supertop","menu":"supertop","simple_search":"supertop","list_options":"supertop","search_panel":"left","filter_panel":"left","breadcrumb":"top","details_found":"above-grid","page_size":"above-grid","print_panel":"above-grid","pagination":"below-grid","simple_grid_field":"grid","simple_grid_field1":"grid","simple_grid_field8":"grid","simple_grid_field2":"grid","simple_grid_field9":"grid","simple_grid_field3":"grid","simple_grid_field10":"grid","simple_grid_field4":"grid","simple_grid_field11":"grid","simple_grid_field5":"grid","simple_grid_field13":"grid","simple_grid_field6":"grid","simple_grid_field14":"grid","simple_grid_field12":"grid","simple_grid_field15":"grid","simple_grid_field7":"grid","grid_checkbox_head":"grid","grid_checkbox":"grid"},"itemLocations":{"simple_grid_field":{"location":"grid","cellId":"headcell_field"},"simple_grid_field1":{"location":"grid","cellId":"cell_field"},"simple_grid_field8":{"location":"grid","cellId":"headcell_field1"},"simple_grid_field2":{"location":"grid","cellId":"cell_field1"},"simple_grid_field9":{"location":"grid","cellId":"headcell_field2"},"simple_grid_field3":{"location":"grid","cellId":"cell_field2"},"simple_grid_field10":{"location":"grid","cellId":"headcell_field3"},"simple_grid_field4":{"location":"grid","cellId":"cell_field3"},"simple_grid_field11":{"location":"grid","cellId":"headcell_field4"},"simple_grid_field5":{"location":"grid","cellId":"cell_field4"},"simple_grid_field13":{"location":"grid","cellId":"headcell_field5"},"simple_grid_field6":{"location":"grid","cellId":"cell_field5"},"simple_grid_field14":{"location":"grid","cellId":"headcell_field6"},"simple_grid_field12":{"location":"grid","cellId":"cell_field6"},"simple_grid_field15":{"location":"grid","cellId":"headcell_field7"},"simple_grid_field7":{"location":"grid","cellId":"cell_field7"},"grid_checkbox_head":{"location":"grid","cellId":"headcell_checkbox"},"grid_checkbox":{"location":"grid","cellId":"cell_checkbox"}},"itemVisiblity":{"menu":3,"simple_search":3,"list_options":3,"search_panel":5,"filter_panel":3,"print_panel":5}},"helperItemsByType":{"page_size":["page_size"],"details_found":["details_found"],"breadcrumb":["breadcrumb"],"logo":["logo"],"menu":["menu"],"simple_search":["simple_search"],"pagination":["pagination"],"search_panel":["search_panel"],"list_options":["list_options"],"show_search_panel":["show_search_panel"],"hide_search_panel":["hide_search_panel"],"search_panel_field":["search_panel_field1","search_panel_field2","search_panel_field3","search_panel_field5","search_panel_field6","search_panel_field9","search_panel_field10","search_panel_field11"],"print_panel":["print_panel"],"print_scope":["print_scope"],"print_button":["print_button"],"print_records":["print_records"],"export":["export"],"-":["-","-1","-2","-3"],"export_selected":["export_selected"],"advsearch_link":["advsearch_link"],"filter_panel":["filter_panel"],"filter_panel_field":["filter_panel_field"],"grid_field":["simple_grid_field1","simple_grid_field2","simple_grid_field3","simple_grid_field4","simple_grid_field5","simple_grid_field6","simple_grid_field12","simple_grid_field7"],"grid_field_label":["simple_grid_field","simple_grid_field8","simple_grid_field9","simple_grid_field10","simple_grid_field11","simple_grid_field13","simple_grid_field14","simple_grid_field15"],"grid_checkbox":["grid_checkbox"],"grid_checkbox_head":["grid_checkbox_head"]},"helperFieldItems":{"IlceId":["simple_grid_field1","simple_grid_field"],"MahalleId":["simple_grid_field2","simple_grid_field8"],"Sokak":["simple_grid_field3","simple_grid_field9"],"EtkilenenMahalleler":["simple_grid_field4","simple_grid_field10"],"KesintiNedeniId":["simple_grid_field5","simple_grid_field11"],"BaslangicTarihSaat":["simple_grid_field6","simple_grid_field13"],"TahminiBitisTarihSaat":["simple_grid_field12","simple_grid_field14"],"BitisTarihiSaat":["simple_grid_field7","simple_grid_field15"]},"buttons":[],"renderedMediaType":0,"gridTabs":"","cellMaps":{"grid":{"cells":{"headcell_checkbox":{"cols":[0],"rows":[0],"tags":["checkbox_column"],"items":["grid_checkbox_head"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[0]},"headcell_field":{"cols":[1],"rows":[0],"tags":["IlceId_fieldheadercolumn"],"items":["simple_grid_field"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[1]},"headcell_field1":{"cols":[2],"rows":[0],"tags":["MahalleId_fieldheadercolumn"],"items":["simple_grid_field8"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[2]},"headcell_field2":{"cols":[3],"rows":[0],"tags":["Sokak_fieldheadercolumn"],"items":["simple_grid_field9"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[3]},"headcell_field3":{"cols":[4],"rows":[0],"tags":["EtkilenenMahalleler_fieldheadercolumn"],"items":["simple_grid_field10"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[4]},"headcell_field4":{"cols":[5],"rows":[0],"tags":["KesintiNedeniId_fieldheadercolumn"],"items":["simple_grid_field11"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[5]},"headcell_field5":{"cols":[6],"rows":[0],"tags":["BaslangicTarihSaat_fieldheadercolumn"],"items":["simple_grid_field13"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[6]},"headcell_field6":{"cols":[7],"rows":[0],"tags":["TahminiBitisTarihSaat_fieldheadercolumn"],"items":["simple_grid_field14"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[7]},"headcell_field7":{"cols":[8],"rows":[0],"tags":["BitisTarihiSaat_fieldheadercolumn"],"items":["simple_grid_field15"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[8]},"cell_checkbox":{"cols":[0],"rows":[1],"tags":["checkbox_column"],"items":["grid_checkbox"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[0]},"cell_field":{"cols":[1],"rows":[1],"tags":["IlceId_fieldcolumn"],"items":["simple_grid_field1"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[1]},"cell_field1":{"cols":[2],"rows":[1],"tags":["MahalleId_fieldcolumn"],"items":["simple_grid_field2"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[2]},"cell_field2":{"cols":[3],"rows":[1],"tags":["Sokak_fieldcolumn"],"items":["simple_grid_field3"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[3]},"cell_field3":{"cols":[4],"rows":[1],"tags":["EtkilenenMahalleler_fieldcolumn"],"items":["simple_grid_field4"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[4]},"cell_field4":{"cols":[5],"rows":[1],"tags":["KesintiNedeniId_fieldcolumn"],"items":["simple_grid_field5"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[5]},"cell_field5":{"cols":[6],"rows":[1],"tags":["BaslangicTarihSaat_fieldcolumn"],"items":["simple_grid_field6"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[6]},"cell_field6":{"cols":[7],"rows":[1],"tags":["TahminiBitisTarihSaat_fieldcolumn"],"items":["simple_grid_field12"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[7]},"cell_field7":{"cols":[8],"rows":[1],"tags":["BitisTarihiSaat_fieldcolumn"],"items":["simple_grid_field7"],"fixedAtServer":false,"fixedAtClient":false,"visibleCols":[8]},"footcell_checkbox":{"cols":[0],"rows":[],"tags":[],"items":[],"fixedAtServer":false,"fixedAtClient":false,"removable":true,"hidable":true,"visibleCols":[0]},"footcell_field":{"cols":[1],"rows":[],"tags":[],"items":[],"fixedAtServer":false,"fixedAtClient":false,"removable":true,"hidable":true,"visibleCols":[1]},"footcell_field1":{"cols":[2],"rows":[],"tags":[],"items":[],"fixedAtServer":false,"fixedAtClient":false,"removable":true,"hidable":true,"visibleCols":[2]},"footcell_field2":{"cols":[3],"rows":[],"tags":[],"items":[],"fixedAtServer":false,"fixedAtClient":false,"removable":true,"hidable":true,"visibleCols":[3]},"footcell_field3":{"cols":[4],"rows":[],"tags":[],"items":[],"fixedAtServer":false,"fixedAtClient":false,"removable":true,"hidable":true,"visibleCols":[4]},"footcell_field4":{"cols":[5],"rows":[],"tags":[],"items":[],"fixedAtServer":false,"fixedAtClient":false,"removable":true,"hidable":true,"visibleCols":[5]},"footcell_field5":{"cols":[6],"rows":[],"tags":[],"items":[],"fixedAtServer":false,"fixedAtClient":false,"removable":true,"hidable":true,"visibleCols":[6]},"footcell_field6":{"cols":[7],"rows":[],"tags":[],"items":[],"fixedAtServer":false,"fixedAtClient":false,"removable":true,"hidable":true,"visibleCols":[7]},"footcell_field7":{"cols":[8],"rows":[],"tags":[],"items":[],"fixedAtServer":false,"fixedAtClient":false,"removable":true,"hidable":true,"visibleCols":[8]}},"width":9,"height":3}}}} );
+			</script>
+<script language="JavaScript" src="/include/runnerJS/RunnerAll.js"></script>
+<script> Runner.util.ScriptLoader.load();</script>	</body>
+</html>

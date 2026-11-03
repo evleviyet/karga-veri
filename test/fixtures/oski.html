@@ -1,0 +1,748 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="assets/images/oski.ico" />
+    <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow|Raleway|Titillium+Web|Roboto" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1">
+    <link href="/assets/css/uikit.min.css?v=2.0.158" rel="stylesheet" />
+    <link href="/assets/library/fa/fontawesome-all.min.css?v=2.0.158" rel="stylesheet" />
+    <link href="/assets/css/site.css?v=2.0.158" rel="stylesheet" />
+    <link href="/assets/library/fontawesome/css/font-awesome.min.css?v=2.0.158" rel="stylesheet" />
+    <script  src="https://code.jquery.com/jquery-3.6.3.min.js"  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/assets/js/uikit.min.js?v=2.0.158"></script>
+    <script src="/assets/js/uikit-icons.min.js?v=2.0.158"></script>
+    
+    <style>
+        .uk-cover {
+            max-width:100%;
+        }
+    </style>
+   <script>
+       
+       function checkMobileOperatingSystem() {
+           var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+           if (/windows phone/i.test(userAgent)) {
+               return "Windows Phone";
+           }
+
+           if (/android/i.test(userAgent)) {
+               location.href = "/mobil.html";
+           }
+
+           if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+               location.href = "/mobil.html";
+           }
+
+           return "unknown";
+       }
+       //checkMobileOperatingSystem();
+       
+       /*
+       if (window.location.hostname == "oski.gov.tr") {
+           window.location.href = "https://www.oski.gov.tr/";
+       }
+       if (window.location.href)
+           if (window.location.protocol != "https:")
+               window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+               
+        */
+       $(document).ready(function () {
+           $('[data-menu-target]').hover(function (e) {
+               e.preventDefault();
+               var id = $(this).attr('data-menu-target');
+               $('[data-menu-content]').addClass('uk-hidden');
+               $('[data-menu-content="' + id + '"]').removeClass('uk-hidden');
+           });
+           $('[data-menu-content]').mouseleave(function (e) {
+               $('[data-menu-content]').addClass('uk-hidden');
+           })
+           setInterval(function () {
+               $('.credit').addClass('uk-hidden');
+           }, 1000);
+       })
+
+       
+   </script>
+<link href="/assets/library/popper/popper.css" rel="stylesheet" />
+<script src="/assets/library/popper/popper.js"></script>
+<script> window.start.init({ Palette: "palette6", Mode: "banner banner-bottom", ButtonText: "TAMAM", LinkText: "Devam...", Location:"https://www.oski.gov.tr/icerik/detay.aspx?Id=2420",Message:"Bu internet sitesinde sizlere daha iyi hizmet sunulabilmesi için çerezler kullanılmaktadır. Çerezler hakkında detaylı bilgi almak için Gizlilik Politikası’nı inceleyiniz. ",Time:"5",})</script>
+
+    <script>
+        var CheckSubForm = undefined;
+        function CheckForm() {
+            if (CheckSubForm != undefined) {
+                var status = CheckSubForm();
+                if (!status)
+                    return false;
+            }
+
+            var Status = true;
+            var msg = "Lütfen aşağıdaki alanları giriniz<ul class='uk-list uk-margin-top'>";
+            $("input, select").each(
+
+                function (i, e) {
+                    if ($(this).attr("data-form-required") != undefined) {
+                        if ($(this).val() == "" || $(this).val() == null || $(this).val() == "undefined") {
+                            Status = false;
+                            msg += "<li>" + ($(this).attr("placeHolder")) + "</li>";
+                            $(this).addClass("uk-form-danger");
+                        } else {
+                            $(this).removeClass("uk-form-danger");
+                        }
+                    }
+
+                });
+            if (!Status) {
+                UIkit.notification({
+                    message: msg + "</ul>",
+                    status: 'danger',
+                    timeout: 5000,
+                    pos: 'top-center'
+                });
+            }
+            return Status;
+        }
+    </script>
+
+    
+<link href="/assets/css/content.css?v=2.0.158" rel="stylesheet" />
+    <style>
+        body {
+            background-image:none;
+        }
+        .sub-menu-container {
+            background-color:#003c73;
+            border-radius: 0px 0px 20px 20px;
+        }
+        #footer-logo-container {
+            background-image: url(/assets/images/headerBackground.png);
+            background-position-y: bottom;
+            background-repeat: no-repeat;
+            background-position-x: right;
+        }
+        .sub-menu-container h3 {
+            color: #cce0f2;
+        }
+    </style>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5595d53a21b7d301" async="async"></script>
+
+     <script>
+         function SetSplahPhoto(src, altsrc) {
+             $('#splash-photo').attr('src', src);
+             $('#splash-photo').removeClass('uk-hidden');
+             $('#splash-photo').on('error', function (e) {
+                 if (altsrc) {
+                     if (altsrc == '/assets/images/covers/cover.jpg') {
+                         $('#cover-container').css('height', '150px');
+                     } else {
+                         $('#cover-container').css('height', '400px');
+                     }
+                     $('#splash-photo').attr('src', altsrc);
+                 } else {
+                     $('#splash-photo').attr('src', '/assets/images/covers/cover.jpg');
+                     $('#cover-container').css('height', '150px');
+                     //$('#cover-container').css('background-color', '#ccc');
+                 }
+             });
+         }
+         function HideSplash() {
+             //$('#cover-container').addClass('uk-hidden');
+             SetSplahPhoto('none.png','/assets/images/covers/cover.jpg');
+         }
+         
+
+        $(document).ready(function() {
+            
+
+            $('.content-description ul').addClass('uk-list uk-list-divider uk-table-striped');
+            $('.content-description table').addClass('uk-table uk-table-divider uk-table-striped');
+            $('.content-description ol').addClass('uk-list uk-list-divider uk-table-striped');
+            
+            $("#toTop").css("display", "none");
+            $(window).scroll(function () {
+
+                if ($(window).scrollTop() > 120) {
+                    $("#toTop").fadeIn("slow");
+                }
+                else {
+                    $("#toTop").fadeOut("slow");
+
+                }
+            });
+
+            $("#toTop").click(function () {
+                event.preventDefault();
+
+                $("html, body").animate({
+                    scrollTop: 0
+                }, "slow");
+            });
+        });
+
+        function SetTitle(text) {
+            $('#page-title').html(text);
+        }
+    </script>
+</head>
+<body>
+    <a id="toTop" href="#" title="Sayfa başına dön"><i class="uk-icon-chevron-circle-up" style="font-size:36px; color:#7eba4b;"></i></a>
+    <div data-uk-sticky class="uk-hidden@m">
+        <div style="padding:10px; background-color:#ededed;">
+            <div class="uk-flex">
+                <div class="uk-width-1-3">
+                    <a href="/index.aspx" title="Ana Sayfaya Dön"><img src="/assets/images/mainlogo.png" style="height:100px" /></a>
+                </div>
+                <div class="uk-width-expand">
+                    <div class="uk-margin-top uk-text-center">
+                        <a href="/index.aspx"><img src="/assets/images/logotextm.png" /></a>
+                    </div>
+                </div>
+                <div class="uk-width-1-3">
+                    <div class="uk-align-right">
+                        <div class="uk-margin-top">
+                            <a uk-toggle="target: #site-menu-offcanvas" class="uk-button uk-button-primary" style="padding-top:8px; height:58px;"><span uk-icon="icon: menu"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color:#fff" class="uk-visible@m">
+         <div class="uk-container" id="footer-logo-container">
+             <div class="uk-flex" style="margin-top:10px; margin-bottom:-25px">
+                <div>
+                    <a href="/index.aspx"><img src="/assets/images/mainlogo.png"  style="height: 100px;"/></a>
+                </div>
+                <div class="uk-margin-top">
+                    <a href="/index.aspx"><img src="/assets/images/logotext2.png" style="margin-left: 20px;" /></a>
+                </div>
+                <div class="uk-width-expand">
+                    <div class="uk-align-right">
+                        <div class="uk-flex">
+                            <div>
+                                <a href="https://turkiyeyuzyili.com/" target="_blank"><img src="/assets/images/100Yil.png" /></a>
+                            </div>
+                            <div style="margin-left:20px">
+                                <a href="/sube"><img src="/assets/images/eoskit.png" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background:#003c73" class="uk-visible@m">
+        <div style="padding-top:25px">
+            <div class="uk-container">
+                <div class="uk-flex">
+                    <div>
+                        <a href="/index.aspx"><img src="/assets/images/ico_home.png" /></a>
+                    </div>
+                    <div class="uk-margin-left">
+                        
+<div>
+    <div class="menu">
+        <div style="height:58px">
+            <div class="uk-container">
+            <div class="uk-float-left">
+                
+                <div class="uk-visible@m">
+                    <div class="uk-flex">
+                        <div class="menu-item">
+                            <a href="#" data-menu-target="kurumsal" ><img src="/assets/images/ico_kurumsal.png" /> KURUMSAL</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" data-menu-target="abone"><img src="/assets/images/ico_abone.png" /> ABONE İŞLEMLERİ</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" data-menu-target="odeme-noktalari"><img src="/assets/images/ico_odeme.png" /> ÖDEME NOKTALARI</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" data-menu-target="iletisim"><img src="/assets/images/ico_iletisim.png" /> İLETİŞİM</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+          
+            <div class="sub-menu uk-hidden" data-menu-content="abone">
+                    
+                    <div class="sub-menu-container">
+                        <div class="uk-grid">
+                            <div>
+                                <img src="/assets/images/m_abone.png" />
+                            </div>
+                            <div>
+                                <img src="/assets/images/s2sep.png" class="seperator" />
+                            </div>
+                            <div>
+                                <ul class="uk-list">
+                                    <li><h3><span uk-icon="icon: triangle-right"></span> ABONELİK</h3></li>
+                                    <li><a href="/icerik/detay.aspx?Id=54">İlk Abonelik İşlemi</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=53">Abone Devir İşlemi</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=52">Abone Çıkış Kapama</a></li>
+                                    <li><a href="/sube/liste.aspx?Id=55">Abonelerimizin Dikkatine</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=71">Sayaç Değişim Prosedürü</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=72"> Suyun Kapatılması İşlemleri</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="uk-list">
+                                    <li><h3><span uk-icon="icon: triangle-right"></span> TAHSİLAT</h3></li>
+                                    <li><a href="/icerik/detay.aspx?Id=89">Mükerrer Ödemeler</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=90">Taksitlendirme</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=91">Taksitlendirme Esasları</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=92">Nasıl Ödeme Yapılır?</a></li>
+                                </ul>
+                                
+                            </div>
+                            <div>
+                                <ul class="uk-list">
+                                    <li><h3><span uk-icon="icon: triangle-right"></span> TAHAKKUK</h3></li>
+                                    <li><a href="/icerik/detay.aspx?Id=85">Fatura İtiraz</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=87">Sayaç Okuma Tahakkuk</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=88">Sayaç Hakkında Bilgi</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="uk-list">
+                                    <li><h3><span uk-icon="icon: triangle-right"></span> KAÇAK SU</h3></li>
+                                    <li><a href="/icerik/detay.aspx?Id=58">Kaçak Su Prosedürü</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=57">Kaçak Su İhbarı</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+            <div class="sub-menu uk-hidden" data-menu-content="kurumsal">
+                    
+                    <div class="sub-menu-container">
+                        <div class="uk-grid">
+                            <div>
+                                <img src="/assets/images/mainlogo.png" />
+                            </div>
+                            <div>
+                                <img src="/assets/images/s2sep.png" class="seperator" />
+                            </div>
+                            <div>
+                                <ul class="uk-list">
+                                    <li><h3><span uk-icon="icon: triangle-right"></span> KURUMSAL</h3></li>
+                                    <li><a href="/icerik/detay.aspx?Id=24">Künye</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=171">Yönetim Şeması</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=1313">OSKİ Hakkında</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=2387">Büyükşehir Belediye Başkanı</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=2389">OSKİ Genel Müdürü</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=2461">Kurumsal Logo</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="uk-list">
+                                    <li><div class="uk-margin-top"></div></li>
+                                    <li><a href="/icerik/detay.aspx?Id=123">Yönetmelikler</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=2380">Yönergeler</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=1294">Formlar</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=110">Hizmet Standarları Tabloları</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=116">Kanunlar</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="uk-list">
+                                    <li><div class="uk-margin-top"></div></li>
+                                    <li><a href="/icerik/detay.aspx?Id=153">Stratejik Plan</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=154">Performans Programı</a></li>
+									<li><a href="/icerik/detay.aspx?Id=2509">Bütçe</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=2515">Faaliyet Raporu</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=2517">Kurumsal Mali Durum ve Beklentiler Raporu</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=2497">İç Kontrol Eylem Planı</a></li>
+                                    
+                                    
+                                </ul>
+                            </div>
+
+                            <div>
+                                <ul class="uk-list">
+                                    <li><div class="uk-margin-top"></div></li>
+                                    <li><a href="/ihaleler/">İhaleler</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=2356">Laboratuvarlar</a></li>
+                                    <li><a href="/icerik/detay.aspx?Id=2422">KVKK</a></li>
+                                    <li><a href="/haberler">Haberler</a></li>
+                                    <li><a href="/duyurular">Duyurular</a></li>
+                                </ul>
+                            </div>
+                             
+                        </div>
+
+                    </div>
+            </div>
+
+            <div id="site-menu-offcanvas" uk-offcanvas="mode: reveal;overlay: true;flip: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                     <ul class="uk-nav uk-nav-default">
+                        <li><a href="/sube/">İNTERNET ŞUBESİ</a></li>
+						<li class="uk-nav-divider"></li>
+                        <li class="uk-nav-header"><i class="fa fa-caret-right"></i> KURUMSAL</li>
+                        <li><a href="/haberler">Haberler</a></li>
+                        <li><a href="/duyurular">Duyurular</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=24">Künye</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=171">Yönetim Şeması</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=1313">OSKİ Hakkında</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=2387">Büyükşehir Belediye Başkanı</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=2389">OSKİ Genel Müdürü</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=2461">Kurumsal Logo</a></li>
+
+                        <li><div class="uk-margin-top"></div></li>
+                        <li><a href="/icerik/detay.aspx?Id=123">Yönetmelikler</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=2380">Yönergeler</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=1294">Formlar</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=110">Hizmet Standarları Tabloları</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=116">Kanunlar</a></li>
+                        
+                        <li><div class="uk-margin-top"></div></li>
+                        <li><a href="/icerik/detay.aspx?Id=153">Stratejik Plan</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=154">Performans Programı</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=2509">Bütçe</a></li>
+						<li><a href="/icerik/detay.aspx?Id=2515">Faaliyet Raporu</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=2517">Kurumsal Mali Durum ve Beklentiler Raporu</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=2497">İç Kontrol Eylem Planı</a></li>
+                        <li><div class="uk-margin-top"></div></li>
+                        <li><a href="/ihaleler/">İhaleler</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=2356">Laboratuvarlar</a></li> 
+                        <li><a href="/icerik/detay.aspx?Id=2510">Su Fiyatları</a></li>
+                        
+                        <li class="uk-nav-header"><i class="fa fa-caret-right"></i> ABONE İŞLEMLERİ</li>
+                        <li><a href="/icerik/detay.aspx?Id=54">İlk Abonelik İşlemi</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=53">Abone Devir İşlemi</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=52">Abone Çıkış Kapama</a></li>
+                        <li><a href="/sube/liste.aspx?Id=55">Abonelerimizin Dikkatine</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=71">Sayaç Değişim Prosedürü</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=72"> Suyun Kapatılması İşlemleri</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=89">Mükerrer Ödemeler</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=90">Taksitlendirme</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=91">Taksitlendirme Esasları</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=92">Nasıl Ödeme Yapılır?</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=85">Fatura İtiraz</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=87">Sayaç Okuma Tahakkuk</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=88">Sayaç Hakkında Bilgi</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=58">Kaçak Su Prosedürü</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=57">Kaçak Su İhbarı</a></li>
+                        <li class="uk-nav-header"><i class="fa fa-caret-right"></i> ÖDEME NOKTALARI</li>
+                        <li><a href="/icerik/detay.aspx?Id=49" class="uk-reset">Şube Müdürlükleri</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=286" class="uk-reset">PTT Şubeleri</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=56" class="uk-reset">Bankalar</a></li>
+						<li class="uk-nav-header"><i class="fa fa-caret-right"></i> İLETİŞİM</li>
+						<li><a href="/icerik/detay.aspx?Id=73" class="uk-reset">İletişim Bilgileri</a></li>
+						<li><a href="/sube/sikayet/iletisim.aspx" class="uk-reset">İletişim Formu</a></li>
+						<li class="uk-nav-header"><i class="fa fa-caret-right"></i> SOSYAL MEDYA</li>
+                        <li><a href="https://www.facebook.com/orduoski" title="Facebook" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/Orduoski52" title="Twitter" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCymk_ePY5ALitdM9ArlXkig" title="Youtube Kanalı" target="_blank">Youtube</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="/icerik/detay.aspx?Id=2382" target="_blank">Arabuluculuk Hizmetleri</a></li>
+                        <li><a href="https://ebys.oski.gov.tr/sorgu/sorgula.aspx" target="_blank">Evrak Sorgulama</a></li>
+                        <li class="uk-nav-header"><i class="fa fa-caret-right"></i> Gizlilik</li>
+                        <li><a href="/icerik/detay.aspx?Id=2422">Kişisel Verilerin Korunması Hakkında Aydınlatma Metni</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=2421">Kişisel Veri Sahibi Başvuru Formu</a></li>
+                         <li><a href="/icerik/detay.aspx?Id=2420">Çerez Politikası</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="sub-menu uk-hidden" data-menu-content="odeme-noktalari">
+                    
+                    <div class="sub-menu-container">
+                        <div class="uk-grid uk-margin-top">
+                            <div class="uk-width-1-5 uk-text-center">
+                                <img src="/assets/images/mainlogo.png" style="height:100px" />
+                                <div class="uk-margin-top">
+                                    <a href="/icerik/detay.aspx?Id=49" class="uk-reset">Şube Müdürlükleri</a>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-5  uk-text-center">
+                                <img src="/assets/images/ptt.png" />
+                                <div class="uk-margin-top">
+                                    <a href="/icerik/detay.aspx?Id=286" class="uk-reset">PTT Şubeleri</a>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-5  uk-text-center">
+                                <img src="/assets/images/banka.png" />
+                                <div class="uk-margin-top">
+                                    <a href="/icerik/detay.aspx?Id=56" class="uk-reset">Bankalar</a>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-5 uk-text-center">
+                                <img src="/assets/images/harita.png"  />
+                                <div class="uk-margin-top">
+                                    <a href="/odemenoktalari/" class="uk-reset">Haritada Göster</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="sub-menu uk-hidden" data-menu-content="iletisim">
+                    
+                    <div class="sub-menu-container">
+                        <div class="uk-grid uk-margin-top">
+                            <div class="uk-width-1-3">
+                                <div class="uk-grid">
+                                    <div>
+                                        <img src="/assets/images/marker.png" />
+                                    </div>
+                                    <div class="uk-margin-top">
+                                    Dolunay Mahallesi Dolunay Sokak<br />
+                                    No:12  Fatsa/ORDU
+                                    <div class="uk-margin-top"><a href="/icerik/detay.aspx?Id=73" class="uk-button uk-button-primary uk-button-small"><i class="fas fa-map-marker"></i> İLETİŞİM BİLGİLERİ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-3">
+                                <div class="uk-grid">
+                                    <div>
+                                        <img src="/assets/images/telefon.png" />
+                                    </div>
+                                    <div class="uk-margin-top">
+                                    <a href="tel:+904522330696">T: 0(452) 233 0696 (pbx)</a><br />
+                                    <a href="tel:+904527773100">F: 0(452) 777 3100</a>
+                                    <div class="uk-margin-top"><a href="#" class="uk-button uk-button-primary uk-button-small"><i class="fas fa-phone-square"></i> ALO 185</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-3">
+                                <div class="uk-grid">
+                                    <div>
+                                        <img src="/assets/images/addres.png" />
+                                    </div>
+                                    <div class="uk-margin-top">
+                                    <a href="mailto:oski@hs01.kep.tr">KEP: oski@hs01.kep.tr</a><br />
+                                    <div class="uk-margin-top"><a href="/sube/sikayet/iletisim.aspx" target="_blank" class="uk-button uk-button-primary uk-button-small"><i class="fas fa-comment"></i> İLETİŞİM FORMU</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+    <div class="uk-container" style="min-height:670px; background-color:#fff; " id="content-wrapper">
+        <form method="post" action="./" id="form1" onsubmit="return CheckForm()" autocomplete="off">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="oL0HYpsw5LhdqXqDRYGt0rCQBG68BegHdz/atIxyL8MXUMeCsHwps4aRF538iOiqvLPHnvgZ8PrFSKZ4IFidfIDkZZHvXTyAtWvOc4dA1L9OUdIqGxHHIBN4szNwNVPJek0uE0a3Aqgv7ijGaFdEY+/Qk0ORoFP01L7dXW708kMi9KjafwbogulNFNyFmr/H/J09XI58qHucD8T0EnQjTzFKeZM0dTCk6rjZIgVjPIdd/kc/C2KPDoFQysQm93ExS/5LJurwcsGL3v0ulk/MtHFOrfbwu4wzbfoFOcnJBwn6KYci/ZcFzRk2jvjE07hzt7bCUPxZW+xK2tZ5HkRy2P3RJdm+SNehB/OUKxI1a3+jgs5aGjOJCQyH1PgFAMrtXzn7JBp/iQBUgweoXS0fvu6NcGQeLEjgyOj8L8eCgXu0bH2pGj8IJzFFwKiEnD7HOeZ5Pc5Hgd1lrhEKfLRlOVIDzcluQcv9SArM594s+7qC9ZQaIkHV88n96NDmzrHtwvtinbBpMj6+H2X/HDLmJeVncBEpHQQzPQbjG1NggohYUW+KU2HIUoM24JkVeBW4BEaaPU47g26HcjDeYjSt1QPae1L0LO5lmNTMxTtQpzgPayRioxOAmSlXQ0FpbnRWG7NUtVWAz+MAfgJ5wSWkYXRKzgeyVvd61wVmsSB/b1xI4rD4OScJl1B2mxid/chucl9M6YNa5XhmhO5BH78BJV7XX2o/6tH3TqBIi605vsMMu6YSUkajYBRMpTprn+sYIpSnTw==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2126CD56" />
+</div>
+            <div>
+                <div class="uk-cover-container uk-height-large" id="cover-container" style="height:650px;">
+                    <img src="/assets/images/cover.jpg" class="uk-hidden" id="splash-photo" uk-cover/>
+                    <div class="uk-position-bottom uk-overlay uk-overlay-default uk-text-center" style="color:#333; text-align:left;padding: 20px 30px;">
+                        <div class="uk-grid">
+                            <div class="uk-width-5-6@m uk-width-6-6@s" style="text-align:left">
+                                <h2 id="page-title" class="uk-heading-bullet"></h2>
+                            </div>
+                            <div class="uk-width-1-6@m uk-visible@m">
+                                <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                                  <a class="addthis_button_preferred_1"></a>
+                                  <a class="addthis_button_preferred_2"></a>
+                                  <a class="addthis_button_preferred_3"></a>
+                                  <a class="addthis_button_compact"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+    <div class="content-container">
+        <div>
+            <ul class="uk-subnav uk-subnav-pill">
+                
+            </ul>
+           <div class="uk-alert-danger" uk-alert>
+               <p>
+                Not: Su kesintisi / Arıza onarımı tamamlandıktan sonra suyun abonelere ulaşması ev veya iş yerlerinin konumuna ve arızanın boyutuna bağlı olarak bir kaç saat kadar farklılık gösterebilir.
+               </p>
+           </div>
+            <div class="uk-margin-top">
+                
+                <table class="uk-table uk-table-divider uk-table-striped">
+                    <thead>
+                        <tr>
+                            <th>Başlangıç</th>
+                            <th>Bitiş</th>
+                            <th>Nedeni</th>
+                            <th>Etkilenen Yerler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                                <tr>
+                                    <td>03 Kasım 15:40</td>
+                                    <td>03 Kasım 17:00</td>
+                                    <td>İÇMESUYU ARITMA TESİSİ ARIZASI</td>
+                                    <td>ÜNYE / BAYRAMCA MAH. / ,ÜNYE / İPEKYOLU MAH. / </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>03 Kasım 10:50</td>
+                                    <td>03 Kasım 23:59</td>
+                                    <td>ANA İSALE HATTI ARIZASI</td>
+                                    <td>GÖLKÖY / DÜZYAYLA MAH. / </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>03 Kasım 09:00</td>
+                                    <td>03 Kasım 15:30</td>
+                                    <td>ANA ŞEBEKE ARIZASI</td>
+                                    <td>ÜNYE / GÖLEVİ MAH. / ,ÜNYE / ATATÜRK MAH. / ,ÜNYE / KOCUKLU MAH. / ,ÜNYE / SAHİLKÖY MAH. / </td>
+                                </tr>
+                            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            SetSplahPhoto('none.png', '/assets/images/covers/cover.jpg');
+            SetTitle('Su Kesintileri');
+        });
+    </script>
+
+        </form>
+        
+    </div>
+    
+
+<div class="uk-visible@m">
+    <div class="footer">
+        <div class="uk-container">
+            <div class="uk-flex">
+                <div class="uk-width-1-5@m">
+                    <h3>KURUMSAL</h3>
+                    <ul class="uk-list uk-list-space">
+                        <li><a href="/icerik/detay.aspx?Id=171">Organizasyon Şeması</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=24">Künye</a></li>
+					    <li><a href="/icerik/detay.aspx?Id=2356">Laboratuvarlar</a></li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-5@m">
+                    <h3>ABONE</h3>
+                    <ul class="uk-list uk-list-space">
+                        <li><a href="/icerik/detay.aspx?Id=54">İlk Abonelik İşlemi</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=53">Abonelik Devir İşlemi</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=52">Abone Kapatma</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=158">Sıkça Sorulan Sorular</a></li>
+                    </ul>
+                </div>
+                
+                <div class="uk-width-1-5@m">
+                    <h3>TAHSİLAT</h3>
+                    <ul class="uk-list">
+                        <li><a href="/icerik/detay.aspx?Id=228">Şube Müdürlükleri</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=286">PTT Şubeleri</a></li>
+                        <li><a href="/icerik/detay.aspx?Id=56">Anlaşmalı Bankalar</a></li>
+                        <li><a href="/harita.aspx">Haritada Göster</a></li>
+                    </ul>
+                </div>
+
+                 <div class="uk-width-1-5@m">
+                    <div>
+                        <a href="https://ebys.oski.gov.tr/sorgu/sorgula.aspx" style="color:#ffd800" target="_blank"><i class="fa fa-caret-right"></i> Evrak Sorgulama</a>
+                    </div>
+                    <div class="uk-margin-top">
+                        <h3>K.V.K.K</h3>
+                        <ul class="uk-list uk-list-space">
+                             <li><a href="/icerik/detay.aspx?Id=2422">Kişisel Verilerin Korunması Hakkında Aydınlatma Metni</a></li>
+                            <li><a href="/icerik/detay.aspx?Id=2421">Kişisel Veri Sahibi Başvuru Formu</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-width-expand@m">
+                    <div class="uk-text-center">
+                        <img src="/assets/images/biziTakipEdin.png" />
+                        <div class="uk-text-center uk-margin-top">
+                            <a href="https://www.facebook.com/orduoski" title="Facebook" target="_blank"><img src="/assets/images/facebook.png" /></a>
+                            <a href="https://twitter.com/orduoski52" title="Twitter" target="_blank"><img src="/assets/images/twitter.png" /></a>
+                            <a href="https://www.youtube.com/channel/UCymk_ePY5ALitdM9ArlXkig" title="Youtube Kanalı" target="_blank"><img src="/assets/images/youtube.png" /></a>
+                        </div>
+                    </div>
+                    <div class="uk-text-center uk-margin-top" style="margin-top: 25px !important; margin-bottom: 25px ">
+                        <a href="#" title="ALO 185"><img src="/assets/images/alo185.png" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color:#fff">
+        <div class="uk-container" style="padding-top:5px; padding-bottom:5px;">
+            <div class="uk-clearfix">
+                <div class="uk-float-left">
+                    <div class="uk-grid-small" uk-grid style="margin-top:15px;">
+                        <div><a href="http://www.ordu.bel.tr/" title="Ordu Büyükşehir Belediyesi" target="_blank"><img src="/assets/images/ordubb.png" /></a></div>
+                    </div>
+                </div>
+                <div class="uk-float-right">
+                    <div class="uk-text-right" id="external-icons">
+                        <a href="http://www.resmigazete.gov.tr/default.aspx" title="Resmi Gazete" target="_blank"><img src="/assets/images/resmiGazete.png" /></a>
+                        <a href="https://www.cimer.gov.tr/" title="CİMER" target="_blank"><img src="/assets/images/cimer.png" /></a>
+                        <a href="http://www.tbb.gov.tr/" title="Türkiye Belediyeler Birliği" target="_blank"><img src="/assets/images/tbb.png" /></a>
+                        <a href="https://www.icisleri.gov.tr/" title="İller Bankası" target="_blank"><img src="/assets/images/illerbankasi.png" /></a>
+                    </div>
+                    <div style="color:#666; font-size:14px;">
+                        Tüm Hakları Saklıdır 2026© Ordu Su ve Kanalizasyon İdaresi Genel Müdürlüğü.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-G-0K0YGBYRGN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0K0YGBYRGN');
+</script>
+
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5595d53a21b7d301" async="async"></script>
+    <script>
+        $(document).ready(function () {
+            console.log("start");
+            
+        });
+        $('.cover-image').on('error', function (e) {
+            console.log("error");
+            $(this).attr('src', '/assets/images/coverImage.png')
+        });
+        $(".thumb-photo").on("error", function () {
+            $(this).attr('src', '/assets/images/coverImage.png');
+        })
+    </script>
+    
+
+</body>
+</html>
