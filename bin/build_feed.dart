@@ -9,6 +9,7 @@
 import 'dart:io';
 
 import 'package:karga_feed/build.dart';
+import 'package:karga_feed/fires.dart';
 import 'package:karga_feed/models.dart';
 import 'package:karga_feed/net.dart';
 import 'package:karga_feed/quakes.dart';
@@ -37,9 +38,11 @@ Future<void> main(List<String> args) async {
 
   // Depremler kaynaklarla birlikte okunur (aynı turda, ayrı dosya).
   final quakes = buildQuakes(net, DateTime.now().toUtc());
+  final fires = buildFires(Net(null, const Duration(seconds: 90)), reg, out, ctx.cacheDir);
   final result = await runSources(ctx, sources);
   writeSite(result, reg, out);
   writeQuakes(out, await quakes);
+  await fires;
   copyStatic(Directory('static'), out);
   net.close();
   if (legacy != null && syncLegacy(out, legacy, result.generatedUtc)) {
