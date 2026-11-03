@@ -16,7 +16,7 @@ kurumların "kara haber"leri (kesinti, uyarı, tatil, afet...) iletilir.
 | Deprem | AFAD (yedeği EMSC) → data/v2/quakes.json; anlık bildirim quakepush/ Worker'ı | Türkiye |
 | Yangın | kanari.io uydu tespitleri (güçlü, doğrulanmış) → data/v2/fires.json | Türkiye |
 | Elektrik | BEDAŞ, AEDAŞ, ÇEDAŞ (CK Enerji), Çoruh, Fırat, KCETAŞ, UEDAŞ | 26 il + İstanbul Avrupa yakası |
-| Elektrik (EPİAŞ) | Başkent EDAŞ, AYEDAŞ, Toroslar, GDZ, TREDAŞ, SEDAŞ, OEDAŞ, Akedaş, ADM, YEDAŞ, Dicle, VEDAŞ, Aras — EPİAŞ Şeffaflık Platformu planlı kesintileri (bugün + 3 gün; EPIAS_USER/EPIAS_PASS secret'ları) | kalan iller |
+| Elektrik (EPİAŞ) | Başkent EDAŞ, AYEDAŞ, Toroslar, GDZ, SEDAŞ, Akedaş — EPİAŞ Şeffaflık Platformu planlı kesintileri (bugün + 3 gün; EPIAS_USER/EPIAS_PASS secret'ları) | 26 il + İstanbul Anadolu yakası |
 | Elektrik (cihazdan) | MEDAŞ, KCETAŞ — uygulama Türkiye'den kendisi okur | 7 il |
 | Su | ASKİ (Ankara), İZSU, SASKİ (Samsun), TİSKİ, MUSKİ | 5 büyükşehir |
 | Su (cihazdan) | DESKİ, ASAT, OSKİ, ESKİ — uygulama Türkiye'den kendisi okur | Denizli, Antalya, Ordu, Eskişehir |

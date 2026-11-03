@@ -51,11 +51,11 @@ Future<Map<String, dynamic>> epiasPost(http.Client c, String tgt, String path, M
   return j as Map<String, dynamic>;
 }
 
-/// EPİAŞ'tan okunan dağıtım şirketleri (providers.json kimlikleri).
-const epiasKurumlar = [
-  'baskent', 'ayedas', 'toroslar', 'gdz', 'tredas', 'sedas', 'oedas',
-  'akedas', 'adm', 'yedas', 'dicle', 'vedas', 'aras',
-];
+/// EPİAŞ'tan okunan dağıtım şirketleri (providers.json kimlikleri). Kasım
+/// 2026'da TREDAŞ, OEDAŞ, ADM, YEDAŞ, Dicle, VEDAŞ ve Aras EPİAŞ'a planlı
+/// kesinti girmiyor; onlar eklenirse "Karga izliyor" yanlış görünür
+/// (bkz. data/v2/epias_companies.json).
+const epiasKurumlar = ['baskent', 'ayedas', 'toroslar', 'gdz', 'sedas', 'akedas'];
 
 /// EPİAŞ şirket adı ("BASKENT_EDAS", "CK_CAMLIBEL_EDAS", "AKEDAS") -> kurum.
 /// Sıra önemli: "ayedas" içinde "yedas", "yesilirmakedas" içinde "akedas" geçer.
