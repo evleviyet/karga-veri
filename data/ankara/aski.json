@@ -19,6 +19,15 @@
       "district": "SEREFLIKOÇHISAR",
       "start": "2026-11-03T08:30:00.000",
       "end": "2026-11-03T13:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Cumhuriyet Mahallesi 5609 Cadde ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-03T06:50:00.000",
+      "end": "2026-11-03T13:00:00.000"
     }
   ]
 }
