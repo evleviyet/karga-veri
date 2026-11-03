@@ -54,12 +54,18 @@ test('küçük deprem yalnız yakın illere, M5+ tüm Türkiye', () => {
   assert.equal(c[1], "'il-6' in topics");
 });
 
-test('ilk çalışma bildirim göndermez, listeyi görüldü sayar', async () => {
+test('ilk çalışma bildirim göndermez, listeyi görüldü sayar, anahtarı kuru dener', async () => {
   const calls = stub([afad('1', 4.2, 39.78, 30.52, '2026-11-03T11:55:00')]);
   const SEEN = kv(null);
   const r = await run({ SEEN, FCM_SA: SA }, now);
   assert.equal(r.first, true);
-  assert.equal(calls.length, 1);
+  assert.equal(r.check, 200);
+  const tok = calls.find((c) => c.url === 'https://oauth2.googleapis.com/token');
+  const jwt = decodeURIComponent(tok.init.body.split('assertion=')[1]);
+  assert.equal(jwt.split('.').length, 3);
+  const fcm = calls.filter((c) => c.url.includes('fcm.googleapis.com'));
+  assert.equal(fcm.length, 1);
+  assert.equal(JSON.parse(fcm[0].init.body).validate_only, true);
   assert.ok('1' in SEEN.read());
 });
 
@@ -72,7 +78,7 @@ test('yeni deprem yoksa KV\'ye yazılmaz, FCM\'ye gidilmez', async () => {
   assert.equal(calls.length, 1);
 });
 
-test('yeni deprem: imzalı jetonla ilgili konulara veri mesajı', async () => {
+test('yeni deprem: ilgili konulara veri mesajı (jeton yeniden kullanılır)', async () => {
   const calls = stub([
     afad('2', 3.4, 39.78, 30.52, '2026-11-03T11:58:00'),
     afad('3', 4.0, 38.0, 30.0, '2026-11-03T09:00:00'), // 3 saat önce: anlık değil
@@ -80,9 +86,6 @@ test('yeni deprem: imzalı jetonla ilgili konulara veri mesajı', async () => {
   const SEEN = kv({ 1: now.getTime() });
   const r = await run({ SEEN, FCM_SA: SA }, now);
   assert.ok(r.sent >= 1);
-  const tok = calls.find((c) => c.url === 'https://oauth2.googleapis.com/token');
-  const jwt = decodeURIComponent(tok.init.body.split('assertion=')[1]);
-  assert.equal(jwt.split('.').length, 3);
   const sends = calls.filter((c) => c.url.includes('fcm.googleapis.com/v1/projects/test-proje/messages:send'));
   assert.equal(sends.length, r.sent);
   const m = JSON.parse(sends[0].init.body).message;

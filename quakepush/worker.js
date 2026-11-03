@@ -103,10 +103,13 @@ export async function run(env, now) {
 
   const raw = await env.SEEN.get('seen');
   const seen = raw ? JSON.parse(raw) : null;
-  // İlk çalışma: o anki listeyi görüldü say, eski depremleri bildirme.
+  // İlk çalışma: o anki listeyi görüldü say, eski depremleri bildirme. Anahtar
+  // FCM'nin kuru çalıştırmasıyla (validate_only: kimseye gitmez) denenir.
   if (!seen) {
     await env.SEEN.put('seen', JSON.stringify(Object.fromEntries(quakes.map((q) => [q.id, now.getTime()]))));
-    return { sent: 0, first: true };
+    const check = await send(env, { topic: 'tr', data: { type: 'check' } }, true);
+    console.log(`İlk çalışma; FCM denemesi HTTP ${check}`);
+    return { sent: 0, first: true, check };
   }
   const fresh = quakes.filter(
     (q) => !(q.id in seen) && now.getTime() - Date.parse(q.time) <= FRESH_MIN * 60e3,
@@ -118,39 +121,43 @@ export async function run(env, now) {
   for (const [id, t] of Object.entries(seen)) if (now.getTime() - t > KEEP_H * 3600e3) delete seen[id];
   await env.SEEN.put('seen', JSON.stringify(seen));
 
-  const token = await accessToken(env);
-  const sa = JSON.parse(env.FCM_SA);
   let sent = 0;
   for (const q of fresh.sort((a, b) => b.mag - a.mag)) {
     const topics = topicsFor(q);
     const targets = topics.length === 1 ? [{ topic: topics[0] }] : conditions(topics).map((c) => ({ condition: c }));
     for (const t of targets) {
       if (sent >= LIMITS.maxSends) break;
-      const r = await fetch(`https://fcm.googleapis.com/v1/projects/${sa.project_id}/messages:send`, {
-        method: 'POST',
-        headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: {
-            ...t,
-            data: {
-              type: 'quake',
-              id: q.id,
-              mag: String(q.mag),
-              lat: String(q.lat),
-              lon: String(q.lon),
-              depth: q.depth,
-              place: q.place,
-              time: q.time,
-            },
-            android: { priority: 'HIGH', ttl: `${FRESH_MIN * 60}s` },
-          },
-        }),
+      await send(env, {
+        ...t,
+        data: {
+          type: 'quake',
+          id: q.id,
+          mag: String(q.mag),
+          lat: String(q.lat),
+          lon: String(q.lon),
+          depth: q.depth,
+          place: q.place,
+          time: q.time,
+        },
+        android: { priority: 'HIGH', ttl: `${FRESH_MIN * 60}s` },
       });
-      if (r.status !== 200) console.error(`FCM HTTP ${r.status} ${await r.text()}`);
       sent++;
     }
   }
   return { sent };
+}
+
+/** FCM HTTP v1 gönderimi; [validateOnly] kimseye göndermeden yalnızca dener. */
+async function send(env, message, validateOnly = false) {
+  const token = await accessToken(env);
+  const sa = JSON.parse(env.FCM_SA);
+  const r = await fetch(`https://fcm.googleapis.com/v1/projects/${sa.project_id}/messages:send`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message, ...(validateOnly ? { validate_only: true } : {}) }),
+  });
+  if (r.status !== 200) console.error(`FCM HTTP ${r.status} ${await r.text()}`);
+  return r.status;
 }
 
 // --- Google OAuth (servis hesabı JWT, RS256) ---
