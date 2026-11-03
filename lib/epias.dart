@@ -119,7 +119,7 @@ List<Notice> epiasNotices(List<Map<String, dynamic>> rows, String kurum, Registr
     final s0 = local(start), e0 = local(end);
     if (s0 == null || !inWindow(s0, e0, now)) continue;
     final mahalleler = mah.values.toList()..sort();
-    final reason = '${r['reason'] ?? ''}'.trim();
+    final reason = '${r['reason'] ?? ''}'.trim().replaceAll(RegExp(r'^[-–\s]+$'), '');
     out.add(Notice(
       kind: NoticeKind.power,
       source: reg.kurumlar[kurum]?.kisa ?? kurum,
@@ -179,3 +179,21 @@ Future<List<Map<String, dynamic>>> epiasPlanned(Object turn, DateTime trNow,
 bool get epiasConfigured =>
     (Platform.environment['EPIAS_USER'] ?? '').isNotEmpty &&
     (Platform.environment['EPIAS_PASS'] ?? '').isNotEmpty;
+
+/// EPİAŞ'taki şirket adları ve kayıt sayıları (eşlenemeyen ad görülsün diye):
+/// data/v2/epias_companies.json. Yalnızca ad ve sayı yazılır.
+Future<void> writeEpiasCompanies(Directory out, Object turn, DateTime trNow) async {
+  try {
+    final rows = await epiasPlanned(turn, trNow);
+    final names = <String, int>{};
+    for (final r in rows) {
+      final n = '${r['distributionCompanyName']}';
+      names[n] = (names[n] ?? 0) + 1;
+    }
+    File('${out.path}/data/v2/epias_companies.json')
+      ..parent.createSync(recursive: true)
+      ..writeAsStringSync(const JsonEncoder.withIndent('  ').convert({
+        for (final e in names.entries) e.key: {'kayit': e.value, 'kurum': epiasKurum(e.key)},
+      }));
+  } catch (_) {}
+}
