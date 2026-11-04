@@ -28,15 +28,6 @@
       "district": "YENİMAHALLE",
       "start": "2026-11-04T10:05:00.000",
       "end": "2026-11-04T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Etkilenen Yerler: Atatürk Mahallesi Ağda Sokak ve Bağlı Sokaklar",
-      "district": "ÇUBUK",
-      "start": "2026-11-04T10:15:00.000",
-      "end": "2026-11-04T14:00:00.000"
     }
   ]
 }
