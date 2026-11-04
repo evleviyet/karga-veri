@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-04T04:34:51.435396Z",
+  "generatedAt": "2026-11-04T05:49:56.013708Z",
   "sources": {
     "ankara-aski": {
       "status": "ok",
@@ -11,8 +11,8 @@
       "count": 0
     },
     "ankara-valilik": {
-      "status": "ok",
-      "count": 0
+      "status": "degraded",
+      "error": "ClientException with SocketException: HTTP connection timed out after 0:00:15.000000, host: www.ankara.gov.tr, port: 443, uri=https://www.ankara.gov.tr/duyurular"
     }
   }
 }
