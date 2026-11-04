@@ -1,15 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Tuzla, Hacıenbiya, Yeşilova, Emek, Cumhuriyet Mahalleleri",
-      "district": "SEREFLIKOÇHISAR",
-      "start": "2026-11-04T09:15:00.000",
-      "end": "2026-11-04T13:15:00.000"
-    }
-  ]
+  "notices": []
 }
