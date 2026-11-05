@@ -1,15 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Tek Yapı Kooperatifine",
-      "district": "GÖLBAŞI",
-      "start": "2026-11-05T17:15:00.000",
-      "end": "2026-11-05T22:00:00.000"
-    }
-  ]
+  "notices": []
 }
