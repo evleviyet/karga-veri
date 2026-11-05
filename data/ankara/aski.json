@@ -1,5 +1,15 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": []
+  "notices": [
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Etkilenen yerler: Küçük Kayaş mahallesi, Yeni Bayındır mahallesi, Yeşilbayır mahallelerin üst kotları",
+      "district": "MAMAK",
+      "start": "2026-11-05T08:15:00.000",
+      "end": "2026-11-05T20:00:00.000"
+    }
+  ]
 }
