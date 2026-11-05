@@ -15,19 +15,19 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yıldıztepe mahallesinin bir kısmı",
-      "district": "ALTINDAĞ",
-      "start": "2026-11-05T13:25:00.000",
+      "detail": "İvedik köy Mahallesi Anadolu Bulvarı ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-05T13:40:00.000",
       "end": "2026-11-05T17:00:00.000"
     },
     {
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İvedik köy Mahallesi Anadolu Bulvarı ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-05T13:40:00.000",
-      "end": "2026-11-05T17:00:00.000"
+      "detail": "Önder mahallesinin bir kısmı",
+      "district": "ALTINDAĞ",
+      "start": "2026-11-05T15:05:00.000",
+      "end": "2026-11-05T18:00:00.000"
     }
   ]
 }
