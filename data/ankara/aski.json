@@ -15,19 +15,19 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İvedik köy Mahallesi Anadolu Bulvarı ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-05T13:40:00.000",
-      "end": "2026-11-05T17:00:00.000"
+      "detail": "ÇAMLICA Mahallesi Bir Kısmı, MEHMET AKİF Mahallesi Bir Kısmı",
+      "district": "POLATLI",
+      "start": "2026-11-05T15:10:00.000",
+      "end": "2026-11-05T20:00:00.000"
     },
     {
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "ÇAMLICA Mahallesi Bir Kısmı, MEHMET AKİF Mahallesi Bir Kısmı",
-      "district": "POLATLI",
-      "start": "2026-11-05T15:10:00.000",
-      "end": "2026-11-05T20:00:00.000"
+      "detail": "Mutlu Mahallesi",
+      "district": "ÇUBUK",
+      "start": "2026-11-05T17:00:00.000",
+      "end": "2026-11-05T22:00:00.000"
     }
   ]
 }
