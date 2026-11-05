@@ -37,6 +37,15 @@
       "district": "ÇANKAYA",
       "start": "2026-11-05T12:50:00.000",
       "end": "2026-11-05T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yıldıztepe mahallesinin bir kısmı",
+      "district": "ALTINDAĞ",
+      "start": "2026-11-05T13:25:00.000",
+      "end": "2026-11-05T17:00:00.000"
     }
   ]
 }
