@@ -28,6 +28,15 @@
       "district": "ÇUBUK",
       "start": "2026-11-05T11:50:00.000",
       "end": "2026-11-05T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İşçi blokları mahallesi ,Kızılırmak mahallesi üst kotları",
+      "district": "ÇANKAYA",
+      "start": "2026-11-05T12:50:00.000",
+      "end": "2026-11-05T17:00:00.000"
     }
   ]
 }
