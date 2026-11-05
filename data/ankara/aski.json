@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Mutlu Mahallesi",
-      "district": "ÇUBUK",
-      "start": "2026-11-05T17:00:00.000",
-      "end": "2026-11-05T22:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Tek Yapı Kooperatifine",
       "district": "GÖLBAŞI",
       "start": "2026-11-05T17:15:00.000",
