@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yeni Mahalle, Seyran Mahallesi, Kayabaşı Mahallesi, Çaldağ Mahallesi, Medrese Mahallesi",
-      "district": "HAYMANA",
-      "start": "2026-11-05T11:20:00.000",
-      "end": "2026-11-05T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Etkilenen Yerler: Yavuz Selim Mahallesi Şehit Musa Kaplan Sokak ve Bağlı Sokaklar",
       "district": "ÇUBUK",
       "start": "2026-11-05T11:50:00.000",
@@ -45,6 +36,15 @@
       "detail": "Yıldıztepe mahallesinin bir kısmı",
       "district": "ALTINDAĞ",
       "start": "2026-11-05T13:25:00.000",
+      "end": "2026-11-05T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İvedik köy Mahallesi Anadolu Bulvarı ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-05T13:40:00.000",
       "end": "2026-11-05T17:00:00.000"
     }
   ]
