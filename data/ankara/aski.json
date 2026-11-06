@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Battalgazi mahallesinin bir kısmı (Perşembe Pazar çevresi)",
-      "district": "ALTINDAĞ",
-      "start": "2026-11-06T09:20:00.000",
-      "end": "2026-11-06T14:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Günsazak caddesi erfelek sokak ve gökova sokak",
       "district": "KEÇİÖREN",
       "start": "2026-11-06T09:40:00.000",
