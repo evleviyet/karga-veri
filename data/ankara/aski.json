@@ -6,33 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Keklik pınarı alt kotları, Oran mahallesi Ahmet Rüstem Caddesi, Dikmen Caddesi, Karapınar mahallesi Üst kotları, Malazgirt mahallesi Alt kotları",
-      "district": "ÇANKAYA",
-      "start": "2026-11-06T16:20:00.000",
-      "end": "2026-11-06T23:55:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Su Kesintisinden Etkilenen Yerler: Kavaklı, Karapürçek, Beşikkaya, Başpınar, Battalgazi, Feridun Çelik, Solfasol ve Doğantepe, mahalleleri",
-      "district": "ALTINDAĞ",
-      "start": "2026-11-06T18:25:00.000",
-      "end": "2026-11-06T23:55:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "yuva mahallesi köyü ve içi",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-06T20:40:00.000",
-      "end": "2026-11-06T23:55:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yunus Mahallesi nin bir kısmı Merkez Mahallesi nin bir kısmı",
       "district": "PURSAKLAR",
       "start": "2026-11-06T22:30:00.000",
