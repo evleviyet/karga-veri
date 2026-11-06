@@ -19,6 +19,24 @@
       "district": "POLATLI",
       "start": "2026-11-06T09:30:00.000",
       "end": "2026-11-06T13:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Kurtuluş Mahallesi Öner Sokak Ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-11-06T09:45:00.000",
+      "end": "2026-11-06T12:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Günsazak cd erfelek sk ve gökova sk",
+      "district": "KEÇİÖREN",
+      "start": "2026-11-06T09:40:00.000",
+      "end": "2026-11-06T13:00:00.000"
     }
   ]
 }
