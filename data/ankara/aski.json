@@ -1,5 +1,15 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": []
+  "notices": [
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Battalgazi mahallesinin bir kısmı (Perşembe Pazar çevresi)",
+      "district": "ALTINDAĞ",
+      "start": "2026-11-06T09:20:00.000",
+      "end": "2026-11-06T14:00:00.000"
+    }
+  ]
 }
