@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Öveçler mahallesi , Sokullu Mehmet Paşa mahallesi , Harbiye mahallesi",
-      "district": "ÇANKAYA",
-      "start": "2026-11-06T11:30:00.000",
-      "end": "2026-11-06T14:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Demetgül mahallesi ve civarı, 25 Mart mahallesi üst kodları",
       "district": "YENİMAHALLE",
       "start": "2026-11-06T12:40:00.000",
