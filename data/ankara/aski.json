@@ -37,6 +37,15 @@
       "district": "POLATLI",
       "start": "2026-11-06T20:30:00.000",
       "end": "2026-11-06T22:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "yuva mahallesi köyü ve içi",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-06T20:40:00.000",
+      "end": "2026-11-06T23:55:00.000"
     }
   ]
 }
