@@ -1,15 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "1147 sokak gül 86 sitesi ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-07T16:00:00.000",
-      "end": "2026-11-07T20:00:00.000"
-    }
-  ]
+  "notices": []
 }
