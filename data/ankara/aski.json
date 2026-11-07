@@ -64,6 +64,24 @@
       "district": "KALECİK",
       "start": "2026-11-07T12:40:00.000",
       "end": "2026-11-07T14:30:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Etkilenen Yerler: Hacıkara Mahallesi Çağdaş Sokak Ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-11-07T13:50:00.000",
+      "end": "2026-11-07T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Çakırlar Mahallesi 2290 Cadde ve Mesutevler sitesi",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-07T13:40:00.000",
+      "end": "2026-11-07T18:00:00.000"
     }
   ]
 }
