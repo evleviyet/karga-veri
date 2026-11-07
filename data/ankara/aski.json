@@ -1,5 +1,15 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": []
+  "notices": [
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Kesinti den etkilenen yerler: Fahri Korutürk, Şahintepe mahallesi, Şirintepe mahallesi, Tuzluçayır mahallesi,Ege mahallesi, Mutlu mahallesi,Kutlu mahallesi, Genaral Zeki Doğan mahallesi, Cengizhan mahallesi, Akşemsettin mahallesi, Boğaziçi mahallesi, Zirvekent mahallesi, Misket mahalleleri ile Çankaya ilçe Yakupabdal mahallesi",
+      "district": "MAMAK",
+      "start": "2026-11-07T08:10:00.000",
+      "end": "2026-11-07T12:00:00.000"
+    }
+  ]
 }
