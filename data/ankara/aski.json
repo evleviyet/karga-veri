@@ -15,6 +15,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Has Karapürcek sitesi 1670/1 sokak ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-07T10:05:00.000",
+      "end": "2026-11-07T14:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Kesinti den etkilenen yerler: Fahri Korutürk, Şahintepe mahallesi, Şirintepe mahallesi, Tuzluçayır mahallesi,Ege mahallesi, Mutlu mahallesi,Kutlu mahallesi, Genaral Zeki Doğan mahallesi, Cengizhan mahallesi, Akşemsettin mahallesi, Boğaziçi mahallesi, Zirvekent mahallesi, Misket mahalleleri ile Çankaya ilçe Yakupabdal mahallesi",
       "district": "MAMAK",
       "start": "2026-11-07T08:10:00.000",
