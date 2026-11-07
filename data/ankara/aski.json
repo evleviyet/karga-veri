@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Emine Tevfika Ayaşlı Mahallesi Sanayi Sitesi, Ova Bağları",
-      "district": "AYAŞ",
-      "start": "2026-11-07T11:10:00.000",
-      "end": "2026-11-07T14:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yuvaköy Mahallesi ve mermerciler sitesi",
       "district": "YENİMAHALLE",
       "start": "2026-11-07T11:20:00.000",
