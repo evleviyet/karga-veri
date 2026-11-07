@@ -1,15 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yuva Mahallesi köyü",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-07T00:20:00.000",
-      "end": "2026-11-07T04:00:00.000"
-    }
-  ]
+  "notices": []
 }
