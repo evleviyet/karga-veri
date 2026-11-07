@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Susuz Mahallesi 2.İnönü Caddesi ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-07T15:10:00.000",
-      "end": "2026-11-07T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "cumhuriyet mahallesi üst kotları",
       "district": "YENİMAHALLE",
       "start": "2026-11-07T15:20:00.000",
