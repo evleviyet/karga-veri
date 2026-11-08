@@ -1,15 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "FATİH MAHALLESİ BİR BÖLÜMÜ ,KURTULUŞ Mahallelerin bir kısmı ZAFER MAHALLESİ BİR KISMI",
-      "district": "POLATLI",
-      "start": "2026-11-08T11:30:00.000",
-      "end": "2026-11-08T18:00:00.000"
-    }
-  ]
+  "notices": []
 }
