@@ -42,10 +42,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Tatlıca Mh Konutkur sk ve civarı.",
-      "district": "ELMADAĞ",
-      "start": "2026-11-08T12:40:00.000",
-      "end": "2026-11-08T15:30:00.000"
+      "detail": "Ayaş Çanıllı Çiğdemci, Uluyol Mahalleleri.",
+      "district": "AYAŞ",
+      "start": "2026-11-08T14:15:00.000",
+      "end": "2026-11-08T17:00:00.000"
     }
   ]
 }
