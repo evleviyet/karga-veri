@@ -1,5 +1,15 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": []
+  "notices": [
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Gersan Sanayi Sitesi",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-08T08:30:00.000",
+      "end": "2026-11-08T12:00:00.000"
+    }
+  ]
 }
