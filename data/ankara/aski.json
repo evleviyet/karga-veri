@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Etkilenen Yerler: Süvari Mahallesi ve Kazım Karabekir Mahallesi bir kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-11-10T11:30:00.000",
-      "end": "2026-11-10T14:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Günsazak caddedi Şemdinli sokak Erfelek caddesi Gökova sokak ve civarı",
       "district": "KEÇİÖREN",
       "start": "2026-11-10T08:50:00.000",
@@ -55,15 +46,6 @@
       "district": "BEYPAZARI",
       "start": "2026-11-10T13:30:00.000",
       "end": "2026-11-10T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Etkilenen Yerler: Tunahan Mahallesi , Devlet Mahallesi bir kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-11-09T09:40:00.000",
-      "end": "2026-11-10T14:00:00.000"
     }
   ]
 }
