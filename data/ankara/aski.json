@@ -6,6 +6,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Şahap Gürler Mahallesi",
+      "district": "MAMAK",
+      "start": "2026-11-10T17:55:00.000",
+      "end": "2026-11-10T21:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Etkilenen Yerler: Fen işleri caddesi ve Güvercinlik civarı",
       "district": "ETİMESGUT",
       "start": "2026-11-10T09:45:00.000",
