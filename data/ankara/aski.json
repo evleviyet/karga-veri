@@ -1,15 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Şahap Gürler Mahallesi",
-      "district": "MAMAK",
-      "start": "2026-11-10T17:55:00.000",
-      "end": "2026-11-10T21:00:00.000"
-    }
-  ]
+  "notices": []
 }
