@@ -6,10 +6,28 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Yakacık 3581 cadde , 3585 cadde ve 3583 cadde civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-10T11:20:00.000",
+      "end": "2026-11-10T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Yıldırım Mahallesi bir kısmı- Atatürk Mahallesi bir kısmı - Beyazıt Mahallesi bir kısmı",
       "district": "AKYURT",
       "start": "2026-11-10T11:00:00.000",
       "end": "2026-11-10T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Hacı Muratlı Mahallesi ve Çatal armut sitesi",
+      "district": "GÖLBAŞI",
+      "start": "2026-11-10T11:05:00.000",
+      "end": "2026-11-10T14:00:00.000"
     },
     {
       "kind": "water",
