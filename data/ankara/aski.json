@@ -9,7 +9,7 @@
       "detail": "Küçük Kayaş mahallesi, Yeni Bayındır mahallesi, Yeşilbayır mahallelerin üst kotları ŞahapGürler mahallesi üst kotları Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir.",
       "district": "MAMAK",
       "start": "2026-11-11T08:00:00.000",
-      "end": "2026-11-11T14:00:00.000"
+      "end": "2026-11-11T17:00:00.000"
     },
     {
       "kind": "water",
@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yavuzselim Mah geneli",
-      "district": "ÇUBUK",
-      "start": "2026-11-11T09:50:00.000",
-      "end": "2026-11-11T14:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yakacık Mahallesi 3585 cadde ve üst kotlar",
       "district": "YENİMAHALLE",
       "start": "2026-11-11T11:10:00.000",
@@ -54,6 +45,15 @@
       "detail": "Birlik mahallesi bir kısmı",
       "district": "ÇANKAYA",
       "start": "2026-11-11T13:20:00.000",
+      "end": "2026-11-11T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": ".Ballıkpınar Mahallesinin bir kısmı",
+      "district": "GÖLBAŞI",
+      "start": "2026-11-11T14:00:00.000",
       "end": "2026-11-11T17:00:00.000"
     }
   ]
