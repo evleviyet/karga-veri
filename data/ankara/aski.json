@@ -10,6 +10,15 @@
       "district": "MAMAK",
       "start": "2026-11-11T08:00:00.000",
       "end": "2026-11-11T14:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Dünya Birlik Sitesi, Gülyurt Sitesi ve Golfkent Sitesi civarı",
+      "district": "ETİMESGUT",
+      "start": "2026-11-11T09:30:00.000",
+      "end": "2026-11-11T17:00:00.000"
     }
   ]
 }
