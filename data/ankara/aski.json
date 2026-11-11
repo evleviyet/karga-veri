@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Küçük Kayaş mahallesi, Yeni Bayındır mahallesi, Yeşilbayır mahallelerin üst kotları ŞahapGürler mahallesi üst kotları Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir.",
-      "district": "MAMAK",
-      "start": "2026-11-11T08:00:00.000",
-      "end": "2026-11-11T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Mehmet Akif mahallesi bir kısmı, Çamlıca mahallesi bir kısmı",
       "district": "POLATLI",
       "start": "2026-11-11T10:00:00.000",
@@ -33,28 +24,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Birlik mahallesi bir kısmı",
-      "district": "ÇANKAYA",
-      "start": "2026-11-11T13:20:00.000",
-      "end": "2026-11-11T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": ".Ballıkpınar Mahallesinin bir kısmı",
-      "district": "GÖLBAŞI",
-      "start": "2026-11-11T14:00:00.000",
-      "end": "2026-11-11T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Kardelen Mahallesi 2112 cadde ve civarı",
       "district": "YENİMAHALLE",
       "start": "2026-11-11T15:25:00.000",
-      "end": "2026-11-11T17:00:00.000"
+      "end": "2026-11-11T21:00:00.000"
     },
     {
       "kind": "water",
