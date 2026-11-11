@@ -64,6 +64,24 @@
       "district": "PURSAKLAR",
       "start": "2026-11-11T16:30:00.000",
       "end": "2026-11-11T18:30:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Kurtuluş Mahallesi Öner Sokak Ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-11-11T16:45:00.000",
+      "end": "2026-11-11T19:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Fatih Mahallesi Mekke Caddesine Bağlı Sokaklar",
+      "district": "ÇUBUK",
+      "start": "2026-11-11T16:45:00.000",
+      "end": "2026-11-11T19:00:00.000"
     }
   ]
 }
