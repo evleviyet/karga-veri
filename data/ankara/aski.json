@@ -6,7 +6,7 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Küçük Kayaş mahallesi, Yeni Bayındır mahallesi, Yeşilbayır mahallelerin üst kotları Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir.",
+      "detail": "Küçük Kayaş mahallesi, Yeni Bayındır mahallesi, Yeşilbayır mahallelerin üst kotları ŞahapGürler mahallesi üst kotları Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir.",
       "district": "MAMAK",
       "start": "2026-11-11T08:00:00.000",
       "end": "2026-11-11T14:00:00.000"
@@ -37,6 +37,15 @@
       "district": "ÇUBUK",
       "start": "2026-11-11T09:50:00.000",
       "end": "2026-11-11T14:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yakacık Mahallesi 3585 cadde ve üst kotlar",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-11T11:10:00.000",
+      "end": "2026-11-11T18:00:00.000"
     }
   ]
 }
