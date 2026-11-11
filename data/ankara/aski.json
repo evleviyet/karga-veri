@@ -55,6 +55,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-11-11T15:25:00.000",
       "end": "2026-11-11T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Merkez Mahallesinin bir kısmı",
+      "district": "PURSAKLAR",
+      "start": "2026-11-11T16:30:00.000",
+      "end": "2026-11-11T18:30:00.000"
     }
   ]
 }
