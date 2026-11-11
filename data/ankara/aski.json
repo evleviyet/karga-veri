@@ -1,24 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Şentepe Mah.bir kısmı",
-      "district": "POLATLI",
-      "start": "2026-11-11T19:55:00.000",
-      "end": "2026-11-11T21:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Şentepe Mah.bir kısmı",
-      "district": "POLATLI",
-      "start": "2026-11-11T19:55:00.000",
-      "end": "2026-11-11T21:30:00.000"
-    }
-  ]
+  "notices": []
 }
