@@ -51,15 +51,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "-altinova mahallesinin bir kısmı",
-      "district": "PURSAKLAR",
-      "start": "2026-11-11T14:30:00.000",
-      "end": "2026-11-11T16:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Kardelen Mahallesi 2112 cadde ve civarı",
       "district": "YENİMAHALLE",
       "start": "2026-11-11T15:25:00.000",
