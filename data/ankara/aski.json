@@ -24,10 +24,19 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "MEHMET AKİF MAHALLESİ BİR BÖLÜMÜ ,ÇAMLICA Mahallelerin bir kısmı",
+      "detail": "Mehmet Akif mahallesi bir kısmı, Çamlıca mahallesi bir kısmı",
       "district": "POLATLI",
       "start": "2026-11-11T10:00:00.000",
       "end": "2026-11-11T18:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yavuzselim Mah geneli",
+      "district": "ÇUBUK",
+      "start": "2026-11-11T09:50:00.000",
+      "end": "2026-11-11T14:00:00.000"
     }
   ]
 }
