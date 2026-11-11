@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Kurtuluş Mahallesi Öner Sokak Ve civarı",
-      "district": "BEYPAZARI",
-      "start": "2026-11-11T16:45:00.000",
-      "end": "2026-11-11T21:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Hacılar Mahallesinin bir kısmına",
       "district": "GÖLBAŞI",
       "start": "2026-11-11T19:30:00.000",
