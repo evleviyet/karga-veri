@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Dünya Birlik Sitesi, Gülyurt Sitesi ve Golfkent Sitesi civarı",
-      "district": "ETİMESGUT",
-      "start": "2026-11-11T09:30:00.000",
-      "end": "2026-11-11T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Mehmet Akif mahallesi bir kısmı, Çamlıca mahallesi bir kısmı",
       "district": "POLATLI",
       "start": "2026-11-11T10:00:00.000",
