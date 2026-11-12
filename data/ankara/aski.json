@@ -24,10 +24,19 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "TATLICA MH. KEMALPAŞA MH. İSMETPAŞA MH. GÜMÜŞPALA MH. YENİMAHELLE. ÜÇEVLER.",
+      "detail": "Tatlıca Mh. Kemalpaşa Mh. İsmetpaşa Mh. Gümüşpala Mh. Yenimahalle Mh. Üçevler Mh.",
       "district": "ELMADAĞ",
       "start": "2026-11-12T10:05:00.000",
       "end": "2026-11-12T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Baraj Mahallesinin bir kısmı",
+      "district": "ALTINDAĞ",
+      "start": "2026-11-12T00:20:00.000",
+      "end": "2026-11-12T13:00:00.000"
     }
   ]
 }
