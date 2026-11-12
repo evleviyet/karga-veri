@@ -51,15 +51,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İvedik osb mahallesi tamamı",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-12T11:40:00.000",
-      "end": "2026-11-12T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Mehmet Akif Mahallesi bir bölümü, Gazi Mahallesi bir bölümü, Şehitlik Mahallesi bir bölümü",
       "district": "POLATLI",
       "start": "2026-11-12T11:35:00.000",
