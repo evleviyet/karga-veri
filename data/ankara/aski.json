@@ -9,16 +9,7 @@
       "detail": "İvedik köyü aski lojmanları",
       "district": "YENİMAHALLE",
       "start": "2026-11-12T08:55:00.000",
-      "end": "2026-11-12T14:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": ".Ballıkpınar Mahallesinin bir kısmı",
-      "district": "GÖLBAŞI",
-      "start": "2026-11-12T10:00:00.000",
-      "end": "2026-11-12T14:00:00.000"
+      "end": "2026-11-12T17:00:00.000"
     },
     {
       "kind": "water",
