@@ -6,6 +6,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "İvedik köyü aski lojmanları",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-12T08:55:00.000",
+      "end": "2026-11-12T14:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Baraj Mahallesinin bir kısmı",
       "district": "ALTINDAĞ",
       "start": "2026-11-12T00:20:00.000",
