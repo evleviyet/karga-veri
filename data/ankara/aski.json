@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Hacılar Mahallesi ve civarı",
-      "district": "GÖLBAŞI",
-      "start": "2026-11-13T14:15:00.000",
-      "end": "2026-11-13T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "sehit mustafa Ercigez cd,1540 sk,1550 sk ve civari",
       "district": "KEÇİÖREN",
       "start": "2026-11-13T14:30:00.000",
