@@ -6,37 +6,19 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "yeni mahalle kayabaşı mahalle çaldağ mahalle seyran mahalle medrese mahalle",
+      "district": "HAYMANA",
+      "start": "2026-11-13T17:05:00.000",
+      "end": "2026-11-13T22:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "SARAY , ORHANİYE VE DAĞYAKA MAH ÇANİÇİ CADDESİ, ATOM CADDESİ, DAĞYAKA CADDESİ 614 CAD 688 CADDE ,GİMAT CADDESİ ,115 CADDE YE. BAĞLI CADDE VE SOKAKLAR",
       "district": "KAZAN",
       "start": "2026-11-14T08:00:00.000",
       "end": "2026-11-14T23:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Şeyhkuyusu Mahallesi, Yeni sanayi sitesi, Tuzcular sitesi E 90 karayolu",
-      "district": "SEREFLIKOÇHISAR",
-      "start": "2026-11-13T10:00:00.000",
-      "end": "2026-11-13T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Birlik mahallesi bir kısmı",
-      "district": "ÇANKAYA",
-      "start": "2026-11-13T11:40:00.000",
-      "end": "2026-11-13T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "sehit mustafa Ercigez cd,1540 sk,1550 sk ve civari",
-      "district": "KEÇİÖREN",
-      "start": "2026-11-13T14:30:00.000",
-      "end": "2026-11-13T17:00:00.000"
     },
     {
       "kind": "water",
