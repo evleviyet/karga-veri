@@ -55,6 +55,15 @@
       "district": "KEÇİÖREN",
       "start": "2026-11-13T14:30:00.000",
       "end": "2026-11-13T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İstiklal Mahallesi bir bölümü.",
+      "district": "POLATLI",
+      "start": "2026-11-13T14:40:00.000",
+      "end": "2026-11-13T18:00:00.000"
     }
   ]
 }
