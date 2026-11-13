@@ -6,6 +6,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "yeni mahalle kayabaşı mahalle çaldağ mahalle seyran mahalle medrese mahalle",
+      "district": "HAYMANA",
+      "start": "2026-11-13T17:05:00.000",
+      "end": "2026-11-13T23:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "SARAY , ORHANİYE VE DAĞYAKA MAH ÇANİÇİ CADDESİ, ATOM CADDESİ, DAĞYAKA CADDESİ 614 CAD 688 CADDE ,GİMAT CADDESİ ,115 CADDE YE. BAĞLI CADDE VE SOKAKLAR",
       "district": "KAZAN",
       "start": "2026-11-14T08:00:00.000",
