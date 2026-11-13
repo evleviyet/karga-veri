@@ -28,6 +28,15 @@
       "district": "ÇANKAYA",
       "start": "2026-11-13T11:40:00.000",
       "end": "2026-11-13T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Atatürk Mah geneli",
+      "district": "ÇUBUK",
+      "start": "2026-11-13T13:00:00.000",
+      "end": "2026-11-13T15:00:00.000"
     }
   ]
 }
