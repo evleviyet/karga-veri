@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Uğur mumcu mahallesi 1670/1 sokak ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-14T09:55:00.000",
-      "end": "2026-11-14T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Tek Yapı Kooperatifi",
       "district": "GÖLBAŞI",
       "start": "2026-11-14T12:00:00.000",
