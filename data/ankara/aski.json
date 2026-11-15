@@ -1,15 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Güvenevler mahallesi, Aşık paşa Mahallesi, Ayrancı Mahallesi, Bağcılar Mahallesi, Barbaros Mahallesi, Boztepe Mahallesi, Murat Mahallesi, Devlet Mahallesi, Esatoğlu Mahallesi, Gaziosmanpaşa Mahallesi, Küçük Esat Mahallesi, Muhsin Ertuğrul Mahallesi, Oğuzlar Mahallesi, Seyran Bağları Mahallesi, Remzi Oğuz Arık Mahallesi, Umut Mahallesi, Doğuş Mahallesi, Birlik Mahallesi, Sancak Mahallesi, Kırkkonaklar Mahallesi, İlkbahar Mahallesi, Oran Mahallesi, keklik Pınarı Mahallesi, Mürsel Uluç Mahallesi, Harbiye Mahallesi, Aşağı Övenler Mahallesi, Yukarı Öveçler Mahallesi, Cevizlidere Mahallesi, Naci çakır Mahallesi, aydınlar Mahallesi, şehit Cevdet Özdemir Mahallesi, ata Mahallesi, Huzur Mahallesi, Gökkuşağı Mahallesi, Karapınar Mahallesi, Akpınar Mahallesi, İlker Mahallesi, Metin Mahallesi, Osman temiz Mahallesi, Şehit cengiz karaca Mahallesi, Yücetepe Mahallesi, Emek Mahallesi, Bahçelievler Mahallesi",
-      "district": "ÇANKAYA",
-      "start": "2026-11-15T03:30:00.000",
-      "end": "2026-11-15T12:00:00.000"
-    }
-  ]
+  "notices": []
 }
