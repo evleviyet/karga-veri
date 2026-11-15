@@ -10,6 +10,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-11-15T09:10:00.000",
       "end": "2026-11-15T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Başağaç Mahallesi Kuruçay mevkii Ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-11-15T10:10:00.000",
+      "end": "2026-11-15T14:00:00.000"
     }
   ]
 }
