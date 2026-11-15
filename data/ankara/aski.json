@@ -10,6 +10,15 @@
       "district": "MAMAK",
       "start": "2026-11-15T12:40:00.000",
       "end": "2026-11-15T18:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Cengizhan mahallesi, Fahri Korutürk mahallerin üst kotları Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "district": "MAMAK",
+      "start": "2026-11-15T12:50:00.000",
+      "end": "2026-11-15T18:00:00.000"
     }
   ]
 }
