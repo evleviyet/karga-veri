@@ -19,15 +19,6 @@
       "district": "YENİMAHALLE",
       "start": "2026-11-18T23:55:00.000",
       "end": "2026-11-19T23:55:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "İvedik köy Mah ve İvedik Aski lojmanları",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-16T18:40:00.000",
-      "end": "2026-11-16T23:55:00.000"
     }
   ]
 }
