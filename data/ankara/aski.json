@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Piyade Mahallesi bir kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-11-16T09:30:00.000",
-      "end": "2026-11-16T16:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Şehitlik Mahallesi bir bölümü.",
       "district": "POLATLI",
       "start": "2026-11-16T10:25:00.000",
@@ -64,6 +55,24 @@
       "district": "ALTINDAĞ",
       "start": "2026-11-16T14:15:00.000",
       "end": "2026-11-16T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Turgut Özal mahallesi 2102 cadde ve civarı.",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-16T14:50:00.000",
+      "end": "2026-11-16T18:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yıldırım Beyazıt Mahallesi Geneli",
+      "district": "ÇUBUK",
+      "start": "2026-11-16T15:00:00.000",
+      "end": "2026-11-16T16:00:00.000"
     }
   ]
 }
