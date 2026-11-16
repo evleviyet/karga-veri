@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yıldırım Beyazıt mahallesi Dağıstan sokak ve bağlı sokaklar.",
-      "district": "ÇUBUK",
-      "start": "2026-11-16T11:40:00.000",
-      "end": "2026-11-16T14:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Şentepe Mahallesi bir bölümü.",
       "district": "POLATLI",
       "start": "2026-11-16T12:15:00.000",
@@ -54,6 +45,15 @@
       "detail": "Cumhuriyet mahallesi 5609 sokak ve civarı.",
       "district": "YENİMAHALLE",
       "start": "2026-11-16T12:40:00.000",
+      "end": "2026-11-16T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Başağaç Mahallesi Nurettin Karaoğuz Caddesi Ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-11-16T14:00:00.000",
       "end": "2026-11-16T17:00:00.000"
     }
   ]
