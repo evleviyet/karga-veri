@@ -10,6 +10,15 @@
       "district": "KAZAN",
       "start": "2026-11-16T08:30:00.000",
       "end": "2026-11-16T23:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Piyade Mahallesi bir kısmı",
+      "district": "ETİMESGUT",
+      "start": "2026-11-16T09:30:00.000",
+      "end": "2026-11-16T16:00:00.000"
     }
   ]
 }
