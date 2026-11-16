@@ -9,16 +9,16 @@
       "detail": "Beşikkaya ve Karapürçek Mahallesinin bir kısmı",
       "district": "ALTINDAĞ",
       "start": "2026-11-16T14:15:00.000",
-      "end": "2026-11-16T17:00:00.000"
+      "end": "2026-11-16T19:00:00.000"
     },
     {
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Turgut Özal mahallesi 2102 cadde ve civarı.",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-16T14:50:00.000",
-      "end": "2026-11-16T18:00:00.000"
+      "detail": "Yavuzselim Mahallesi İbnisina caddesi ve bağlı sokaklar",
+      "district": "ÇUBUK",
+      "start": "2026-11-16T17:00:00.000",
+      "end": "2026-11-16T19:00:00.000"
     }
   ]
 }
