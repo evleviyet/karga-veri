@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Atatürk Mah Geneli",
-      "district": "ÇUBUK",
-      "start": "2026-11-17T11:00:00.000",
-      "end": "2026-11-17T16:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Taşpınar Mahallesi bir kısmına",
       "district": "GÖLBAŞI",
       "start": "2026-11-17T11:15:00.000",
@@ -78,6 +69,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Aşağı Yurtçu Mahallesi bir kısmı",
+      "district": "ETİMESGUT",
+      "start": "2026-11-17T15:35:00.000",
+      "end": "2026-11-17T19:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Adnan Menderes,Aktepe.Atapark,Ayvalı,Aşağı Eğlence, Bademlik,Basınevleri,Bağlarbaşı,Hisar,Kafkas,Karakaya,Karşıyaka,Kösrelik,Emrah,Esertepe,Etlik,Güzelyurt,Güçlükaya,Kalaba,Kamil Ocak,Kanuni,Karargahtepe,Kuşcağız,Köşk,19 Mayıs,Osmangazi,Ovacık,Pınarbaşı,Sancaktepe,Tepebaşı,Ufuktepe,Uyanış,Yakacık,Yayla,Yeşiltepe,Yeşilöz,Yükseltepe,23 Nisan,Çaldıran,Çiçekli,İncirli,Şehit Kubilay,Şenlik,Şenyuva,Şevkat Mahalleleri",
       "district": "KEÇİÖREN",
       "start": "2026-11-18T23:55:00.000",
@@ -87,7 +87,7 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Anadolu,Avcılar ,Barıştepe , Burç ,Çiğdemtepe ,Ergenekon ,Güventepe ,Güzelyaka ,İvedik ,Kaletepe ,Karşıyaka ,Kayalar ,Kuzey Yıldızı ,Memlik ,Pamuklar ,Serhat ,Yakacık ,Yeşilevler ,Yukarı Yahyalar ,Yunus Emre Mahalleleri",
+      "detail": "Anadolu,Avcılar ,Barıştepe , Burç ,Çiğdemtepe ,Ergenekon ,Esentepe, Güventepe ,Güzelyaka ,İvedik ,Kaletepe ,Karşıyaka ,Kayalar ,Kuzey Yıldızı ,Memlik ,Pamuklar ,Serhat ,Yakacık ,Yeşilevler ,Yukarı Yahyalar ,Yunus Emre Mahalleleri",
       "district": "YENİMAHALLE",
       "start": "2026-11-18T23:55:00.000",
       "end": "2026-11-19T23:55:00.000"
