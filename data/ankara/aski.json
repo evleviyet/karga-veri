@@ -15,6 +15,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Atatürk Mah Geneli",
+      "district": "ÇUBUK",
+      "start": "2026-11-17T11:00:00.000",
+      "end": "2026-11-17T16:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Taşpınar Mahallesi bir kısmına",
       "district": "GÖLBAŞI",
       "start": "2026-11-17T11:15:00.000",
@@ -46,6 +55,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-11-17T14:00:00.000",
       "end": "2026-11-17T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Etkilenen yerler ; Akdere mahallesi, Kazım Orbay, Şehit Cengiz Topel mahallesi, Peyami Sefa mahallerin üst kotları",
+      "district": "MAMAK",
+      "start": "2026-11-17T14:20:00.000",
+      "end": "2026-11-17T20:00:00.000"
     },
     {
       "kind": "water",
