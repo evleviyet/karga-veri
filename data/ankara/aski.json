@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Çakırlar Mahallesi 2293 sokak Mesutevler sitesi.",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-17T14:00:00.000",
-      "end": "2026-11-17T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Etkilenen yerler ; Akdere mahallesi, Kazım Orbay, Şehit Cengiz Topel mahallesi, Peyami Sefa, Türközü mahallerin üst kotları",
       "district": "MAMAK",
       "start": "2026-11-17T14:20:00.000",
