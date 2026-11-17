@@ -6,24 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yakacık Mahallesi 3585 cadde ve üst kotlar",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-17T11:20:00.000",
-      "end": "2026-11-17T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "İvedikköy mahallesi Anadolu bulvarı otaban çıkışı.",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-17T12:40:00.000",
-      "end": "2026-11-17T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Etkilenen yerler ; Akdere mahallesi, Kazım Orbay, Şehit Cengiz Topel mahallesi, Peyami Sefa, Türközü mahallerin üst kotları",
       "district": "MAMAK",
       "start": "2026-11-17T14:20:00.000",
@@ -37,15 +19,6 @@
       "district": "YENİMAHALLE",
       "start": "2026-11-18T08:00:00.000",
       "end": "2026-11-18T23:55:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Aşağı Yurtçu Mahallesi bir kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-11-17T15:35:00.000",
-      "end": "2026-11-17T19:00:00.000"
     },
     {
       "kind": "water",
