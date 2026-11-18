@@ -15,28 +15,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İncek Mahallesi bir kısmına",
-      "district": "GÖLBAŞI",
-      "start": "2026-11-18T17:15:00.000",
-      "end": "2026-11-18T20:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Kurtuluş mahallesi Ilıman küme evler sokak ve civarı",
       "district": "BEYPAZARI",
       "start": "2026-11-18T17:00:00.000",
       "end": "2026-11-18T23:55:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "akyurt güzelhisar mahallesi köy içi",
-      "district": "AKYURT",
-      "start": "2026-11-18T17:05:00.000",
-      "end": "2026-11-18T20:00:00.000"
     },
     {
       "kind": "water",
