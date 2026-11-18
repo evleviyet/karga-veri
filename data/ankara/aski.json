@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Hacıkara Mahallesi Fatih Sokak Ve civarı",
-      "district": "BEYPAZARI",
-      "start": "2026-11-18T08:45:00.000",
-      "end": "2026-11-18T12:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "ŞAHAPGÜRLER MAHALLESİ",
       "district": "MAMAK",
       "start": "2026-11-18T08:50:00.000",
