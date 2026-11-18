@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "ŞAHAPGÜRLER MAHALLESİ",
-      "district": "MAMAK",
-      "start": "2026-11-18T08:50:00.000",
-      "end": "2026-11-18T16:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Sarıyar mahallesi geneli",
       "district": "NALLIHAN",
       "start": "2026-11-18T12:25:00.000",
