@@ -15,10 +15,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yakacık mahallesi alt kotları",
+      "detail": "Yakacık mahallesi alt kotları , 3586 cadde ve civar",
       "district": "YENİMAHALLE",
       "start": "2026-11-17T20:15:00.000",
-      "end": "2026-11-18T14:00:00.000"
+      "end": "2026-11-18T17:00:00.000"
     },
     {
       "kind": "water",
@@ -42,7 +42,7 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yaylabağ Mahallesine 18 Kasım 2026 saat- 10:15 ile 18 Kasım 2026 saat- 15:00 saatleri arasında su verilemeyecektir.",
+      "detail": "Yaylabağ Mahallesine",
       "district": "GÖLBAŞI",
       "start": "2026-11-18T10:15:00.000",
       "end": "2026-11-18T15:00:00.000"
