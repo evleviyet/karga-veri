@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yakacık mahallesi alt kotları , 3586 cadde ve civar",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-17T20:15:00.000",
-      "end": "2026-11-18T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Sarıyar mahallesi geneli",
       "district": "NALLIHAN",
       "start": "2026-11-18T12:25:00.000",
