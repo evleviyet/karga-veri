@@ -6,6 +6,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Yakacık Mahallesi 3585 Cadde ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-19T11:40:00.000",
+      "end": "2026-11-19T19:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Atatürk Mahallesi Geneli",
       "district": "ÇUBUK",
       "start": "2026-11-19T10:40:00.000",
