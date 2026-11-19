@@ -24,6 +24,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Kale Mahallesi Bir Kısmı",
+      "district": "ALTINDAĞ",
+      "start": "2026-11-19T15:45:00.000",
+      "end": "2026-11-19T20:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Adnan Menderes,Aktepe.Atapark,Ayvalı,Aşağı Eğlence, Bademlik,Basınevleri,Bağlarbaşı,Hisar,Kafkas,Karakaya,Karşıyaka,Kösrelik,Emrah,Esertepe,Etlik,Güzelyurt,Güçlükaya,Kalaba,Kamil Ocak,Kanuni,Karargahtepe,Kuşcağız,Köşk,19 Mayıs,Osmangazi,Ovacık,Pınarbaşı,Sancaktepe,Tepebaşı,Ufuktepe,Uyanış,Yakacık,Yayla,Yeşiltepe,Yeşilöz,Yükseltepe,23 Nisan,Çaldıran,Çiçekli,İncirli,Şehit Kubilay,Şenlik,Şenyuva,Şevkat Mahalleleri",
       "district": "KEÇİÖREN",
       "start": "2026-11-18T23:55:00.000",
