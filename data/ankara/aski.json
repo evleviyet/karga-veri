@@ -28,6 +28,15 @@
       "district": "GÖLBAŞI",
       "start": "2026-11-20T11:20:00.000",
       "end": "2026-11-20T16:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Kızılöz Mahallesi Geneli",
+      "district": "ÇUBUK",
+      "start": "2026-11-20T12:05:00.000",
+      "end": "2026-11-20T16:00:00.000"
     }
   ]
 }
