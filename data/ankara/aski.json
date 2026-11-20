@@ -28,6 +28,15 @@
       "district": "KAZAN",
       "start": "2026-11-22T09:00:00.000",
       "end": "2026-11-22T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Esenboğa Mahallesi Geneli",
+      "district": "ÇUBUK",
+      "start": "2026-11-20T14:50:00.000",
+      "end": "2026-11-20T17:00:00.000"
     }
   ]
 }
