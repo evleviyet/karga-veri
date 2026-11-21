@@ -19,6 +19,15 @@
       "district": "NALLIHAN",
       "start": "2026-11-21T12:00:00.000",
       "end": "2026-11-21T19:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Saraycık mahallesi",
+      "district": "SİNCAN",
+      "start": "2026-11-21T15:45:00.000",
+      "end": "2026-11-21T19:00:00.000"
     }
   ]
 }
