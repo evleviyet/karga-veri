@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Ayvaşık Mahallesi Necmettin ERBAKAN (Çevre Yolu) Caddesi Ve civarı",
-      "district": "BEYPAZARI",
-      "start": "2026-11-21T11:00:00.000",
-      "end": "2026-11-21T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Sarıyar mahallesi geneli",
       "district": "NALLIHAN",
       "start": "2026-11-21T12:00:00.000",
