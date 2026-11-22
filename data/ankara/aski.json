@@ -6,6 +6,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Saraycık mh Toki konutları 4.bölge 1.etap 1.kısım",
+      "district": "SİNCAN",
+      "start": "2026-11-22T08:10:00.000",
+      "end": "2026-11-22T12:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "SARAY , ORHANİYE VE DAĞYAKA MAH ÇANİÇİ CADDESİ, ATOM CADDESİ, DAĞYAKA CADDESİ 614 CAD 688 CADDE ,GİMAT CADDESİ ,115 CADDE YE. BAĞLI CADDE VE SOKAKLAR",
       "district": "KAZAN",
       "start": "2026-11-22T09:00:00.000",
