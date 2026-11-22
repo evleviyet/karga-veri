@@ -10,24 +10,6 @@
       "district": "KEÇİÖREN",
       "start": "2026-11-22T14:25:00.000",
       "end": "2026-11-22T20:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Taşpınar Mahallesi",
-      "district": "GÖLBAŞI",
-      "start": "2026-11-22T14:15:00.000",
-      "end": "2026-11-22T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Hacılar Mahallesi",
-      "district": "GÖLBAŞI",
-      "start": "2026-11-22T14:15:00.000",
-      "end": "2026-11-22T18:00:00.000"
     }
   ]
 }
