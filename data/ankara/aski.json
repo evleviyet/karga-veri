@@ -15,6 +15,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": ". Yaylabağ Mahallesi",
+      "district": "GÖLBAŞI",
+      "start": "2026-11-22T09:45:00.000",
+      "end": "2026-11-22T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "SARAY , ORHANİYE VE DAĞYAKA MAH ÇANİÇİ CADDESİ, ATOM CADDESİ, DAĞYAKA CADDESİ 614 CAD 688 CADDE ,GİMAT CADDESİ ,115 CADDE YE. BAĞLI CADDE VE SOKAKLAR",
       "district": "KAZAN",
       "start": "2026-11-22T09:00:00.000",
