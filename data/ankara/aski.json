@@ -6,6 +6,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Yozgat bulvarı ve civarı",
+      "district": "KEÇİÖREN",
+      "start": "2026-11-22T14:25:00.000",
+      "end": "2026-11-22T20:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Saraycık mh Toki konutları 4.bölge 1.etap 1.kısım",
       "district": "SİNCAN",
       "start": "2026-11-22T08:10:00.000",
