@@ -91,6 +91,15 @@
       "district": "YENİMAHALLE",
       "start": "2026-11-23T14:15:00.000",
       "end": "2026-11-23T20:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Cumhuriyet Mahallesi Geneli",
+      "district": "ÇUBUK",
+      "start": "2026-11-23T14:50:00.000",
+      "end": "2026-11-23T17:00:00.000"
     }
   ]
 }
