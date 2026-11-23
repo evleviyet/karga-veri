@@ -6,37 +6,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "; Başak mahallesi, Ekin mahallesi, Bostancık mahallerin üst kotları",
-      "district": "MAMAK",
-      "start": "2026-11-23T10:40:00.000",
-      "end": "2026-11-23T21:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Karapürçek, Beşikkaya, Feridun Çelik, Başpınar ve Doğantepe Mahallelerinin üst kotları",
-      "district": "ALTINDAĞ",
-      "start": "2026-11-23T12:00:00.000",
-      "end": "2026-11-23T21:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Serhat mahallesi Mehmet Akif Ersoy caddesi örnek sanayi sitesi,uzay çağı cad bir kısmı",
       "district": "YENİMAHALLE",
       "start": "2026-11-23T14:15:00.000",
       "end": "2026-11-23T22:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Saraycık mahallesinin bir kısmı. Ertuğrulgazi Mahallesi Üst kotları. Osmanlı Mahallesi Üst kotları. Pınarbaşı Mahallesi Üst kotları",
-      "district": "SİNCAN",
-      "start": "2026-11-23T15:40:00.000",
-      "end": "2026-11-23T21:00:00.000"
     },
     {
       "kind": "water",
