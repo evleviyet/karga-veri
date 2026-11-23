@@ -6,28 +6,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yenipeçenek Mahallesi tamamı.",
-      "district": "SİNCAN",
-      "start": "2026-11-23T09:55:00.000",
-      "end": "2026-11-23T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "; Başak mahallesi, Ekin mahallesi, Bostancık mahallerin üst kotları",
       "district": "MAMAK",
       "start": "2026-11-23T10:40:00.000",
       "end": "2026-11-23T21:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yaylabağ Mahallesi",
-      "district": "GÖLBAŞI",
-      "start": "2026-11-23T11:20:00.000",
-      "end": "2026-11-23T15:00:00.000"
     },
     {
       "kind": "water",
@@ -55,15 +37,6 @@
       "district": "ÇANKAYA",
       "start": "2026-11-23T13:20:00.000",
       "end": "2026-11-23T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yakacık bağlar mevki",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-23T13:00:00.000",
-      "end": "2026-11-23T15:00:00.000"
     },
     {
       "kind": "water",
@@ -100,6 +73,15 @@
       "district": "ÇUBUK",
       "start": "2026-11-23T14:50:00.000",
       "end": "2026-11-23T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Beyler Mahallesi Gölünyazı Kümeevleri.",
+      "district": "ÇAMLIDERE",
+      "start": "2026-11-23T15:00:00.000",
+      "end": "2026-11-23T19:00:00.000"
     }
   ]
 }
