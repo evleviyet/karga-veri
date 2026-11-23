@@ -33,24 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Beyler Mahallesi Gölünyazı Kümeevleri.",
-      "district": "ÇAMLIDERE",
-      "start": "2026-11-23T15:00:00.000",
-      "end": "2026-11-23T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "saraycık mahallesinin bir kısmı.",
-      "district": "SİNCAN",
-      "start": "2026-11-23T15:40:00.000",
-      "end": "2026-11-23T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yeni Mahalle bir bölümü.",
       "district": "POLATLI",
       "start": "2026-11-23T18:30:00.000",
