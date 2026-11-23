@@ -10,6 +10,15 @@
       "district": "SİNCAN",
       "start": "2026-11-23T09:55:00.000",
       "end": "2026-11-23T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "; Başak mahallesi, Ekin mahallesi, Bostancık mahallerin üst kotları",
+      "district": "MAMAK",
+      "start": "2026-11-23T10:40:00.000",
+      "end": "2026-11-23T14:40:00.000"
     }
   ]
 }
