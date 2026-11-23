@@ -24,37 +24,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Sarıyar mahallesi geneli",
-      "district": "NALLIHAN",
-      "start": "2026-11-23T12:10:00.000",
-      "end": "2026-11-23T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yakacık bağlar mevki",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-23T13:00:00.000",
-      "end": "2026-11-23T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Serhat mahallesi Mehmet Akif Ersoy caddesi örnek sanayi sitesi,uzay çağı cad bir kısmı",
       "district": "YENİMAHALLE",
       "start": "2026-11-23T14:15:00.000",
       "end": "2026-11-23T20:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Cumhuriyet Mahallesi Geneli",
-      "district": "ÇUBUK",
-      "start": "2026-11-23T14:50:00.000",
-      "end": "2026-11-23T17:00:00.000"
     },
     {
       "kind": "water",
