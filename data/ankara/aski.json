@@ -19,6 +19,15 @@
       "district": "MAMAK",
       "start": "2026-11-23T10:40:00.000",
       "end": "2026-11-23T14:40:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yaylabağ Mahallesi",
+      "district": "GÖLBAŞI",
+      "start": "2026-11-23T11:20:00.000",
+      "end": "2026-11-23T15:00:00.000"
     }
   ]
 }
