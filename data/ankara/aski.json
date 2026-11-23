@@ -28,6 +28,15 @@
       "district": "GÖLBAŞI",
       "start": "2026-11-23T11:20:00.000",
       "end": "2026-11-23T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Karapürçek, Beşikkaya ve Feridun Çelik Mahallelerinin üst kotları",
+      "district": "ALTINDAĞ",
+      "start": "2026-11-23T12:00:00.000",
+      "end": "2026-11-23T15:00:00.000"
     }
   ]
 }
