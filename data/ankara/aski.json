@@ -33,7 +33,7 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Karapürçek, Beşikkaya ve Feridun Çelik Mahallelerinin üst kotları",
+      "detail": "Karapürçek, Beşikkaya, Feridun Çelik, Başpınar ve Doğantepe Mahallelerinin üst kotları",
       "district": "ALTINDAĞ",
       "start": "2026-11-23T12:00:00.000",
       "end": "2026-11-23T15:00:00.000"
@@ -45,6 +45,42 @@
       "detail": "Sarıyar mahallesi geneli",
       "district": "NALLIHAN",
       "start": "2026-11-23T12:10:00.000",
+      "end": "2026-11-23T19:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Mustafa Kemal mahallesi üst kotları, Söğütözü mahallesi bir kısmı, Koru mahallesi, Konutkent mahallesi bir kısmı",
+      "district": "ÇANKAYA",
+      "start": "2026-11-23T13:20:00.000",
+      "end": "2026-11-23T21:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yakacık bağlar mevki",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-23T13:00:00.000",
+      "end": "2026-11-23T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "3703/1 sk ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-23T13:15:00.000",
+      "end": "2026-11-23T18:15:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Erler Mahallesi Bir Kısmı",
+      "district": "ETİMESGUT",
+      "start": "2026-11-23T13:20:00.000",
       "end": "2026-11-23T19:00:00.000"
     }
   ]
