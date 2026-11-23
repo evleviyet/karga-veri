@@ -1,5 +1,15 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": []
+  "notices": [
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Serhat mahallesi Mehmet Akif Ersoy caddesi örnek sanayi sitesi,uzay çağı cad bir kısmı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-23T14:15:00.000",
+      "end": "2026-11-24T02:00:00.000"
+    }
+  ]
 }
