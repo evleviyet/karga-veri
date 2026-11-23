@@ -82,6 +82,15 @@
       "district": "ETİMESGUT",
       "start": "2026-11-23T13:20:00.000",
       "end": "2026-11-23T19:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Mehmet Akif Ersoy caddesi örnek sanayi sitesi,uzay çağı cad bir kısmı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-23T14:15:00.000",
+      "end": "2026-11-23T20:00:00.000"
     }
   ]
 }
