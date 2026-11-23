@@ -36,7 +36,7 @@
       "detail": "Karapürçek, Beşikkaya, Feridun Çelik, Başpınar ve Doğantepe Mahallelerinin üst kotları",
       "district": "ALTINDAĞ",
       "start": "2026-11-23T12:00:00.000",
-      "end": "2026-11-23T15:00:00.000"
+      "end": "2026-11-23T21:00:00.000"
     },
     {
       "kind": "water",
@@ -51,10 +51,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Mustafa Kemal mahallesi üst kotları, Söğütözü mahallesi bir kısmı, Koru mahallesi, Konutkent mahallesi bir kısmı",
+      "detail": "Mustafa Kemal mahallesi üst kotları, Söğütözü mahallesi bir kısmı, Koru mahallesi, Konutkent mahallesi bir kısmı, Üniversiteler mahallesi bir kısmı",
       "district": "ÇANKAYA",
       "start": "2026-11-23T13:20:00.000",
-      "end": "2026-11-23T21:00:00.000"
+      "end": "2026-11-23T19:00:00.000"
     },
     {
       "kind": "water",
