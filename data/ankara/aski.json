@@ -33,28 +33,10 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Mustafa Kemal mahallesi üst kotları, Söğütözü mahallesi bir kısmı, Koru mahallesi, Konutkent mahallesi bir kısmı, Üniversiteler mahallesi bir kısmı",
-      "district": "ÇANKAYA",
-      "start": "2026-11-23T13:20:00.000",
-      "end": "2026-11-23T19:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yakacık bağlar mevki",
       "district": "YENİMAHALLE",
       "start": "2026-11-23T13:00:00.000",
       "end": "2026-11-23T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Erler Mahallesi Bir Kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-11-23T13:20:00.000",
-      "end": "2026-11-23T19:00:00.000"
     },
     {
       "kind": "water",
