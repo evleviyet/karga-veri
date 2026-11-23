@@ -37,6 +37,15 @@
       "district": "ALTINDAĞ",
       "start": "2026-11-23T12:00:00.000",
       "end": "2026-11-23T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Sarıyar mahallesi geneli",
+      "district": "NALLIHAN",
+      "start": "2026-11-23T12:10:00.000",
+      "end": "2026-11-23T19:00:00.000"
     }
   ]
 }
