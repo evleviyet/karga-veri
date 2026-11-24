@@ -1,15 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "İncek Mahallesinin bir kısmına",
-      "district": "GÖLBAŞI",
-      "start": "2026-11-24T09:20:00.000",
-      "end": "2026-11-24T15:00:00.000"
-    }
-  ]
+  "notices": []
 }
