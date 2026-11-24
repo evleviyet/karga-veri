@@ -6,16 +6,7 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yukarı Dikmen mahallesi ,Oran mahallesi bir kısmı, İlkbahar mahallesi bir kısmı,Dumlupınar mahallesi bir kısmı",
-      "district": "ÇANKAYA",
-      "start": "2026-11-24T12:45:00.000",
-      "end": "2026-11-24T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Fahri Korutürk , Şahintepe , Şirintepe , Tuzluçayır , Ege , Mutlu , Kutlu , Genaral Zeki Doğan , Cengizhan , Akşemsettin , Boğaziçi , Zirvekent , Misket Mahalleleri",
+      "detail": "Fahri Korutürk , Durali Alıç , Şahintepe , Şirintepe , Tuzluçayır , Ege , Mutlu , Kutlu , Genaral Zeki Doğan , Cengizhan , Akşemsettin , Boğaziçi , Zirvekent , Misket Mahalleleri",
       "district": "MAMAK",
       "start": "2026-11-25T05:00:00.000",
       "end": "2026-11-26T09:00:00.000"
