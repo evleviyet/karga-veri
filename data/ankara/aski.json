@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Mustafa Kemal Mahallesi'nin bir kısmı",
-      "district": "SİNCAN",
-      "start": "2026-11-24T12:25:00.000",
-      "end": "2026-11-24T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yukarı Dikmen mahallesi ,Oran mahallesi bir kısmı, İlkbahar mahallesi bir kısmı,Dumlupınar mahallesi bir kısmı",
       "district": "ÇANKAYA",
       "start": "2026-11-24T12:45:00.000",
