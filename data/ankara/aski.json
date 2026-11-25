@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Yakacık mahallesi 3585 cadde Bağlar Mevki 3576 cadde ve civarı.",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-25T09:20:00.000",
-      "end": "2026-11-25T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yaşamkent mahallesi tamamı, Konutkent mahallesi bir kısmı, Dodurga mahallesi üst kotları, Alacaatlı mahallesi bir kısmı, Koru mahallesi bir kısmı",
       "district": "ÇANKAYA",
       "start": "2026-11-25T09:40:00.000",
@@ -64,15 +55,6 @@
       "district": "ETİMESGUT",
       "start": "2026-11-25T13:10:00.000",
       "end": "2026-11-25T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Gazipaşa Mahallesi Ilıman Kümeevleri Sokak ve civarı",
-      "district": "BEYPAZARI",
-      "start": "2026-11-25T14:00:00.000",
-      "end": "2026-11-25T17:00:00.000"
     }
   ]
 }
