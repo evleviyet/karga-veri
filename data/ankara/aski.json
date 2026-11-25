@@ -28,6 +28,15 @@
       "district": "ÇAMLIDERE",
       "start": "2026-11-25T09:00:00.000",
       "end": "2026-11-26T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Yakacık mahallesi 3585 cadde Bağlar Mevki 3576 cadde ve civarı.",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-25T09:20:00.000",
+      "end": "2026-11-25T17:00:00.000"
     }
   ]
 }
