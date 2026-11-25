@@ -73,6 +73,15 @@
       "district": "SİNCAN",
       "start": "2026-11-25T11:50:00.000",
       "end": "2026-11-25T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Fatih Sultan Mahallesi",
+      "district": "ETİMESGUT",
+      "start": "2026-11-25T13:10:00.000",
+      "end": "2026-11-25T18:00:00.000"
     }
   ]
 }
