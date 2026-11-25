@@ -51,6 +51,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Yeşiltepe Mahallesi Toki Blokları ve Büğdüz Mahallesinin bir kısmı",
+      "district": "AKYURT",
+      "start": "2026-11-26T09:00:00.000",
+      "end": "2026-11-26T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "Hicret Caddesi ve Civarı",
       "district": "ETİMESGUT",
       "start": "2026-11-25T10:50:00.000",
