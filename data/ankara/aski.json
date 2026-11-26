@@ -33,15 +33,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Şehitlik Mah. Gazi Mah. bir kısmı",
-      "district": "POLATLI",
-      "start": "2026-11-26T10:40:00.000",
-      "end": "2026-11-26T12:30:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Saraycık Mahallesinin bir kısmı",
       "district": "SİNCAN",
       "start": "2026-11-26T11:45:00.000",
