@@ -6,24 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Fahri Korutürk , Durali Alıç , Şahintepe , Şirintepe , Tuzluçayır , Ege , Mutlu , Kutlu , Genaral Zeki Doğan , Cengizhan , Akşemsettin , Boğaziçi , Zirvekent , Misket Mahalleleri",
-      "district": "MAMAK",
-      "start": "2026-11-25T05:00:00.000",
-      "end": "2026-11-26T09:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yakupabdal Mahallesi",
-      "district": "ÇANKAYA",
-      "start": "2026-11-25T05:00:00.000",
-      "end": "2026-11-26T09:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yediören Mahallesi, Peçenek Mahallesi, Yoncatepe Mahallesi.",
       "district": "ÇAMLIDERE",
       "start": "2026-11-25T09:00:00.000",
