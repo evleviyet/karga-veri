@@ -1,24 +1,5 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": [
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Karakaya mahallesi Kafkas mahallesi Hisar mahallesi",
-      "district": "KEÇİÖREN",
-      "start": "2026-11-26T17:30:00.000",
-      "end": "2026-11-26T22:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Yakacık Bağlar Mevkii ve Yakacık Toki Konutları",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-26T17:45:00.000",
-      "end": "2026-11-26T22:00:00.000"
-    }
-  ]
+  "notices": []
 }
