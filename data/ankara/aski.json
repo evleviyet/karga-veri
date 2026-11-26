@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Şentepe Mahallesi bir bölüm",
-      "district": "POLATLI",
-      "start": "2026-11-26T17:10:00.000",
-      "end": "2026-11-26T21:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Yakacık Bağlar Mevkii ve Yakacık Toki Konutları",
       "district": "YENİMAHALLE",
       "start": "2026-11-26T17:45:00.000",
