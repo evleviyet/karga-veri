@@ -6,19 +6,19 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Fatih Sultan Mahallesi Bir Kısmı",
-      "district": "ETİMESGUT",
-      "start": "2026-11-27T15:40:00.000",
-      "end": "2026-11-27T19:00:00.000"
+      "detail": "Ayvaşık Mahallesi M.Cengiz ÖZALP Caddesi ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-11-27T10:05:00.000",
+      "end": "2026-11-27T20:00:00.000"
     },
     {
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Bağlıca Mahallesi Bir Kısmı",
+      "detail": "Fatih Sultan Mahallesi Bir Kısmı",
       "district": "ETİMESGUT",
-      "start": "2026-11-27T16:30:00.000",
-      "end": "2026-11-27T20:00:00.000"
+      "start": "2026-11-27T15:40:00.000",
+      "end": "2026-11-27T19:00:00.000"
     }
   ]
 }
