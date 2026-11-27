@@ -37,6 +37,15 @@
       "district": "AKYURT",
       "start": "2026-11-27T10:10:00.000",
       "end": "2026-11-27T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İvedik osb 1419 sokak ve civarı",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-27T10:15:00.000",
+      "end": "2026-11-27T16:00:00.000"
     }
   ]
 }
