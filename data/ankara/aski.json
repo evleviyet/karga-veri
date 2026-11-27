@@ -15,15 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Esenboğa Mahallesi Geneli",
-      "district": "ÇUBUK",
-      "start": "2026-11-27T11:00:00.000",
-      "end": "2026-11-27T16:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Söğütözü mahallesi tamamı",
       "district": "ÇANKAYA",
       "start": "2026-11-27T12:55:00.000",
