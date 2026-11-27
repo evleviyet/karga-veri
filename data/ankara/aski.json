@@ -19,6 +19,24 @@
       "district": "BEYPAZARI",
       "start": "2026-11-27T10:05:00.000",
       "end": "2026-11-27T17:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Cumhuriyet Mahallesi İnözü Kalın Yol Caddesi ve civarı",
+      "district": "BEYPAZARI",
+      "start": "2026-11-27T10:10:00.000",
+      "end": "2026-11-27T15:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "Balıkhisar Mahallesi Fabrikalar Bölesi ve Havalimanı",
+      "district": "AKYURT",
+      "start": "2026-11-27T10:10:00.000",
+      "end": "2026-11-27T17:00:00.000"
     }
   ]
 }
