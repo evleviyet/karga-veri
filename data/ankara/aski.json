@@ -1,5 +1,15 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": []
+  "notices": [
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İnönü mahallesi Fatih Sultan Mehmet bulvarı, Rajiv Gandi caddesi bir kısmı.",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-27T09:25:00.000",
+      "end": "2026-11-27T16:00:00.000"
+    }
+  ]
 }
