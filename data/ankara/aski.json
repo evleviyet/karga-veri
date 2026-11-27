@@ -15,24 +15,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Cumhuriyet Mahallesi İnözü Kalın Yol Caddesi ve civarı",
-      "district": "BEYPAZARI",
-      "start": "2026-11-27T10:10:00.000",
-      "end": "2026-11-27T15:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "İvedik osb 1419 sokak ve civarı",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-27T10:15:00.000",
-      "end": "2026-11-27T16:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Esenboğa Mahallesi Geneli",
       "district": "ÇUBUK",
       "start": "2026-11-27T11:00:00.000",
