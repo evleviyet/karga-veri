@@ -6,15 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Şentepe Mahallesinin bir kısmı",
-      "district": "POLATLI",
-      "start": "2026-11-28T14:00:00.000",
-      "end": "2026-11-28T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Dempa sanayi sitesi.",
       "district": "YENİMAHALLE",
       "start": "2026-11-28T16:05:00.000",
