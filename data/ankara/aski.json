@@ -6,33 +6,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "Şehitlik ve Gazi Mahallesinin bir kısmı",
-      "district": "POLATLI",
-      "start": "2026-11-28T11:30:00.000",
-      "end": "2026-11-28T13:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Mutlukent mahallesi, 2687 cadde ve civarı",
-      "district": "ÇANKAYA",
-      "start": "2026-11-28T11:45:00.000",
-      "end": "2026-11-28T17:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Ayvaşık mahallesi Boztepe küme evleri Nakliyeciler Sitesi. Bir kısmı",
-      "district": "BEYPAZARI",
-      "start": "2026-11-28T10:10:00.000",
-      "end": "2026-11-28T13:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "İğciler ,Beylikköprü,Kıranharmanı Karailyas Mahalleleri,Nazmi Elmas Kışlası,Sakarya Kışlası",
       "district": "POLATLI",
       "start": "2026-11-28T11:00:00.000",
