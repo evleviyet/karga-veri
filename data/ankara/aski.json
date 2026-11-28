@@ -37,6 +37,15 @@
       "district": "BEYPAZARI",
       "start": "2026-11-28T10:20:00.000",
       "end": "2026-11-28T12:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İğciler ,Beylikköprü,Kıranharmanı Karailyas Mahalleleri,Nazmi Elmas Kışlası,Sakarya Kışlası",
+      "district": "POLATLI",
+      "start": "2026-11-28T11:00:00.000",
+      "end": "2026-11-28T15:00:00.000"
     }
   ]
 }
