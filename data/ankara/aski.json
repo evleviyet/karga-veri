@@ -24,15 +24,6 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
-      "detail": "İvedikköy mahallesi Aski lojmanları, Anadolu Bulvarı, Petrol Ofisi ve Koçak fırın",
-      "district": "YENİMAHALLE",
-      "start": "2026-11-28T08:50:00.000",
-      "end": "2026-11-28T18:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
       "detail": "Ayvaşık mahallesi Boztepe küme evleri Nakliyeciler Sitesi. Bir kısmı",
       "district": "BEYPAZARI",
       "start": "2026-11-28T10:10:00.000",
