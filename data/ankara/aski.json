@@ -1,5 +1,15 @@
 {
   "schema": 1,
   "source": "ankara-aski",
-  "notices": []
+  "notices": [
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
+      "detail": "İvedikköy mahallesi Aski lojmanları, Anadolu Bulvarı, Petrol Ofisi ve Koçak fırın",
+      "district": "YENİMAHALLE",
+      "start": "2026-11-28T08:50:00.000",
+      "end": "2026-11-28T18:00:00.000"
+    }
+  ]
 }
