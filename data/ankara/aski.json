@@ -6,6 +6,15 @@
       "kind": "water",
       "source": "ASKİ",
       "title": "Su kesintisi",
+      "detail": "Şehitlik ve Gazi Mahallesinin bir kısmı",
+      "district": "POLATLI",
+      "start": "2026-11-28T11:30:00.000",
+      "end": "2026-11-28T13:00:00.000"
+    },
+    {
+      "kind": "water",
+      "source": "ASKİ",
+      "title": "Su kesintisi",
       "detail": "İvedikköy mahallesi Aski lojmanları, Anadolu Bulvarı, Petrol Ofisi ve Koçak fırın",
       "district": "YENİMAHALLE",
       "start": "2026-11-28T08:50:00.000",
@@ -27,15 +36,6 @@
       "detail": "Çubuk İlçesi Esenboğa Mahallesi Batubey Caddesi ve bağlı sokaklar.",
       "district": "ÇUBUK",
       "start": "2026-11-28T10:10:00.000",
-      "end": "2026-11-28T12:00:00.000"
-    },
-    {
-      "kind": "water",
-      "source": "ASKİ",
-      "title": "Su kesintisi",
-      "detail": "Kurtuluş milli egemenlik caddesi bir kısmı",
-      "district": "BEYPAZARI",
-      "start": "2026-11-28T10:20:00.000",
       "end": "2026-11-28T12:00:00.000"
     },
     {
